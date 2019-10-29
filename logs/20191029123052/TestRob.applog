@@ -1,0 +1,122 @@
+﻿(29.10.2019 12:30:52) APP   : Studio v.1.0.0.0
+(29.10.2019 12:30:52) APP   : Microsoft Windows NT 6.2.9200.0
+(29.10.2019 12:30:52) APP   : OnMessageEvent: Запуск робота
+(29.10.2019 12:30:53) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\TestRob\logs\20191029123052, True, )
+(29.10.2019 12:30:53) APP   : OnStatusChangedEvent: building
+(29.10.2019 12:30:53) APP   : PreProcessFile
+(29.10.2019 12:30:53) APP   : ProcessFile
+(29.10.2019 12:30:53) APP   : ParseSyntaxTree
+(29.10.2019 12:30:53) APP   : Precompile
+(29.10.2019 12:30:53) APP   : Compile
+(29.10.2019 12:30:53) APP   : Compilation succeed
+(29.10.2019 12:30:53) WARN  : The following warnings occurs during compilation:
+warning CS0162: Unreachable code detected in line: '                this.ActionGuid("9433e43b-ec58-4b69-b696-83ea8f2997b9", "");'
+hidden CS8019: Unnecessary using directive. in line: 'using System.IO;'
+hidden CS8019: Unnecessary using directive. in line: 'using Robin.CommonTools;'
+hidden CS8019: Unnecessary using directive. in line: 'using System.Data;'
+hidden CS8019: Unnecessary using directive. in line: 'using System.Windows.Forms;'
+hidden CS8019: Unnecessary using directive. in line: 'using System.Windows;'
+
+(29.10.2019 12:30:53) APP   : VerifyMethods
+(29.10.2019 12:30:53) APP   : OnStatusChangedEvent: running
+(29.10.2019 12:30:53) APP   : RunRobot("Main")
+(29.10.2019 12:30:53) USER  : Горячие клавиши
+(29.10.2019 12:30:54) CMD   : NumberOfKeystrokes("91,77", "1", "10")
+(29.10.2019 12:30:54) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(29.10.2019 12:30:54) DTL   :     KeyDown:'LWIN'
+(29.10.2019 12:30:54) DTL   :     Sleep("10")
+(29.10.2019 12:30:54) DTL   :     KeyDown:'VK_M'
+(29.10.2019 12:30:54) DTL   :     Sleep("10")
+(29.10.2019 12:30:54) DTL   :     KeyUp:'VK_M'
+(29.10.2019 12:30:54) DTL   :     KeyUp:'LWIN'
+(29.10.2019 12:30:54) USER  : Запустить процесс
+(29.10.2019 12:30:54) CMD   : Sleep("2000")
+(29.10.2019 12:30:56) CMD   : Processes.Execute("system32\mstsc.exe", "", "True", "False", "Normal")
+(29.10.2019 12:30:56) DTL   :   Processes.StartProcess("system32\mstsc.exe", "", "True", "False", "Normal", "False", "False")
+(29.10.2019 12:30:56) USER  : Фокус на элементе
+(29.10.2019 12:30:56) CMD   : Sleep("1000")
+(29.10.2019 12:30:57) CMD   : WindowsUI.GetElementRectangle("0", "False", "True", "False", "False")
+(29.10.2019 12:30:57) DTL   :   WindowsUI.FocusWindow("ByName", "Подключение к удаленному рабочему столу", "0")
+(29.10.2019 12:30:57) DTL   :     WindowsUI.FindWindow("ByName", "Подключение к удаленному рабочему столу", "System.Windows.Automation.AutomationElement", "Robin.RobotTools.RobinWatch")
+(29.10.2019 12:30:57) DTL   :       Focus window with name 'Подключение к удаленному рабочему столу' is successfully
+(29.10.2019 12:30:57) DTL   :       Focus on window Подключение к удаленному рабочему столу
+(29.10.2019 12:30:57) DTL   :     Found 1 elements.
+(29.10.2019 12:30:58) DTL   :     Order = 0, taking first.
+(29.10.2019 12:30:58) DTL   :     elArr: Found 
+(29.10.2019 12:30:58) DTL   :     BoundingRectangle: (x=773, y=198, w=389, h=28)
+(29.10.2019 12:30:58) DTL   :     GetCurrentPropertyValue: (x=773, y=198, w=389, h=28)
+(29.10.2019 12:30:58) DTL   :     GetClickablePoint: (967, 212)
+(29.10.2019 12:30:58) DTL   :     x+w/2, y+h/2: (967,5, 212)
+(29.10.2019 12:30:58) DTL   :     Focused element
+(29.10.2019 12:30:58) DTL   :     SimulateSystem.ClickLeftMouseButton("967", "212", "")
+(29.10.2019 12:30:58) DTL   :       SimulateSystem.CalculateLocation("967", "212", "")
+(29.10.2019 12:30:58) DTL   :         (33006, 12864)
+(29.10.2019 12:30:58) DTL   :       SimulateSystem.ClickMouseYeah("33006", "12864", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(29.10.2019 12:30:58) DTL   :       Click left mouse button complete
+(29.10.2019 12:30:58) DTL   :     ForceClick on (967,212)
+(29.10.2019 12:30:58) WARN  : Action Timeout!
+(29.10.2019 12:30:58) USER  : Клавиши+текст
+(29.10.2019 12:30:58) DTL   :     Sleep("1000")
+(29.10.2019 12:30:59) DTL   :     TextEntry
+(29.10.2019 12:30:59) USER  : Горячие клавиши
+(29.10.2019 12:31:00) DTL   :   NumberOfKeystrokes("13", "1", "10")
+(29.10.2019 12:31:00) DTL   :     KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(29.10.2019 12:31:00) DTL   :       KeyDown:'RETURN'
+(29.10.2019 12:31:00) DTL   :       Sleep("10")
+(29.10.2019 12:31:00) DTL   :       KeyUp:'RETURN'
+(29.10.2019 12:31:00) USER  : Клавиши+текст
+(29.10.2019 12:31:00) DTL   :   Sleep("2000")
+(29.10.2019 12:31:02) DTL   :   TextEntry
+(29.10.2019 12:31:02) USER  : Горячие клавиши
+(29.10.2019 12:31:02) CMD   : Sleep("1000")
+(29.10.2019 12:31:03) CMD   : NumberOfKeystrokes("13", "1", "10")
+(29.10.2019 12:31:03) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(29.10.2019 12:31:03) DTL   :     KeyDown:'RETURN'
+(29.10.2019 12:31:03) DTL   :     Sleep("10")
+(29.10.2019 12:31:03) DTL   :     KeyUp:'RETURN'
+(29.10.2019 12:31:03) USER  : Загрузить из ресурса
+(29.10.2019 12:31:03) CMD   : VisualOperations.FromResource: resource identifier("a4603e12-a8d1-420f-95c4-4cd1b3819404")
+(29.10.2019 12:31:03) DTL   :   VisualOperations.FromResource: resource name 
+(29.10.2019 12:31:03) USER  : Ждать появления
+(29.10.2019 12:31:03) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "False", "12000")
+(29.10.2019 12:31:03) DTL   :   RobinBitmap detected
+(29.10.2019 12:31:15) APP   : Vision.WaitFor found location
+(29.10.2019 12:31:15) USER  : Горячие клавиши
+(29.10.2019 12:31:16) CMD   : Sleep("12000")
+(29.10.2019 12:31:28) CMD   : NumberOfKeystrokes("91,77", "1", "10")
+(29.10.2019 12:31:28) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(29.10.2019 12:31:28) DTL   :     KeyDown:'LWIN'
+(29.10.2019 12:31:28) DTL   :     Sleep("10")
+(29.10.2019 12:31:28) DTL   :     KeyDown:'VK_M'
+(29.10.2019 12:31:28) DTL   :     Sleep("10")
+(29.10.2019 12:31:28) DTL   :     KeyUp:'VK_M'
+(29.10.2019 12:31:28) DTL   :     KeyUp:'LWIN'
+(29.10.2019 12:31:28) USER  : Вход в УС
+(29.10.2019 12:31:28) USER  : Загрузить из ресурса
+(29.10.2019 12:31:28) CMD   : VisualOperations.FromResource: resource identifier("db938a19-4c4a-4616-8ab3-65be4a5b7536")
+(29.10.2019 12:31:28) DTL   :   VisualOperations.FromResource: resource name 
+(29.10.2019 12:31:28) USER  : Ждать появления
+(29.10.2019 12:31:28) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(29.10.2019 12:31:28) DTL   :   RobinBitmap detected
+(29.10.2019 12:31:58) APP   : Vision.WaitFor found location
+(29.10.2019 12:31:58) USER  : Двойной клик ЛКМ
+(29.10.2019 12:31:58) CMD   : SimulateSystem.DoubleClickLeftMouseButton("0", "0", "{X=-10000,Y=-10000}")
+(29.10.2019 12:31:58) DTL   :   ThrowException("Location failed")
+(29.10.2019 12:31:59) DTL   : C:\Users\dboychuk\Desktop\ROBIN\TestRob\TestRob\logs\20191029123052\TestRob.error.jpeg 1920x1080 179621 bytes
+(29.10.2019 12:31:59) ERROR : execution failed:
+Location failed
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.Exception: Location failed
+   в Robin.RobotTools.Standard.ThrowException(Exception exception)
+   в Robin.RobotTools.Standard.ThrowException(String exceptionMessage)
+   в Robin.RobotTools.MouseClick.DoubleClickLeftMouseButton(Decimal X, Decimal Y, Object location)
+   в Robin.RobotTools.Robot.Main(String _args) в C:\Users\dboychuk\Desktop\ROBIN\TestRob\TestRob\logs\20191029123052\TestRob.itrobot:строка 860
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   в System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   в Robin.RobotTools.RobotCompilation.RunRobot(String entryPoint, String args)
+(29.10.2019 12:31:59) APP   : Teardown
+(29.10.2019 12:31:59) ERROR : Location failed
+(29.10.2019 12:31:59) APP   : OnStatusChangedEvent: completed

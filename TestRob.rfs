@@ -314,7 +314,7 @@ Y = ((System.Drawing.Point)Koordinat).Y+25;</sharpcode>
                         <SimilarityRate>0.75</SimilarityRate>
                       </Properties>
                     </Vision.ExistsOnScreen>
-                    <Base.If type_guid="890c9edf-13b1-4678-b74d-0538e584528e" Name="Если" Description="" GUID="b0fad526-385e-4422-93f6-078f45aabdf8" Next="" Previous="88dc744f-8139-4d2a-b851-1bf9eca79ff8" Parent="5da74b82-25dc-466c-bffb-5cd2b9676ff1" UI_identifier="Base|if" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+                    <Base.If type_guid="890c9edf-13b1-4678-b74d-0538e584528e" Name="Если" Description="" GUID="b0fad526-385e-4422-93f6-078f45aabdf8" Next="addc2b86-e869-4d89-b1f1-ac933897e874" Previous="88dc744f-8139-4d2a-b851-1bf9eca79ff8" Parent="5da74b82-25dc-466c-bffb-5cd2b9676ff1" UI_identifier="Base|if" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
                       <List>
                         <Base.CaseIf type_guid="BB8CD187-CFBA-43A8-9DE2-7100E877E0CF" Name="" Description="" GUID="a36c14a6-bf57-4487-9273-de90d1402f9d" Next="" Previous="" Parent="b0fad526-385e-4422-93f6-078f45aabdf8" UI_identifier="" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
                           <List>
@@ -347,6 +347,12 @@ Y = ((System.Drawing.Point)Koordinat).Y+25;</sharpcode>
                         <Variable>Variable1</Variable>
                       </Properties>
                     </Base.If>
+                    <Standard.SetVariable type_guid="59c686d3-1c13-44f2-af6c-52714c5eaa68" Name="Присвоить значение переменной" Description="" GUID="addc2b86-e869-4d89-b1f1-ac933897e874" Next="" Previous="b0fad526-385e-4422-93f6-078f45aabdf8" Parent="5da74b82-25dc-466c-bffb-5cd2b9676ff1" UI_identifier="Base|prisvoenie" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+                      <Properties>
+                        <Value>false</Value>
+                        <ReturnValueVariable>b5d43cfe-ad8c-411b-af79-fa4a84385e23</ReturnValueVariable>
+                      </Properties>
+                    </Standard.SetVariable>
                   </List>
                   <Properties>
                     <Condition>false</Condition>
