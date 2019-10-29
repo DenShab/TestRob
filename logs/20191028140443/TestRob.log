@@ -1,0 +1,29 @@
+﻿(28.10.2019 14:04:44) CMD   : NumberOfKeystrokes("91,77", "1", "10")
+(28.10.2019 14:04:44) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 14:04:44) DTL   :     KeyDown:'LWIN'
+(28.10.2019 14:04:44) DTL   :     Sleep("10")
+(28.10.2019 14:04:44) DTL   :     KeyDown:'VK_M'
+(28.10.2019 14:04:44) DTL   :     Sleep("10")
+(28.10.2019 14:04:44) DTL   :     KeyUp:'VK_M'
+(28.10.2019 14:04:44) DTL   :     KeyUp:'LWIN'
+(28.10.2019 14:04:44) CMD   : Sleep("2000")
+(28.10.2019 14:04:46) CMD   : Processes.Execute("system32\mstsc.exe", "", "False", "False", "Normal")
+(28.10.2019 14:04:46) DTL   :   Processes.StartProcess("system32\mstsc.exe", "", "False", "False", "Normal", "False", "False")
+(28.10.2019 14:04:46) CMD   : WindowsUI.Activate("Подключение к удаленному рабочему столу", "0")
+(28.10.2019 14:04:46) DTL   :   WindowsUI.FindWindow("ByPartialName", "Подключение к удаленному рабочему столу", "System.Windows.Automation.AutomationElement", "Robin.RobotTools.RobinWatch")
+(28.10.2019 14:04:47) DTL   :     C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028140443\TestRob.error.jpeg 1920x1080 164245 bytes
+(28.10.2019 14:04:47) ERROR : execution failed:
+Ссылка на объект не указывает на экземпляр объекта.
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.Exception: Ссылка на объект не указывает на экземпляр объекта.
+   в Robin.RobotTools.PatternExtensions.GetPattern[T](AutomationElement element, AutomationPattern pattern)
+   в Robin.RobotTools.PatternExtensions.GetWindowPattern(AutomationElement element)
+   в Robin.RobotTools.WindowsUI.Activate(String Name, Boolean SearchByPartialName, Int32 TimeOut)
+   в Robin.RobotTools.Robot.Main(String _args) в C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028140443\TestRob.itrobot:строка 737
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   в System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   в Robin.RobotTools.RobotCompilation.RunRobot(String entryPoint, String args)
+(28.10.2019 14:04:47) ERROR : Ссылка на объект не указывает на экземпляр объекта.

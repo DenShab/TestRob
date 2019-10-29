@@ -1,0 +1,40 @@
+﻿(28.10.2019 18:01:47) CMD   : Sleep("5000")
+(28.10.2019 18:01:52) CMD   : VisualOperations.FromResource: resource identifier("23ad08f1-2a73-4cdc-a46c-3f4f01881a4a")
+(28.10.2019 18:01:52) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 18:01:52) CMD   : Vision.ExistsOnScreen: similarity("0,75")
+(28.10.2019 18:01:52) DTL   :   Vision.FindFirst: similarity , return center("0,75", "False")
+(28.10.2019 18:01:52) DTL   :     RobinBitmap detected
+(28.10.2019 18:01:52) CMD   : VisualOperations.FromResource: resource identifier("e4b70ab4-6a51-4866-9e7c-c1ad9027137e")
+(28.10.2019 18:01:52) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 18:01:52) CMD   : Vision.ExistsOnScreen: similarity("0,75")
+(28.10.2019 18:01:52) DTL   :   Vision.FindFirst: similarity , return center("0,75", "False")
+(28.10.2019 18:01:52) DTL   :     RobinBitmap detected
+(28.10.2019 18:01:52) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 18:01:52) DTL   :   RobinBitmap detected
+(28.10.2019 18:01:53) CMD   : Sleep("500")
+(28.10.2019 18:01:53) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=368,Y=55}")
+(28.10.2019 18:01:53) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=368,Y=55}")
+(28.10.2019 18:01:53) DTL   :     (17655, 4693)
+(28.10.2019 18:01:53) DTL   :   SimulateSystem.ClickMouseYeah("17655", "4693", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 18:01:53) DTL   :   Click left mouse button complete
+(28.10.2019 18:01:53) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 18:01:53) DTL   :   RobinBitmap detected
+(28.10.2019 18:02:24) CMD   : Sleep("500")
+(28.10.2019 18:02:24) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=-10000,Y=-10000}")
+(28.10.2019 18:02:24) DTL   :   ThrowException("Location failed")
+(28.10.2019 18:02:24) DTL   : C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028180146\TestRob.error.jpeg 1366x768 123256 bytes
+(28.10.2019 18:02:24) ERROR : execution failed:
+Location failed
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.Exception: Location failed
+   в Robin.RobotTools.Standard.ThrowException(Exception exception)
+   в Robin.RobotTools.Standard.ThrowException(String exceptionMessage)
+   в Robin.RobotTools.MouseClick.ClickLeftMouseButton(Decimal X, Decimal Y, Object location)
+   в Robin.RobotTools.Robot.Main(String _args) в C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028180146\TestRob.itrobot:строка 915
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   в System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   в Robin.RobotTools.RobotCompilation.RunRobot(String entryPoint, String args)
+(28.10.2019 18:02:25) ERROR : Location failed

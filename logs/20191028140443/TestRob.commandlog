@@ -1,0 +1,4 @@
+﻿(28.10.2019 14:04:44) NumberOfKeystrokes("91,77", "1", "10")
+(28.10.2019 14:04:44) Sleep("2000")
+(28.10.2019 14:04:46) Processes.Execute("system32\mstsc.exe", "", "False", "False", "Normal")
+(28.10.2019 14:04:46) WindowsUI.Activate("Подключение к удаленному рабочему столу", "0")

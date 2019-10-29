@@ -1,0 +1,4 @@
+﻿(08.10.2019 17:30:19) ERROR : Compilation failed:
+error CS0103: The name 'cordinates' does not exist in the current context in line: '            X = ((System.Drawing.Point)cordinates).X;'
+error CS0103: The name 'cordinates' does not exist in the current context in line: '            Y = ((System.Drawing.Point)cordinates).Y;'
+

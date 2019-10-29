@@ -1,0 +1,40 @@
+﻿(24.10.2019 10:12:05) APP   : Studio v.1.0.0.0
+(24.10.2019 10:12:05) APP   : Microsoft Windows NT 6.2.9200.0
+(24.10.2019 10:12:05) APP   : OnMessageEvent: Запуск робота
+(24.10.2019 10:12:05) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191024101205, True, )
+(24.10.2019 10:12:05) APP   : OnStatusChangedEvent: building
+(24.10.2019 10:12:06) APP   : PreProcessFile
+(24.10.2019 10:12:06) APP   : ProcessFile
+(24.10.2019 10:12:06) APP   : ParseSyntaxTree
+(24.10.2019 10:12:06) APP   : Precompile
+(24.10.2019 10:12:06) APP   : Compile
+(24.10.2019 10:12:07) APP   : Compilation succeed
+(24.10.2019 10:12:07) APP   : VerifyMethods
+(24.10.2019 10:12:07) APP   : OnStatusChangedEvent: running
+(24.10.2019 10:12:07) APP   : RunRobot("Main")
+(24.10.2019 10:12:08) USER  : Загрузить из ресурса
+(24.10.2019 10:12:08) CMD   : VisualOperations.FromResource: resource identifier("db938a19-4c4a-4616-8ab3-65be4a5b7536")
+(24.10.2019 10:12:08) DTL   :   VisualOperations.FromResource: resource name 
+(24.10.2019 10:12:08) USER  : Ждать появления
+(24.10.2019 10:12:08) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(24.10.2019 10:12:08) DTL   :   RobinBitmap detected
+(24.10.2019 10:12:19) APP   : OnMessageEvent: Остановка робота
+(24.10.2019 10:12:19) APP   : OnStatusChangedEvent: stopping
+(24.10.2019 10:12:39) ERROR : ScreenUtils.WaitFor: error
+System.Threading.ThreadAbortException: Поток находился в процессе прерывания.
+   в VisualCore.VisualCoreAPI.WaitFor(VisualCoreAPI* , InterBitmap* , Double , InterPoint* , Int32 )
+   в RobinIntegration.VisionCoreAPI.WaitFor(Bitmap target, Double similarity, Int64 timeout)
+   в ComputerVison.VisionApi.WaitFor(Bitmap target, Double similarityRate, Decimal timeout, Boolean giveCenter)
+(24.10.2019 10:12:39) ERROR : execution failed:
+Manually stopped
+System.Exception: Manually stopped ---> System.Threading.ThreadAbortException: Поток находился в процессе прерывания.
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   в System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   в Robin.RobotTools.RobotCompilation.RunRobot(String entryPoint, String args)
+   --- Конец трассировки внутреннего стека исключений ---
+(24.10.2019 10:12:39) APP   : Teardown
+(24.10.2019 10:12:40) ERROR : Manually stopped
+(24.10.2019 10:12:40) APP   : OnStatusChangedEvent: completed

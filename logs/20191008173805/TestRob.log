@@ -1,0 +1,19 @@
+﻿(08.10.2019 17:38:05) CMD   : VisualOperations.FromResource: resource identifier("db938a19-4c4a-4616-8ab3-65be4a5b7536")
+(08.10.2019 17:38:05) DTL   :   VisualOperations.FromResource: resource name 
+(08.10.2019 17:38:05) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(08.10.2019 17:38:05) DTL   :   RobinBitmap detected
+(08.10.2019 17:38:09) CMD   : SimulateSystem.MoveMouse("0", "0", "0", "0", "1000", "{X=416,Y=479}", "{X=416,Y=479}")
+(08.10.2019 17:38:09) DTL   :   Sleep("1000")
+(08.10.2019 17:38:10) DTL   :   Sleep("1000")
+(08.10.2019 17:38:11) CMD   : SimulateSystem.DoubleClickLeftMouseButton("416", "479", "")
+(08.10.2019 17:38:11) DTL   :   SimulateSystem.ClickLeftMouseButton("416", "479", "")
+(08.10.2019 17:38:11) DTL   :     SimulateSystem.CalculateLocation("416", "479", "")
+(08.10.2019 17:38:11) DTL   :       (14199, 29066)
+(08.10.2019 17:38:11) DTL   :     SimulateSystem.ClickMouseYeah("14199", "29066", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(08.10.2019 17:38:11) DTL   :     Click left mouse button complete
+(08.10.2019 17:38:11) DTL   :   SimulateSystem.ClickLeftMouseButton("416", "479", "")
+(08.10.2019 17:38:11) DTL   :     SimulateSystem.CalculateLocation("416", "479", "")
+(08.10.2019 17:38:11) DTL   :       (14199, 29066)
+(08.10.2019 17:38:11) DTL   :     SimulateSystem.ClickMouseYeah("14199", "29066", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(08.10.2019 17:38:11) DTL   :     Click left mouse button complete
+(08.10.2019 17:38:11) DTL   :   Double click left mouse button complete

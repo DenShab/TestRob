@@ -1,0 +1,4 @@
+﻿(28.10.2019 13:54:46) CMD   : Sleep("2000")
+(28.10.2019 13:54:48) CMD   : Processes.Execute("system32\mstsc.exe", "", "False", "False", "Normal")
+(28.10.2019 13:54:48) DTL   :   Processes.StartProcess("system32\mstsc.exe", "", "False", "False", "Normal", "False", "False")
+(28.10.2019 13:54:48) DTL   : Key RETURN pressed

@@ -1,0 +1,50 @@
+﻿(28.10.2019 11:28:59) APP   : Studio v.1.0.0.0
+(28.10.2019 11:28:59) APP   : Microsoft Windows NT 6.2.9200.0
+(28.10.2019 11:28:59) APP   : OnMessageEvent: Запуск робота
+(28.10.2019 11:28:59) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028112859, True, )
+(28.10.2019 11:28:59) APP   : OnStatusChangedEvent: building
+(28.10.2019 11:29:00) APP   : PreProcessFile
+(28.10.2019 11:29:00) APP   : ProcessFile
+(28.10.2019 11:29:00) APP   : ParseSyntaxTree
+(28.10.2019 11:29:00) APP   : Precompile
+(28.10.2019 11:29:00) APP   : Compile
+(28.10.2019 11:29:00) APP   : Compilation succeed
+(28.10.2019 11:29:00) APP   : VerifyMethods
+(28.10.2019 11:29:00) APP   : OnStatusChangedEvent: running
+(28.10.2019 11:29:00) APP   : RunRobot("Main")
+(28.10.2019 11:29:00) USER  : Горячие клавиши
+(28.10.2019 11:29:00) CMD   : NumberOfKeystrokes("17,80", "1", "10")
+(28.10.2019 11:29:00) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 11:29:00) DTL   :     KeyDown:'CONTROL'
+(28.10.2019 11:29:00) DTL   :     Sleep("10")
+(28.10.2019 11:29:00) DTL   :     KeyDown:'VK_P'
+(28.10.2019 11:29:00) DTL   :     Sleep("10")
+(28.10.2019 11:29:00) DTL   :     KeyUp:'VK_P'
+(28.10.2019 11:29:00) DTL   :     KeyUp:'CONTROL'
+(28.10.2019 11:29:00) USER  : Загрузить из ресурса
+(28.10.2019 11:29:00) CMD   : VisualOperations.FromResource: resource identifier("ecc4f544-2394-48c0-bb64-6e4295455769")
+(28.10.2019 11:29:00) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 11:29:00) USER  : Ждать появления
+(28.10.2019 11:29:00) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 11:29:01) ERROR : Vision.WaitFor
+(28.10.2019 11:29:01) USER  : Клик ЛКМ
+(28.10.2019 11:29:01) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=-10000,Y=-10000}")
+(28.10.2019 11:29:01) DTL   :   ThrowException("Location failed")
+(28.10.2019 11:29:01) DTL   : C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028112859\TestRob.error.jpeg 1920x1080 182305 bytes
+(28.10.2019 11:29:01) ERROR : execution failed:
+Location failed
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.Exception: Location failed
+   в Robin.RobotTools.Standard.ThrowException(Exception exception)
+   в Robin.RobotTools.Standard.ThrowException(String exceptionMessage)
+   в Robin.RobotTools.MouseClick.ClickLeftMouseButton(Decimal X, Decimal Y, Object location)
+   в Robin.RobotTools.Robot.Main(String _args) в C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028112859\TestRob.itrobot:строка 543
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   в System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   в Robin.RobotTools.RobotCompilation.RunRobot(String entryPoint, String args)
+(28.10.2019 11:29:01) APP   : Teardown
+(28.10.2019 11:29:01) ERROR : Location failed
+(28.10.2019 11:29:01) APP   : OnStatusChangedEvent: completed

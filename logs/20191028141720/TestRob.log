@@ -1,0 +1,66 @@
+﻿(28.10.2019 14:17:21) CMD   : NumberOfKeystrokes("91,77", "1", "10")
+(28.10.2019 14:17:21) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 14:17:21) DTL   :     KeyDown:'LWIN'
+(28.10.2019 14:17:21) DTL   :     Sleep("10")
+(28.10.2019 14:17:21) DTL   :     KeyDown:'VK_M'
+(28.10.2019 14:17:21) DTL   :     Sleep("10")
+(28.10.2019 14:17:21) DTL   :     KeyUp:'VK_M'
+(28.10.2019 14:17:21) DTL   :     KeyUp:'LWIN'
+(28.10.2019 14:17:21) CMD   : Sleep("2000")
+(28.10.2019 14:17:23) CMD   : Processes.Execute("system32\mstsc.exe", "", "True", "False", "Normal")
+(28.10.2019 14:17:23) DTL   :   Processes.StartProcess("system32\mstsc.exe", "", "True", "False", "Normal", "False", "False")
+(28.10.2019 14:17:24) CMD   : WindowsUI.GetElementRectangle("0", "False", "True", "False", "False")
+(28.10.2019 14:17:24) DTL   :   WindowsUI.FocusWindow("ByName", "Подключение к удаленному рабочему столу", "0")
+(28.10.2019 14:17:24) DTL   :     WindowsUI.FindWindow("ByName", "Подключение к удаленному рабочему столу", "System.Windows.Automation.AutomationElement", "Robin.RobotTools.RobinWatch")
+(28.10.2019 14:17:24) DTL   :       Focus window with name 'Подключение к удаленному рабочему столу' is successfully
+(28.10.2019 14:17:24) DTL   :       Focus on window Подключение к удаленному рабочему столу
+(28.10.2019 14:17:24) DTL   :     Found 1 elements.
+(28.10.2019 14:17:24) DTL   :     Order = 0, taking first.
+(28.10.2019 14:17:24) DTL   :     elArr: Found 
+(28.10.2019 14:17:24) DTL   :     BoundingRectangle: (x=-31976, y=-31997, w=128, h=25)
+(28.10.2019 14:17:24) DTL   :     GetCurrentPropertyValue: (x=-31976, y=-31997, w=128, h=25)
+(28.10.2019 14:17:24) DTL   :     Выдано исключение типа "System.Windows.Automation.NoClickablePointException".
+(28.10.2019 14:17:24) DTL   :     Focused element
+(28.10.2019 14:17:24) DTL   :     SimulateSystem.ClickLeftMouseButton("0", "0", "")
+(28.10.2019 14:17:24) DTL   :       SimulateSystem.CalculateLocation("0", "0", "")
+(28.10.2019 14:17:24) DTL   :         (0, 0)
+(28.10.2019 14:17:24) DTL   :       SimulateSystem.ClickMouseYeah("0", "0", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 14:17:24) DTL   :       Click left mouse button complete
+(28.10.2019 14:17:24) DTL   :     ForceClick on (0,0)
+(28.10.2019 14:17:24) WARN  : Action Timeout!
+(28.10.2019 14:17:24) DTL   :     TextEntry
+(28.10.2019 14:17:24) DTL   :   WindowsUI.GetElementRectangle("0", "False", "True", "False", "False")
+(28.10.2019 14:17:24) DTL   :     WindowsUI.FocusWindow("ByName", "Подключение к удаленному рабочему столу", "0")
+(28.10.2019 14:17:24) DTL   :       WindowsUI.FindWindow("ByName", "Подключение к удаленному рабочему столу", "System.Windows.Automation.AutomationElement", "Robin.RobotTools.RobinWatch")
+(28.10.2019 14:17:24) DTL   :         Focus window with name 'Подключение к удаленному рабочему столу' is successfully
+(28.10.2019 14:17:24) DTL   :         Focus on window Подключение к удаленному рабочему столу
+(28.10.2019 14:17:24) DTL   :       Found 1 elements.
+(28.10.2019 14:17:24) DTL   :       Order = 0, taking first.
+(28.10.2019 14:17:24) DTL   :       elArr: Found Подключить
+(28.10.2019 14:17:24) DTL   :       BoundingRectangle: (x=-31758, y=-31810, w=75, h=23)
+(28.10.2019 14:17:24) DTL   :       GetCurrentPropertyValue: (x=-31758, y=-31810, w=75, h=23)
+(28.10.2019 14:17:25) DTL   :       Выдано исключение типа "System.Windows.Automation.NoClickablePointException".
+(28.10.2019 14:17:25) DTL   :       Focused elementПодключить
+(28.10.2019 14:17:25) DTL   :       SimulateSystem.ClickLeftMouseButton("0", "0", "")
+(28.10.2019 14:17:25) DTL   :         SimulateSystem.CalculateLocation("0", "0", "")
+(28.10.2019 14:17:25) DTL   :           (0, 0)
+(28.10.2019 14:17:25) DTL   :         SimulateSystem.ClickMouseYeah("0", "0", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 14:17:25) DTL   :         Click left mouse button complete
+(28.10.2019 14:17:25) DTL   :       ForceClick on (0,0)
+(28.10.2019 14:17:25) WARN  : Action Timeout!
+(28.10.2019 14:17:25) DTL   :       Sleep("1000")
+(28.10.2019 14:17:26) DTL   :       TextEntry
+(28.10.2019 14:17:26) DTL   :     NumberOfKeystrokes("13", "1", "10")
+(28.10.2019 14:17:26) DTL   :       KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 14:17:26) DTL   :         KeyDown:'RETURN'
+(28.10.2019 14:17:26) DTL   :         Sleep("10")
+(28.10.2019 14:17:26) DTL   :         KeyUp:'RETURN'
+(28.10.2019 14:17:26) DTL   :     Sleep("10000")
+(28.10.2019 14:17:36) DTL   :     NumberOfKeystrokes("91,77", "1", "10")
+(28.10.2019 14:17:36) DTL   :       KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 14:17:36) DTL   :         KeyDown:'LWIN'
+(28.10.2019 14:17:36) DTL   :         Sleep("10")
+(28.10.2019 14:17:36) DTL   :         KeyDown:'VK_M'
+(28.10.2019 14:17:36) DTL   :         Sleep("10")
+(28.10.2019 14:17:36) DTL   :         KeyUp:'VK_M'
+(28.10.2019 14:17:36) DTL   :         KeyUp:'LWIN'

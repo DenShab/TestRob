@@ -1,0 +1,84 @@
+﻿(28.10.2019 09:57:14) APP   : Studio v.1.0.0.0
+(28.10.2019 09:57:14) APP   : Microsoft Windows NT 6.2.9200.0
+(28.10.2019 09:57:14) APP   : OnMessageEvent: Запуск робота
+(28.10.2019 09:57:14) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028095714, True, )
+(28.10.2019 09:57:14) APP   : OnStatusChangedEvent: building
+(28.10.2019 09:57:14) APP   : PreProcessFile
+(28.10.2019 09:57:14) APP   : ProcessFile
+(28.10.2019 09:57:14) APP   : ParseSyntaxTree
+(28.10.2019 09:57:14) APP   : Precompile
+(28.10.2019 09:57:14) APP   : Compile
+(28.10.2019 09:57:14) APP   : Compilation succeed
+(28.10.2019 09:57:14) APP   : VerifyMethods
+(28.10.2019 09:57:14) APP   : OnStatusChangedEvent: running
+(28.10.2019 09:57:14) APP   : RunRobot("Main")
+(28.10.2019 09:57:14) USER  : Загрузить из ресурса
+(28.10.2019 09:57:14) CMD   : VisualOperations.FromResource: resource identifier("db938a19-4c4a-4616-8ab3-65be4a5b7536")
+(28.10.2019 09:57:14) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 09:57:14) USER  : Ждать появления
+(28.10.2019 09:57:14) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 09:57:14) DTL   :   RobinBitmap detected
+(28.10.2019 09:57:15) APP   : Vision.WaitFor found location
+(28.10.2019 09:57:15) USER  : Двойной клик ЛКМ
+(28.10.2019 09:57:15) CMD   : SimulateSystem.DoubleClickLeftMouseButton("0", "0", "{X=274,Y=444}")
+(28.10.2019 09:57:15) DTL   :   SimulateSystem.ClickLeftMouseButton("0", "0", "{X=274,Y=444}")
+(28.10.2019 09:57:15) DTL   :     SimulateSystem.CalculateLocation("0", "0", "{X=274,Y=444}")
+(28.10.2019 09:57:15) DTL   :       (9352, 26942)
+(28.10.2019 09:57:15) DTL   :     SimulateSystem.ClickMouseYeah("9352", "26942", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 09:57:15) DTL   :     Click left mouse button complete
+(28.10.2019 09:57:15) DTL   :   SimulateSystem.ClickLeftMouseButton("0", "0", "{X=274,Y=444}")
+(28.10.2019 09:57:15) DTL   :     SimulateSystem.CalculateLocation("0", "0", "{X=274,Y=444}")
+(28.10.2019 09:57:15) DTL   :       (9352, 26942)
+(28.10.2019 09:57:15) DTL   :     SimulateSystem.ClickMouseYeah("9352", "26942", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 09:57:15) DTL   :     Click left mouse button complete
+(28.10.2019 09:57:15) DTL   :   Double click left mouse button complete
+(28.10.2019 09:57:15) USER  : Загрузить из ресурса
+(28.10.2019 09:57:15) CMD   : VisualOperations.FromResource: resource identifier("8dcd3c71-2706-482a-92ae-81da1a3e14f2")
+(28.10.2019 09:57:15) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 09:57:15) USER  : Ждать появления
+(28.10.2019 09:57:15) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 09:57:15) DTL   :   RobinBitmap detected
+(28.10.2019 09:57:16) APP   : Vision.WaitFor found location
+(28.10.2019 09:57:16) USER  : Код C#
+(28.10.2019 09:57:16) USER  : Двойной клик ЛКМ
+(28.10.2019 09:57:16) CMD   : SimulateSystem.DoubleClickLeftMouseButton("919", "811", "")
+(28.10.2019 09:57:16) DTL   :   SimulateSystem.ClickLeftMouseButton("919", "811", "")
+(28.10.2019 09:57:16) DTL   :     SimulateSystem.CalculateLocation("919", "811", "")
+(28.10.2019 09:57:16) DTL   :       (31368, 49212)
+(28.10.2019 09:57:16) DTL   :     SimulateSystem.ClickMouseYeah("31368", "49212", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 09:57:16) DTL   :     Click left mouse button complete
+(28.10.2019 09:57:16) DTL   :   SimulateSystem.ClickLeftMouseButton("919", "811", "")
+(28.10.2019 09:57:16) DTL   :     SimulateSystem.CalculateLocation("919", "811", "")
+(28.10.2019 09:57:16) DTL   :       (31368, 49212)
+(28.10.2019 09:57:16) DTL   :     SimulateSystem.ClickMouseYeah("31368", "49212", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 09:57:16) DTL   :     Click left mouse button complete
+(28.10.2019 09:57:16) DTL   :   Double click left mouse button complete
+(28.10.2019 09:57:16) USER  : Клавиши+текст
+(28.10.2019 09:57:16) DTL   : TextEntry
+(28.10.2019 09:57:16) DTL   : Key TAB pressed
+(28.10.2019 09:57:16) USER  : Клавиши+текст
+(28.10.2019 09:57:16) DTL   : TextEntry
+(28.10.2019 09:57:16) USER  : Загрузить из ресурса
+(28.10.2019 09:57:17) CMD   : VisualOperations.FromResource: resource identifier("0f753767-e856-4abe-8e73-734df7e11194")
+(28.10.2019 09:57:17) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 09:57:17) USER  : Ждать появления
+(28.10.2019 09:57:17) CMD   : Sleep("1000")
+(28.10.2019 09:57:18) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 09:57:18) DTL   :   RobinBitmap detected
+(28.10.2019 09:57:18) APP   : Vision.WaitFor found location
+(28.10.2019 09:57:18) USER  : Двойной клик ЛКМ
+(28.10.2019 09:57:18) CMD   : SimulateSystem.DoubleClickLeftMouseButton("0", "0", "{X=923,Y=929}")
+(28.10.2019 09:57:18) DTL   :   SimulateSystem.ClickLeftMouseButton("0", "0", "{X=923,Y=929}")
+(28.10.2019 09:57:18) DTL   :     SimulateSystem.CalculateLocation("0", "0", "{X=923,Y=929}")
+(28.10.2019 09:57:18) DTL   :       (31505, 56373)
+(28.10.2019 09:57:18) DTL   :     SimulateSystem.ClickMouseYeah("31505", "56373", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 09:57:18) DTL   :     Click left mouse button complete
+(28.10.2019 09:57:18) DTL   :   SimulateSystem.ClickLeftMouseButton("0", "0", "{X=923,Y=929}")
+(28.10.2019 09:57:18) DTL   :     SimulateSystem.CalculateLocation("0", "0", "{X=923,Y=929}")
+(28.10.2019 09:57:18) DTL   :       (31505, 56373)
+(28.10.2019 09:57:18) DTL   :     SimulateSystem.ClickMouseYeah("31505", "56373", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 09:57:18) DTL   :     Click left mouse button complete
+(28.10.2019 09:57:18) DTL   :   Double click left mouse button complete
+(28.10.2019 09:57:18) APP   : execution succeed
+(28.10.2019 09:57:18) APP   : Teardown
+(28.10.2019 09:57:18) APP   : OnStatusChangedEvent: completed

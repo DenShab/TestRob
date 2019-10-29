@@ -1,0 +1,23 @@
+﻿(28.10.2019 13:54:45) APP   : Studio v.1.0.0.0
+(28.10.2019 13:54:45) APP   : Microsoft Windows NT 6.2.9200.0
+(28.10.2019 13:54:45) APP   : OnMessageEvent: Запуск робота
+(28.10.2019 13:54:46) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028135445, True, )
+(28.10.2019 13:54:46) APP   : OnStatusChangedEvent: building
+(28.10.2019 13:54:46) APP   : PreProcessFile
+(28.10.2019 13:54:46) APP   : ProcessFile
+(28.10.2019 13:54:46) APP   : ParseSyntaxTree
+(28.10.2019 13:54:46) APP   : Precompile
+(28.10.2019 13:54:46) APP   : Compile
+(28.10.2019 13:54:46) APP   : Compilation succeed
+(28.10.2019 13:54:46) APP   : VerifyMethods
+(28.10.2019 13:54:46) APP   : OnStatusChangedEvent: running
+(28.10.2019 13:54:46) APP   : RunRobot("Main")
+(28.10.2019 13:54:46) USER  : Запустить процесс
+(28.10.2019 13:54:46) CMD   : Sleep("2000")
+(28.10.2019 13:54:48) CMD   : Processes.Execute("system32\mstsc.exe", "", "False", "False", "Normal")
+(28.10.2019 13:54:48) DTL   :   Processes.StartProcess("system32\mstsc.exe", "", "False", "False", "Normal", "False", "False")
+(28.10.2019 13:54:48) USER  : Клавиши+текст
+(28.10.2019 13:54:48) DTL   : Key RETURN pressed
+(28.10.2019 13:54:48) APP   : execution succeed
+(28.10.2019 13:54:48) APP   : Teardown
+(28.10.2019 13:54:49) APP   : OnStatusChangedEvent: completed

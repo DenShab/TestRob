@@ -1,0 +1,60 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Diagnostics;
+using System.IO;
+using System.Windows;
+using System.Windows.Forms;
+using Robin.CommonTools;
+
+namespace Robin.RobotTools
+{
+    public partial class Robot : RobotCommands
+    {
+        object _a_Variable0;
+        public object Variable0
+        {
+            get
+            {
+                return _a_Variable0;
+            }
+
+            set
+            {
+                _a_Variable0 = value;
+                this.VariableChanged("Variable0", value);
+            }
+        }
+
+        bool _a_Variable1 = false;
+        public bool Variable1
+        {
+            get
+            {
+                return _a_Variable1;
+            }
+
+            set
+            {
+                _a_Variable1 = value;
+                this.VariableChanged("Variable1", value);
+            }
+        }
+
+        public string ___ReturnVariables
+        {
+            get;
+            set;
+        }
+
+        = "";
+        public void Main(string _args)
+        {
+            this.ActionGuid("5bb522c5-dcba-4acc-ad67-2d875e88fbfa", "");
+            this.ActionGuid("058f26f0-cbc4-429f-b84a-8d53b229a5b0", @"Загрузить из ресурса");
+            Variable0 = VisualOperations.FromResource("db938a19-4c4a-4616-8ab3-65be4a5b7536");
+            this.ActionGuid("8ad86879-9b0e-4966-84ef-b3537f0958a2", @"Существует на экране");
+            Variable1 = VisualActions.ExistsOnScreen(Variable0, 0.75m);
+        }
+    }
+}

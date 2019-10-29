@@ -1,0 +1,212 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Diagnostics;
+using System.IO;
+using System.Windows;
+using System.Windows.Forms;
+using Robin.CommonTools;
+
+namespace Robin.RobotTools
+{
+    public partial class Robot : RobotCommands
+    {
+        object _a_Resurs;
+        public object Resurs
+        {
+            get
+            {
+                return _a_Resurs;
+            }
+
+            set
+            {
+                _a_Resurs = value;
+                this.VariableChanged("Resurs", value);
+            }
+        }
+
+        bool _a_Variable1 = false;
+        public bool Variable1
+        {
+            get
+            {
+                return _a_Variable1;
+            }
+
+            set
+            {
+                _a_Variable1 = value;
+                this.VariableChanged("Variable1", value);
+            }
+        }
+
+        object _a_Koordinat;
+        public object Koordinat
+        {
+            get
+            {
+                return _a_Koordinat;
+            }
+
+            set
+            {
+                _a_Koordinat = value;
+                this.VariableChanged("Koordinat", value);
+            }
+        }
+
+        decimal _a_X = 0m;
+        public decimal X
+        {
+            get
+            {
+                return _a_X;
+            }
+
+            set
+            {
+                _a_X = value;
+                this.VariableChanged("X", value);
+            }
+        }
+
+        decimal _a_Y = 0m;
+        public decimal Y
+        {
+            get
+            {
+                return _a_Y;
+            }
+
+            set
+            {
+                _a_Y = value;
+                this.VariableChanged("Y", value);
+            }
+        }
+
+        object _a_имя;
+        public object имя
+        {
+            get
+            {
+                return _a_имя;
+            }
+
+            set
+            {
+                _a_имя = value;
+                this.VariableChanged("имя", value);
+            }
+        }
+
+        object _a_пароль;
+        public object пароль
+        {
+            get
+            {
+                return _a_пароль;
+            }
+
+            set
+            {
+                _a_пароль = value;
+                this.VariableChanged("пароль", value);
+            }
+        }
+
+        string _a_login = @"supervisor";
+        public string login
+        {
+            get
+            {
+                return _a_login;
+            }
+
+            set
+            {
+                _a_login = value;
+                this.VariableChanged("login", value);
+            }
+        }
+
+        string _a_pass = @"123456";
+        public string pass
+        {
+            get
+            {
+                return _a_pass;
+            }
+
+            set
+            {
+                _a_pass = value;
+                this.VariableChanged("pass", value);
+            }
+        }
+
+        object _a_войти;
+        public object войти
+        {
+            get
+            {
+                return _a_войти;
+            }
+
+            set
+            {
+                _a_войти = value;
+                this.VariableChanged("войти", value);
+            }
+        }
+
+        object _a_Касса;
+        public object Касса
+        {
+            get
+            {
+                return _a_Касса;
+            }
+
+            set
+            {
+                _a_Касса = value;
+                this.VariableChanged("Касса", value);
+            }
+        }
+
+        object _a_КоординатыКассы;
+        public object КоординатыКассы
+        {
+            get
+            {
+                return _a_КоординатыКассы;
+            }
+
+            set
+            {
+                _a_КоординатыКассы = value;
+                this.VariableChanged("КоординатыКассы", value);
+            }
+        }
+
+        public string ___ReturnVariables
+        {
+            get;
+            set;
+        }
+
+        = "";
+        public void Main(string _args)
+        {
+            this.ActionGuid("5bb522c5-dcba-4acc-ad67-2d875e88fbfa", "");
+            this.ActionGuid("d67c6ae0-5396-47b0-8e15-0d8b1ad7a6e0", @"Загрузить из ресурса");
+            Касса = VisualOperations.FromResource("23ad08f1-2a73-4cdc-a46c-3f4f01881a4a");
+            this.ActionGuid("dc223540-daf2-4c01-a726-2cfc17f0bf29", @"Ждать появления");
+            КоординатыКассы = VisualActions.WaitFor(Касса, 0.75m, true, -1m);
+            this.ActionGuid("5dfacc9c-e592-49a7-a28d-0abba2aaa3b0", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоординатыКассы);
+        }
+    }
+}

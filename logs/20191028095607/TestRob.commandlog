@@ -1,0 +1,2 @@
+﻿(28.10.2019 09:56:09) VisualOperations.FromResource: resource identifier("db938a19-4c4a-4616-8ab3-65be4a5b7536")
+(28.10.2019 09:56:09) Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")

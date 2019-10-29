@@ -1,0 +1,15 @@
+﻿(08.10.2019 17:30:19) APP   : Studio v.1.0.0.0
+(08.10.2019 17:30:19) APP   : Microsoft Windows NT 6.2.9200.0
+(08.10.2019 17:30:19) APP   : OnMessageEvent: Запуск робота
+(08.10.2019 17:30:19) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191008173019, True, )
+(08.10.2019 17:30:19) APP   : OnStatusChangedEvent: building
+(08.10.2019 17:30:19) APP   : PreProcessFile
+(08.10.2019 17:30:19) APP   : ProcessFile
+(08.10.2019 17:30:19) APP   : ParseSyntaxTree
+(08.10.2019 17:30:19) APP   : Precompile
+(08.10.2019 17:30:19) APP   : Compile
+(08.10.2019 17:30:19) ERROR : Compilation failed:
+error CS0103: The name 'cordinates' does not exist in the current context in line: '            X = ((System.Drawing.Point)cordinates).X;'
+error CS0103: The name 'cordinates' does not exist in the current context in line: '            Y = ((System.Drawing.Point)cordinates).Y;'
+
+(08.10.2019 17:30:19) APP   : OnStatusChangedEvent: completed

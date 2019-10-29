@@ -1,0 +1,44 @@
+﻿(08.10.2019 18:08:30) APP   : Studio v.1.0.0.0
+(08.10.2019 18:08:30) APP   : Microsoft Windows NT 6.2.9200.0
+(08.10.2019 18:08:30) APP   : OnMessageEvent: Запуск робота
+(08.10.2019 18:08:30) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191008180830, True, )
+(08.10.2019 18:08:30) APP   : OnStatusChangedEvent: building
+(08.10.2019 18:08:30) APP   : PreProcessFile
+(08.10.2019 18:08:30) APP   : ProcessFile
+(08.10.2019 18:08:30) APP   : ParseSyntaxTree
+(08.10.2019 18:08:30) APP   : Precompile
+(08.10.2019 18:08:30) APP   : Compile
+(08.10.2019 18:08:30) APP   : Compilation succeed
+(08.10.2019 18:08:30) APP   : VerifyMethods
+(08.10.2019 18:08:30) APP   : OnStatusChangedEvent: running
+(08.10.2019 18:08:30) APP   : RunRobot("Main")
+(08.10.2019 18:08:30) USER  : Загрузить из ресурса
+(08.10.2019 18:08:30) CMD   : VisualOperations.FromResource: resource identifier("db938a19-4c4a-4616-8ab3-65be4a5b7536")
+(08.10.2019 18:08:30) DTL   :   VisualOperations.FromResource: resource name 
+(08.10.2019 18:08:30) USER  : Ждать появления
+(08.10.2019 18:08:30) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(08.10.2019 18:08:30) DTL   :   RobinBitmap detected
+(08.10.2019 18:08:31) APP   : Vision.WaitFor found location
+(08.10.2019 18:08:31) USER  : Двойной клик ЛКМ
+(08.10.2019 18:08:31) CMD   : SimulateSystem.DoubleClickLeftMouseButton("0", "0", "{X=416,Y=480}")
+(08.10.2019 18:08:31) DTL   :   SimulateSystem.ClickLeftMouseButton("0", "0", "{X=416,Y=480}")
+(08.10.2019 18:08:31) DTL   :     SimulateSystem.CalculateLocation("0", "0", "{X=416,Y=480}")
+(08.10.2019 18:08:31) DTL   :       (14199, 29127)
+(08.10.2019 18:08:31) DTL   :     SimulateSystem.ClickMouseYeah("14199", "29127", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(08.10.2019 18:08:31) DTL   :     Click left mouse button complete
+(08.10.2019 18:08:31) APP   : OnMessageEvent: Остановка робота
+(08.10.2019 18:08:31) DTL   :   SimulateSystem.ClickLeftMouseButton("0", "0", "{X=416,Y=480}")
+(08.10.2019 18:08:31) APP   : OnStatusChangedEvent: stopping
+(08.10.2019 18:08:31) ERROR : execution failed:
+Manually stopped
+System.Exception: Manually stopped ---> System.Threading.ThreadAbortException: Поток находился в процессе прерывания.
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   в System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   в Robin.RobotTools.RobotCompilation.RunRobot(String entryPoint, String args)
+   --- Конец трассировки внутреннего стека исключений ---
+(08.10.2019 18:08:31) APP   : Teardown
+(08.10.2019 18:08:32) ERROR : Manually stopped
+(08.10.2019 18:08:32) APP   : OnStatusChangedEvent: completed

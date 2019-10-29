@@ -1,0 +1,14 @@
+﻿(28.10.2019 10:26:52) APP   : Studio v.1.0.0.0
+(28.10.2019 10:26:52) APP   : Microsoft Windows NT 6.2.9200.0
+(28.10.2019 10:26:52) APP   : OnMessageEvent: Запуск робота
+(28.10.2019 10:26:52) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028102651, True, )
+(28.10.2019 10:26:52) APP   : OnStatusChangedEvent: building
+(28.10.2019 10:26:52) APP   : PreProcessFile
+(28.10.2019 10:26:52) APP   : ProcessFile
+(28.10.2019 10:26:52) APP   : ParseSyntaxTree
+(28.10.2019 10:26:52) APP   : Precompile
+(28.10.2019 10:26:52) APP   : Compile
+(28.10.2019 10:26:52) ERROR : Compilation failed:
+error CS1503: Argument 1: cannot convert from 'System.DateTime' to 'long' in line: '            DateTime date1 = new DateTime(DateTime.Today);'
+
+(28.10.2019 10:26:52) APP   : OnStatusChangedEvent: completed

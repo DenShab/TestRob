@@ -1,0 +1,4 @@
+﻿(28.10.2019 14:10:42) NumberOfKeystrokes("91,77", "1", "10")
+(28.10.2019 14:10:42) Sleep("2000")
+(28.10.2019 14:10:44) Processes.Execute("system32\mstsc.exe", "", "True", "False", "Normal")
+(28.10.2019 14:10:44) WindowsUI.GetElementRectangle("0", "False", "True", "False", "False")

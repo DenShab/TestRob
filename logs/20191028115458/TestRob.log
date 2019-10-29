@@ -1,0 +1,37 @@
+﻿(28.10.2019 11:54:59) CMD   : NumberOfKeystrokes("17,80", "1", "10")
+(28.10.2019 11:54:59) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 11:54:59) DTL   :     KeyDown:'CONTROL'
+(28.10.2019 11:54:59) DTL   :     Sleep("10")
+(28.10.2019 11:54:59) DTL   :     KeyDown:'VK_P'
+(28.10.2019 11:54:59) DTL   :     Sleep("10")
+(28.10.2019 11:54:59) DTL   :     KeyUp:'VK_P'
+(28.10.2019 11:54:59) DTL   :     KeyUp:'CONTROL'
+(28.10.2019 11:54:59) CMD   : VisualOperations.FromResource: resource identifier("ecc4f544-2394-48c0-bb64-6e4295455769")
+(28.10.2019 11:54:59) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 11:54:59) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 11:54:59) DTL   :   RobinBitmap detected
+(28.10.2019 11:55:00) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=1885,Y=478}")
+(28.10.2019 11:55:00) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=1885,Y=478}")
+(28.10.2019 11:55:00) DTL   :     (64341, 29005)
+(28.10.2019 11:55:00) DTL   :   SimulateSystem.ClickMouseYeah("64341", "29005", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 11:55:00) DTL   :   Click left mouse button complete
+(28.10.2019 11:55:00) CMD   : VisualOperations.FromResource: resource identifier("a687254c-6184-40ed-82e6-56b99ca6705e")
+(28.10.2019 11:55:00) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 11:55:00) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 11:55:00) DTL   :   RobinBitmap detected
+(28.10.2019 11:55:30) ERROR : ScreenUtils.WaitFor: error
+System.Threading.ThreadAbortException: Поток находился в процессе прерывания.
+   в VisualCore.VisualCoreAPI.WaitFor(VisualCoreAPI* , InterBitmap* , Double , InterPoint* , Int32 )
+   в RobinIntegration.VisionCoreAPI.WaitFor(Bitmap target, Double similarity, Int64 timeout)
+   в ComputerVison.VisionApi.WaitFor(Bitmap target, Double similarityRate, Decimal timeout, Boolean giveCenter)
+(28.10.2019 11:55:30) ERROR : execution failed:
+Manually stopped
+System.Exception: Manually stopped ---> System.Threading.ThreadAbortException: Поток находился в процессе прерывания.
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   в System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   в Robin.RobotTools.RobotCompilation.RunRobot(String entryPoint, String args)
+   --- Конец трассировки внутреннего стека исключений ---
+(28.10.2019 11:55:31) ERROR : Manually stopped

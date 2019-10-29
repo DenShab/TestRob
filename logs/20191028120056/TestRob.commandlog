@@ -1,0 +1,3 @@
+﻿(28.10.2019 12:00:56) NumberOfKeystrokes("17,80", "1", "10")
+(28.10.2019 12:00:56) VisualOperations.FromResource: resource identifier("ecc4f544-2394-48c0-bb64-6e4295455769")
+(28.10.2019 12:00:57) Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")

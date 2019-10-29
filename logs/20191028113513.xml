@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RobotResults>
+    <RobotName value="TestRob" />
+    <Host value="DBOYCHUK-PC" />
+    <User value="DATATEH\dboychuk" />
+    <OS value="Microsoft Windows NT 6.2.9200.0" />
+    <Result value="Failed" />
+    <StartTime value="28.10.2019 09:37:18" />
+    <EndTime value="28.10.2019 11:35:59" />
+    <TotalTime value="1:58:41" />
+    <Error value="Manually stopped" />
+    <ErrorDetails value="System.Exception: Manually stopped ---&gt; System.Threading.ThreadAbortException: Поток находился в процессе прерывания.
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   в System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   в Robin.RobotTools.RobotCompilation.RunRobot(String entryPoint, String args)
+   --- Конец трассировки внутреннего стека исключений ---" />
+    <ErrorScreenshot value="" />
+    <RobotRunnerVersion value="1.0.0.0" />
+</RobotResults>

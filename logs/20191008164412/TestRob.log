@@ -1,0 +1,5 @@
+﻿(08.10.2019 16:44:15) CMD   : VisualOperations.FromResource: resource identifier("db938a19-4c4a-4616-8ab3-65be4a5b7536")
+(08.10.2019 16:44:15) DTL   :   VisualOperations.FromResource: resource name 
+(08.10.2019 16:44:15) CMD   : Vision.ExistsOnScreen: similarity("0,75")
+(08.10.2019 16:44:15) DTL   :   Vision.FindFirst: similarity , return center("0,75", "False")
+(08.10.2019 16:44:15) DTL   :     RobinBitmap detected

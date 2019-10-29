@@ -1,0 +1,30 @@
+﻿(28.10.2019 10:02:22) APP   : Studio v.1.0.0.0
+(28.10.2019 10:02:22) APP   : Microsoft Windows NT 6.2.9200.0
+(28.10.2019 10:02:22) APP   : OnMessageEvent: Запуск робота
+(28.10.2019 10:02:22) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028100222, True, )
+(28.10.2019 10:02:22) APP   : OnStatusChangedEvent: building
+(28.10.2019 10:02:22) APP   : PreProcessFile
+(28.10.2019 10:02:22) APP   : ProcessFile
+(28.10.2019 10:02:22) APP   : ParseSyntaxTree
+(28.10.2019 10:02:22) APP   : Precompile
+(28.10.2019 10:02:22) APP   : Compile
+(28.10.2019 10:02:22) APP   : Compilation succeed
+(28.10.2019 10:02:22) APP   : VerifyMethods
+(28.10.2019 10:02:22) APP   : OnStatusChangedEvent: running
+(28.10.2019 10:02:22) APP   : RunRobot("Main")
+(28.10.2019 10:02:22) USER  : Загрузить из ресурса
+(28.10.2019 10:02:22) CMD   : VisualOperations.FromResource: resource identifier("23ad08f1-2a73-4cdc-a46c-3f4f01881a4a")
+(28.10.2019 10:02:22) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 10:02:22) USER  : Ждать появления
+(28.10.2019 10:02:22) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 10:02:22) DTL   :   RobinBitmap detected
+(28.10.2019 10:02:23) APP   : Vision.WaitFor found location
+(28.10.2019 10:02:23) USER  : Клик ЛКМ
+(28.10.2019 10:02:23) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=546,Y=50}")
+(28.10.2019 10:02:23) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=546,Y=50}")
+(28.10.2019 10:02:23) DTL   :     (18636, 3034)
+(28.10.2019 10:02:23) DTL   :   SimulateSystem.ClickMouseYeah("18636", "3034", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 10:02:23) DTL   :   Click left mouse button complete
+(28.10.2019 10:02:23) APP   : execution succeed
+(28.10.2019 10:02:23) APP   : Teardown
+(28.10.2019 10:02:24) APP   : OnStatusChangedEvent: completed

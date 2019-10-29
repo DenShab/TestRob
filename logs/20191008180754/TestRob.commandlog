@@ -1,0 +1,6 @@
+﻿(08.10.2019 18:07:54) VisualOperations.FromResource: resource identifier("db938a19-4c4a-4616-8ab3-65be4a5b7536")
+(08.10.2019 18:07:54) Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(08.10.2019 18:07:55) SimulateSystem.DoubleClickLeftMouseButton("0", "0", "{X=416,Y=480}")
+(08.10.2019 18:07:56) VisualOperations.FromResource: resource identifier("8dcd3c71-2706-482a-92ae-81da1a3e14f2")
+(08.10.2019 18:07:56) Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(08.10.2019 18:07:56) SimulateSystem.DoubleClickLeftMouseButton("0", "0", "{X=637,Y=348}")

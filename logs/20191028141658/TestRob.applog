@@ -1,0 +1,95 @@
+﻿(28.10.2019 14:16:58) APP   : Studio v.1.0.0.0
+(28.10.2019 14:16:58) APP   : Microsoft Windows NT 6.2.9200.0
+(28.10.2019 14:16:58) APP   : OnMessageEvent: Запуск робота
+(28.10.2019 14:16:58) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028141658, True, )
+(28.10.2019 14:16:58) APP   : OnStatusChangedEvent: building
+(28.10.2019 14:16:58) APP   : PreProcessFile
+(28.10.2019 14:16:58) APP   : ProcessFile
+(28.10.2019 14:16:58) APP   : ParseSyntaxTree
+(28.10.2019 14:16:59) APP   : Precompile
+(28.10.2019 14:16:59) APP   : Compile
+(28.10.2019 14:16:59) APP   : Compilation succeed
+(28.10.2019 14:16:59) APP   : VerifyMethods
+(28.10.2019 14:16:59) APP   : OnStatusChangedEvent: running
+(28.10.2019 14:16:59) APP   : RunRobot("Main")
+(28.10.2019 14:16:59) USER  : Горячие клавиши
+(28.10.2019 14:16:59) CMD   : NumberOfKeystrokes("91,77", "1", "10")
+(28.10.2019 14:16:59) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 14:16:59) DTL   :     KeyDown:'LWIN'
+(28.10.2019 14:16:59) DTL   :     Sleep("10")
+(28.10.2019 14:16:59) DTL   :     KeyDown:'VK_M'
+(28.10.2019 14:16:59) DTL   :     Sleep("10")
+(28.10.2019 14:16:59) DTL   :     KeyUp:'VK_M'
+(28.10.2019 14:16:59) DTL   :     KeyUp:'LWIN'
+(28.10.2019 14:16:59) USER  : Запустить процесс
+(28.10.2019 14:16:59) CMD   : Sleep("2000")
+(28.10.2019 14:17:01) CMD   : Processes.Execute("system32\mstsc.exe", "", "True", "False", "Normal")
+(28.10.2019 14:17:01) DTL   :   Processes.StartProcess("system32\mstsc.exe", "", "True", "False", "Normal", "False", "False")
+(28.10.2019 14:17:01) USER  : Фокус на элементе
+(28.10.2019 14:17:01) CMD   : WindowsUI.GetElementRectangle("0", "False", "True", "False", "False")
+(28.10.2019 14:17:01) DTL   :   WindowsUI.FocusWindow("ByName", "Подключение к удаленному рабочему столу", "0")
+(28.10.2019 14:17:01) DTL   :     WindowsUI.FindWindow("ByName", "Подключение к удаленному рабочему столу", "System.Windows.Automation.AutomationElement", "Robin.RobotTools.RobinWatch")
+(28.10.2019 14:17:02) DTL   :       Focus on window Подключение к удаленному рабочему столу
+(28.10.2019 14:17:02) DTL   :       WindowsUI.FindWindow("ByName", "Подключение к удаленному рабочему столу", "System.Windows.Automation.AutomationElement", "Robin.RobotTools.RobinWatch")
+(28.10.2019 14:17:02) DTL   :         Focus window with name 'Подключение к удаленному рабочему столу' is successfully
+(28.10.2019 14:17:02) DTL   :         Focus on window Подключение к удаленному рабочему столу
+(28.10.2019 14:17:02) DTL   :       Found 1 elements.
+(28.10.2019 14:17:02) DTL   :       Order = 0, taking first.
+(28.10.2019 14:17:02) DTL   :       elArr: Found 
+(28.10.2019 14:17:02) DTL   :       BoundingRectangle: (x=773, y=198, w=389, h=28)
+(28.10.2019 14:17:02) DTL   :       GetCurrentPropertyValue: (x=773, y=198, w=389, h=28)
+(28.10.2019 14:17:02) DTL   :       GetClickablePoint: (967, 212)
+(28.10.2019 14:17:02) DTL   :       x+w/2, y+h/2: (967,5, 212)
+(28.10.2019 14:17:02) DTL   :       Focused element
+(28.10.2019 14:17:02) DTL   :       SimulateSystem.ClickLeftMouseButton("967", "212", "")
+(28.10.2019 14:17:02) DTL   :         SimulateSystem.CalculateLocation("967", "212", "")
+(28.10.2019 14:17:02) DTL   :           (33006, 12864)
+(28.10.2019 14:17:02) DTL   :         SimulateSystem.ClickMouseYeah("33006", "12864", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 14:17:02) DTL   :         Click left mouse button complete
+(28.10.2019 14:17:02) DTL   :       ForceClick on (967,212)
+(28.10.2019 14:17:02) WARN  : Action Timeout!
+(28.10.2019 14:17:02) USER  : Клавиши+текст
+(28.10.2019 14:17:02) DTL   :       TextEntry
+(28.10.2019 14:17:02) USER  : Фокус на элементе
+(28.10.2019 14:17:02) DTL   :     WindowsUI.GetElementRectangle("0", "False", "True", "False", "False")
+(28.10.2019 14:17:02) DTL   :       WindowsUI.FocusWindow("ByName", "Подключение к удаленному рабочему столу", "0")
+(28.10.2019 14:17:02) DTL   :         WindowsUI.FindWindow("ByName", "Подключение к удаленному рабочему столу", "System.Windows.Automation.AutomationElement", "Robin.RobotTools.RobinWatch")
+(28.10.2019 14:17:03) DTL   :           Focus window with name 'Подключение к удаленному рабочему столу' is successfully
+(28.10.2019 14:17:03) DTL   :           Focus on window Подключение к удаленному рабочему столу
+(28.10.2019 14:17:03) DTL   :         Found 1 elements.
+(28.10.2019 14:17:03) DTL   :         Order = 0, taking first.
+(28.10.2019 14:17:03) DTL   :         elArr: Found Подключить
+(28.10.2019 14:17:03) DTL   :         BoundingRectangle: (x=999, y=416, w=75, h=23)
+(28.10.2019 14:17:03) DTL   :         GetCurrentPropertyValue: (x=999, y=416, w=75, h=23)
+(28.10.2019 14:17:03) DTL   :         GetClickablePoint: (1036, 427)
+(28.10.2019 14:17:03) DTL   :         x+w/2, y+h/2: (1036,5, 427,5)
+(28.10.2019 14:17:03) DTL   :         Focused elementПодключить
+(28.10.2019 14:17:03) DTL   :         SimulateSystem.ClickLeftMouseButton("1036", "427", "")
+(28.10.2019 14:17:03) DTL   :           SimulateSystem.CalculateLocation("1036", "427", "")
+(28.10.2019 14:17:03) DTL   :             (35362, 25910)
+(28.10.2019 14:17:03) DTL   :           SimulateSystem.ClickMouseYeah("35362", "25910", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 14:17:03) DTL   :           Click left mouse button complete
+(28.10.2019 14:17:03) DTL   :         ForceClick on (1036,427)
+(28.10.2019 14:17:03) WARN  : Action Timeout!
+(28.10.2019 14:17:03) USER  : Клавиши+текст
+(28.10.2019 14:17:03) DTL   :         Sleep("1000")
+(28.10.2019 14:17:04) DTL   :         TextEntry
+(28.10.2019 14:17:04) USER  : Горячие клавиши
+(28.10.2019 14:17:04) DTL   :       NumberOfKeystrokes("13", "1", "10")
+(28.10.2019 14:17:04) DTL   :         KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 14:17:04) DTL   :           KeyDown:'RETURN'
+(28.10.2019 14:17:04) DTL   :           Sleep("10")
+(28.10.2019 14:17:04) DTL   :           KeyUp:'RETURN'
+(28.10.2019 14:17:04) USER  : Горячие клавиши
+(28.10.2019 14:17:04) DTL   :       Sleep("10000")
+(28.10.2019 14:17:14) DTL   :       NumberOfKeystrokes("91,77", "1", "10")
+(28.10.2019 14:17:14) DTL   :         KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 14:17:14) DTL   :           KeyDown:'LWIN'
+(28.10.2019 14:17:14) DTL   :           Sleep("10")
+(28.10.2019 14:17:14) DTL   :           KeyDown:'VK_M'
+(28.10.2019 14:17:14) DTL   :           Sleep("10")
+(28.10.2019 14:17:14) DTL   :           KeyUp:'VK_M'
+(28.10.2019 14:17:14) DTL   :           KeyUp:'LWIN'
+(28.10.2019 14:17:14) APP   : execution succeed
+(28.10.2019 14:17:14) APP   : Teardown
+(28.10.2019 14:17:15) APP   : OnStatusChangedEvent: completed

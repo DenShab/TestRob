@@ -1,0 +1,88 @@
+﻿(28.10.2019 11:43:32) CMD   : NumberOfKeystrokes("17,80", "1", "10")
+(28.10.2019 11:43:32) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 11:43:32) DTL   :     KeyDown:'CONTROL'
+(28.10.2019 11:43:32) DTL   :     Sleep("10")
+(28.10.2019 11:43:32) DTL   :     KeyDown:'VK_P'
+(28.10.2019 11:43:32) DTL   :     Sleep("10")
+(28.10.2019 11:43:32) DTL   :     KeyUp:'VK_P'
+(28.10.2019 11:43:32) DTL   :     KeyUp:'CONTROL'
+(28.10.2019 11:43:32) CMD   : VisualOperations.FromResource: resource identifier("ecc4f544-2394-48c0-bb64-6e4295455769")
+(28.10.2019 11:43:32) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 11:43:32) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 11:43:32) DTL   :   RobinBitmap detected
+(28.10.2019 11:43:33) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=854,Y=392}")
+(28.10.2019 11:43:33) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=854,Y=392}")
+(28.10.2019 11:43:33) DTL   :     (29149, 23787)
+(28.10.2019 11:43:33) DTL   :   SimulateSystem.ClickMouseYeah("29149", "23787", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 11:43:33) DTL   :   Click left mouse button complete
+(28.10.2019 11:43:33) CMD   : VisualOperations.FromResource: resource identifier("a687254c-6184-40ed-82e6-56b99ca6705e")
+(28.10.2019 11:43:33) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 11:43:33) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 11:43:33) DTL   :   RobinBitmap detected
+(28.10.2019 11:43:34) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=771,Y=392}")
+(28.10.2019 11:43:34) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=771,Y=392}")
+(28.10.2019 11:43:34) DTL   :     (26316, 23787)
+(28.10.2019 11:43:34) DTL   :   SimulateSystem.ClickMouseYeah("26316", "23787", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 11:43:34) DTL   :   Click left mouse button complete
+(28.10.2019 11:43:34) CMD   : NumberOfKeystrokes("13", "1", "10")
+(28.10.2019 11:43:34) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 11:43:34) DTL   :     KeyDown:'RETURN'
+(28.10.2019 11:43:34) DTL   :     Sleep("10")
+(28.10.2019 11:43:34) DTL   :     KeyUp:'RETURN'
+(28.10.2019 11:43:34) CMD   : VisualOperations.FromResource: resource identifier("748a2519-1a23-4262-9004-b91f6e332368")
+(28.10.2019 11:43:34) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 11:43:34) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 11:43:34) DTL   :   RobinBitmap detected
+(28.10.2019 11:43:36) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=683,Y=280}")
+(28.10.2019 11:43:36) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=683,Y=280}")
+(28.10.2019 11:43:36) DTL   :     (23313, 16990)
+(28.10.2019 11:43:36) DTL   :   SimulateSystem.ClickMouseYeah("23313", "16990", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 11:43:36) DTL   :   Click left mouse button complete
+(28.10.2019 11:43:36) CMD   : NumberOfKeystrokes("13,123", "1", "5000")
+(28.10.2019 11:43:36) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "5000")
+(28.10.2019 11:43:36) DTL   :     KeyDown:'RETURN'
+(28.10.2019 11:43:36) DTL   :     Sleep("5000")
+(28.10.2019 11:43:41) DTL   :     KeyDown:'F12'
+(28.10.2019 11:43:41) DTL   :     Sleep("5000")
+(28.10.2019 11:43:46) DTL   :     KeyUp:'F12'
+(28.10.2019 11:43:46) DTL   :     KeyUp:'RETURN'
+(28.10.2019 11:43:46) CMD   : VisualOperations.FromResource: resource identifier("9d676ea3-8ac1-43da-af10-07a130209d02")
+(28.10.2019 11:43:46) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 11:43:46) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 11:43:46) DTL   :   RobinBitmap detected
+(28.10.2019 11:43:46) CMD   : SimulateSystem.ClickLeftMouseButton("227", "555", "")
+(28.10.2019 11:43:46) DTL   :   SimulateSystem.CalculateLocation("227", "555", "")
+(28.10.2019 11:43:46) DTL   :     (7748, 33678)
+(28.10.2019 11:43:46) DTL   :   SimulateSystem.ClickMouseYeah("7748", "33678", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 11:43:46) DTL   :   Click left mouse button complete
+(28.10.2019 11:43:46) CMD   : VisualOperations.FromResource: resource identifier("c61b1d5c-5e39-4333-aca8-d6458c295f24")
+(28.10.2019 11:43:47) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 11:43:47) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 11:43:47) DTL   :   RobinBitmap detected
+(28.10.2019 11:43:47) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=226,Y=651}")
+(28.10.2019 11:43:47) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=226,Y=651}")
+(28.10.2019 11:43:47) DTL   :     (7714, 39503)
+(28.10.2019 11:43:47) DTL   :   SimulateSystem.ClickMouseYeah("7714", "39503", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 11:43:47) DTL   :   Click left mouse button complete
+(28.10.2019 11:43:47) CMD   : VisualOperations.FromResource: resource identifier("5256fa46-6e59-4acf-b3b6-db1bcba18a1b")
+(28.10.2019 11:43:47) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 11:43:47) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 11:43:47) DTL   :   RobinBitmap detected
+(28.10.2019 11:44:18) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=-10000,Y=-10000}")
+(28.10.2019 11:44:18) DTL   :   ThrowException("Location failed")
+(28.10.2019 11:44:18) DTL   : C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028114331\TestRob.error.jpeg 1920x1080 260775 bytes
+(28.10.2019 11:44:18) ERROR : execution failed:
+Location failed
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.Exception: Location failed
+   в Robin.RobotTools.Standard.ThrowException(Exception exception)
+   в Robin.RobotTools.Standard.ThrowException(String exceptionMessage)
+   в Robin.RobotTools.MouseClick.ClickLeftMouseButton(Decimal X, Decimal Y, Object location)
+   в Robin.RobotTools.Robot.Main(String _args) в C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028114331\TestRob.itrobot:строка 611
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   в System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   в Robin.RobotTools.RobotCompilation.RunRobot(String entryPoint, String args)
+(28.10.2019 11:44:18) ERROR : Location failed

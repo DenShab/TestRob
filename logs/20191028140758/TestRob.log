@@ -1,0 +1,45 @@
+﻿(28.10.2019 14:07:59) CMD   : NumberOfKeystrokes("91,77", "1", "10")
+(28.10.2019 14:07:59) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 14:07:59) DTL   :     KeyDown:'LWIN'
+(28.10.2019 14:07:59) DTL   :     Sleep("10")
+(28.10.2019 14:07:59) DTL   :     KeyDown:'VK_M'
+(28.10.2019 14:07:59) DTL   :     Sleep("10")
+(28.10.2019 14:07:59) DTL   :     KeyUp:'VK_M'
+(28.10.2019 14:07:59) DTL   :     KeyUp:'LWIN'
+(28.10.2019 14:07:59) CMD   : Sleep("2000")
+(28.10.2019 14:08:01) CMD   : Processes.Execute("system32\mstsc.exe", "", "False", "True", "Normal")
+(28.10.2019 14:08:01) DTL   :   Processes.StartProcess("system32\mstsc.exe", "", "False", "True", "Normal", "False", "False")
+(28.10.2019 14:08:01) DTL   :     ThrowException("Process failed to start: 'system32\mstsc.exe'
+Exception occurs:
+System.ComponentModel.Win32Exception (0x80004005): Не удается найти указанный файл
+   в System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   в Robin.RobotTools.InternalTools.StartProcess(String executableName, String args, Boolean createNoWindow, Boolean useShellExecute, ProcessWindowStyle style, Boolean waitForExit, Boolean redirectOutput)")
+(28.10.2019 14:08:01) DTL   : C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028140758\TestRob.error.jpeg 1920x1080 156896 bytes
+(28.10.2019 14:08:01) ERROR : execution failed:
+Process failed to start: 'system32\mstsc.exe'
+Exception occurs:
+System.ComponentModel.Win32Exception (0x80004005): Не удается найти указанный файл
+   в System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   в Robin.RobotTools.InternalTools.StartProcess(String executableName, String args, Boolean createNoWindow, Boolean useShellExecute, ProcessWindowStyle style, Boolean waitForExit, Boolean redirectOutput)
+System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.Exception: Process failed to start: 'system32\mstsc.exe'
+Exception occurs:
+System.ComponentModel.Win32Exception (0x80004005): Не удается найти указанный файл
+   в System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   в Robin.RobotTools.InternalTools.StartProcess(String executableName, String args, Boolean createNoWindow, Boolean useShellExecute, ProcessWindowStyle style, Boolean waitForExit, Boolean redirectOutput)
+   в Robin.RobotTools.Standard.ThrowException(Exception exception)
+   в Robin.RobotTools.Standard.ThrowException(String exceptionMessage)
+   в Robin.RobotTools.InternalTools.StartProcess(String executableName, String args, Boolean createNoWindow, Boolean useShellExecute, ProcessWindowStyle style, Boolean waitForExit, Boolean redirectOutput)
+   в Robin.RobotTools.Processes.Run(String executableName, String args, Boolean createNoWindow, Boolean useShellExecute, ProcessWindowStyle style)
+   в Robin.RobotTools.Robot.Main(String _args) в C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028140758\TestRob.itrobot:строка 735
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   в System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   в Robin.RobotTools.RobotCompilation.RunRobot(String entryPoint, String args)
+(28.10.2019 14:08:02) ERROR : Process failed to start: 'system32\mstsc.exe'
+Exception occurs:
+System.ComponentModel.Win32Exception (0x80004005): Не удается найти указанный файл
+   в System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   в Robin.RobotTools.InternalTools.StartProcess(String executableName, String args, Boolean createNoWindow, Boolean useShellExecute, ProcessWindowStyle style, Boolean waitForExit, Boolean redirectOutput)

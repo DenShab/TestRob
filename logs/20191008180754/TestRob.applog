@@ -1,0 +1,58 @@
+﻿(08.10.2019 18:07:54) APP   : Studio v.1.0.0.0
+(08.10.2019 18:07:54) APP   : Microsoft Windows NT 6.2.9200.0
+(08.10.2019 18:07:54) APP   : OnMessageEvent: Запуск робота
+(08.10.2019 18:07:54) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191008180754, True, )
+(08.10.2019 18:07:54) APP   : OnStatusChangedEvent: building
+(08.10.2019 18:07:54) APP   : PreProcessFile
+(08.10.2019 18:07:54) APP   : ProcessFile
+(08.10.2019 18:07:54) APP   : ParseSyntaxTree
+(08.10.2019 18:07:54) APP   : Precompile
+(08.10.2019 18:07:54) APP   : Compile
+(08.10.2019 18:07:54) APP   : Compilation succeed
+(08.10.2019 18:07:54) APP   : VerifyMethods
+(08.10.2019 18:07:54) APP   : OnStatusChangedEvent: running
+(08.10.2019 18:07:54) APP   : RunRobot("Main")
+(08.10.2019 18:07:54) USER  : Загрузить из ресурса
+(08.10.2019 18:07:54) CMD   : VisualOperations.FromResource: resource identifier("db938a19-4c4a-4616-8ab3-65be4a5b7536")
+(08.10.2019 18:07:54) DTL   :   VisualOperations.FromResource: resource name 
+(08.10.2019 18:07:54) USER  : Ждать появления
+(08.10.2019 18:07:54) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(08.10.2019 18:07:54) DTL   :   RobinBitmap detected
+(08.10.2019 18:07:55) APP   : Vision.WaitFor found location
+(08.10.2019 18:07:55) USER  : Двойной клик ЛКМ
+(08.10.2019 18:07:55) CMD   : SimulateSystem.DoubleClickLeftMouseButton("0", "0", "{X=416,Y=480}")
+(08.10.2019 18:07:55) DTL   :   SimulateSystem.ClickLeftMouseButton("0", "0", "{X=416,Y=480}")
+(08.10.2019 18:07:55) DTL   :     SimulateSystem.CalculateLocation("0", "0", "{X=416,Y=480}")
+(08.10.2019 18:07:55) DTL   :       (14199, 29127)
+(08.10.2019 18:07:55) DTL   :     SimulateSystem.ClickMouseYeah("14199", "29127", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(08.10.2019 18:07:55) DTL   :     Click left mouse button complete
+(08.10.2019 18:07:55) DTL   :   SimulateSystem.ClickLeftMouseButton("0", "0", "{X=416,Y=480}")
+(08.10.2019 18:07:55) DTL   :     SimulateSystem.CalculateLocation("0", "0", "{X=416,Y=480}")
+(08.10.2019 18:07:55) DTL   :       (14199, 29127)
+(08.10.2019 18:07:56) DTL   :     SimulateSystem.ClickMouseYeah("14199", "29127", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(08.10.2019 18:07:56) DTL   :     Click left mouse button complete
+(08.10.2019 18:07:56) DTL   :   Double click left mouse button complete
+(08.10.2019 18:07:56) USER  : Загрузить из ресурса
+(08.10.2019 18:07:56) CMD   : VisualOperations.FromResource: resource identifier("8dcd3c71-2706-482a-92ae-81da1a3e14f2")
+(08.10.2019 18:07:56) DTL   :   VisualOperations.FromResource: resource name 
+(08.10.2019 18:07:56) USER  : Ждать появления
+(08.10.2019 18:07:56) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(08.10.2019 18:07:56) DTL   :   RobinBitmap detected
+(08.10.2019 18:07:56) APP   : Vision.WaitFor found location
+(08.10.2019 18:07:56) USER  : Код C#
+(08.10.2019 18:07:56) USER  : Двойной клик ЛКМ
+(08.10.2019 18:07:56) CMD   : SimulateSystem.DoubleClickLeftMouseButton("0", "0", "{X=637,Y=348}")
+(08.10.2019 18:07:56) DTL   :   SimulateSystem.ClickLeftMouseButton("0", "0", "{X=637,Y=348}")
+(08.10.2019 18:07:56) DTL   :     SimulateSystem.CalculateLocation("0", "0", "{X=637,Y=348}")
+(08.10.2019 18:07:56) DTL   :       (21742, 21117)
+(08.10.2019 18:07:56) DTL   :     SimulateSystem.ClickMouseYeah("21742", "21117", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(08.10.2019 18:07:56) DTL   :     Click left mouse button complete
+(08.10.2019 18:07:57) DTL   :   SimulateSystem.ClickLeftMouseButton("0", "0", "{X=637,Y=348}")
+(08.10.2019 18:07:57) DTL   :     SimulateSystem.CalculateLocation("0", "0", "{X=637,Y=348}")
+(08.10.2019 18:07:57) DTL   :       (21742, 21117)
+(08.10.2019 18:07:57) DTL   :     SimulateSystem.ClickMouseYeah("21742", "21117", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(08.10.2019 18:07:57) DTL   :     Click left mouse button complete
+(08.10.2019 18:07:57) DTL   :   Double click left mouse button complete
+(08.10.2019 18:07:57) APP   : execution succeed
+(08.10.2019 18:07:57) APP   : Teardown
+(08.10.2019 18:07:57) APP   : OnStatusChangedEvent: completed

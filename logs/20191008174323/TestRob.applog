@@ -1,0 +1,42 @@
+﻿(08.10.2019 17:43:23) APP   : Studio v.1.0.0.0
+(08.10.2019 17:43:23) APP   : Microsoft Windows NT 6.2.9200.0
+(08.10.2019 17:43:23) APP   : OnMessageEvent: Запуск робота
+(08.10.2019 17:43:23) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191008174323, True, )
+(08.10.2019 17:43:23) APP   : OnStatusChangedEvent: building
+(08.10.2019 17:43:23) APP   : PreProcessFile
+(08.10.2019 17:43:23) APP   : ProcessFile
+(08.10.2019 17:43:23) APP   : ParseSyntaxTree
+(08.10.2019 17:43:24) APP   : Precompile
+(08.10.2019 17:43:24) APP   : Compile
+(08.10.2019 17:43:25) APP   : Compilation succeed
+(08.10.2019 17:43:25) APP   : VerifyMethods
+(08.10.2019 17:43:25) APP   : OnStatusChangedEvent: running
+(08.10.2019 17:43:25) APP   : RunRobot("Main")
+(08.10.2019 17:43:25) USER  : Загрузить из ресурса
+(08.10.2019 17:43:25) CMD   : VisualOperations.FromResource: resource identifier("db938a19-4c4a-4616-8ab3-65be4a5b7536")
+(08.10.2019 17:43:25) DTL   :   VisualOperations.FromResource: resource name 
+(08.10.2019 17:43:25) USER  : Ждать появления
+(08.10.2019 17:43:25) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(08.10.2019 17:43:25) DTL   :   RobinBitmap detected
+(08.10.2019 17:43:25) APP   : Vision.WaitFor found location
+(08.10.2019 17:43:25) USER  : Код C#
+(08.10.2019 17:43:25) USER  : Движение мыши
+(08.10.2019 17:43:25) CMD   : SimulateSystem.MoveMouse("0", "0", "0", "0", "1000", "{X=271,Y=175}", "{X=271,Y=175}")
+(08.10.2019 17:43:25) DTL   :   Sleep("1000")
+(08.10.2019 17:43:26) DTL   :   Sleep("1000")
+(08.10.2019 17:43:27) USER  : Двойной клик ЛКМ
+(08.10.2019 17:43:28) CMD   : SimulateSystem.DoubleClickLeftMouseButton("271", "175", "")
+(08.10.2019 17:43:28) DTL   :   SimulateSystem.ClickLeftMouseButton("271", "175", "")
+(08.10.2019 17:43:28) DTL   :     SimulateSystem.CalculateLocation("271", "175", "")
+(08.10.2019 17:43:28) DTL   :       (9250, 10619)
+(08.10.2019 17:43:28) DTL   :     SimulateSystem.ClickMouseYeah("9250", "10619", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(08.10.2019 17:43:28) DTL   :     Click left mouse button complete
+(08.10.2019 17:43:28) DTL   :   SimulateSystem.ClickLeftMouseButton("271", "175", "")
+(08.10.2019 17:43:28) DTL   :     SimulateSystem.CalculateLocation("271", "175", "")
+(08.10.2019 17:43:28) DTL   :       (9250, 10619)
+(08.10.2019 17:43:28) DTL   :     SimulateSystem.ClickMouseYeah("9250", "10619", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(08.10.2019 17:43:28) DTL   :     Click left mouse button complete
+(08.10.2019 17:43:28) DTL   :   Double click left mouse button complete
+(08.10.2019 17:43:28) APP   : execution succeed
+(08.10.2019 17:43:28) APP   : Teardown
+(08.10.2019 17:43:28) APP   : OnStatusChangedEvent: completed

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RobotResults>
+    <RobotName value="TestRob" />
+    <Host value="DBOYCHUK-PC" />
+    <User value="DATATEH\dboychuk" />
+    <OS value="Microsoft Windows NT 6.2.9200.0" />
+    <Result value="Success" />
+    <StartTime value="08.10.2019 16:41:06" />
+    <EndTime value="08.10.2019 16:49:24" />
+    <TotalTime value="0:08:18" />
+    <Error value="" />
+    <ErrorDetails value="" />
+    <ErrorScreenshot value="" />
+    <RobotRunnerVersion value="1.0.0.0" />
+</RobotResults>

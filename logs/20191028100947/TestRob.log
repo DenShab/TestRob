@@ -1,0 +1,42 @@
+﻿(28.10.2019 10:09:48) CMD   : VisualOperations.FromResource: resource identifier("23ad08f1-2a73-4cdc-a46c-3f4f01881a4a")
+(28.10.2019 10:09:48) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 10:09:48) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 10:09:48) DTL   :   RobinBitmap detected
+(28.10.2019 10:09:48) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=546,Y=52}")
+(28.10.2019 10:09:48) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=546,Y=52}")
+(28.10.2019 10:09:48) DTL   :     (18636, 3155)
+(28.10.2019 10:09:49) DTL   :   SimulateSystem.ClickMouseYeah("18636", "3155", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 10:09:49) DTL   :   Click left mouse button complete
+(28.10.2019 10:09:49) CMD   : VisualOperations.FromResource: resource identifier("5256fa46-6e59-4acf-b3b6-db1bcba18a1b")
+(28.10.2019 10:09:49) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 10:09:49) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 10:09:49) DTL   :   RobinBitmap detected
+(28.10.2019 10:09:49) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=146,Y=106}")
+(28.10.2019 10:09:49) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=146,Y=106}")
+(28.10.2019 10:09:49) DTL   :     (4983, 6432)
+(28.10.2019 10:09:49) DTL   :   SimulateSystem.ClickMouseYeah("4983", "6432", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 10:09:49) DTL   :   Click left mouse button complete
+(28.10.2019 10:09:49) CMD   : VisualOperations.FromResource: resource identifier("30b31e25-7eac-4bbb-b461-7cacc9204de2")
+(28.10.2019 10:09:49) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 10:09:49) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 10:09:49) DTL   :   RobinBitmap detected
+(28.10.2019 10:09:50) CMD   : VisualOperations.FromResource: resource identifier("7b98dc78-b36f-4047-ad27-06da30599821")
+(28.10.2019 10:09:50) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 10:09:50) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "False", "-1")
+(28.10.2019 10:09:50) DTL   :   RobinBitmap detected
+(28.10.2019 10:10:21) ERROR : ScreenUtils.WaitFor: error
+System.Threading.ThreadAbortException: Поток находился в процессе прерывания.
+   в VisualCore.VisualCoreAPI.WaitFor(VisualCoreAPI* , InterBitmap* , Double , InterPoint* , Int32 )
+   в RobinIntegration.VisionCoreAPI.WaitFor(Bitmap target, Double similarity, Int64 timeout)
+   в ComputerVison.VisionApi.WaitFor(Bitmap target, Double similarityRate, Decimal timeout, Boolean giveCenter)
+(28.10.2019 10:10:21) ERROR : execution failed:
+Manually stopped
+System.Exception: Manually stopped ---> System.Threading.ThreadAbortException: Поток находился в процессе прерывания.
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   в System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   в Robin.RobotTools.RobotCompilation.RunRobot(String entryPoint, String args)
+   --- Конец трассировки внутреннего стека исключений ---
+(28.10.2019 10:10:21) ERROR : Manually stopped

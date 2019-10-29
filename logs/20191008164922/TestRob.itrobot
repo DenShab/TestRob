@@ -1,0 +1,77 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Diagnostics;
+using System.IO;
+using System.Windows;
+using System.Windows.Forms;
+using Robin.CommonTools;
+
+namespace Robin.RobotTools
+{
+    public partial class Robot : RobotCommands
+    {
+        object _a_Resurs;
+        public object Resurs
+        {
+            get
+            {
+                return _a_Resurs;
+            }
+
+            set
+            {
+                _a_Resurs = value;
+                this.VariableChanged("Resurs", value);
+            }
+        }
+
+        bool _a_Variable1 = false;
+        public bool Variable1
+        {
+            get
+            {
+                return _a_Variable1;
+            }
+
+            set
+            {
+                _a_Variable1 = value;
+                this.VariableChanged("Variable1", value);
+            }
+        }
+
+        object _a_Koordinat;
+        public object Koordinat
+        {
+            get
+            {
+                return _a_Koordinat;
+            }
+
+            set
+            {
+                _a_Koordinat = value;
+                this.VariableChanged("Koordinat", value);
+            }
+        }
+
+        public string ___ReturnVariables
+        {
+            get;
+            set;
+        }
+
+        = "";
+        public void Main(string _args)
+        {
+            this.ActionGuid("5bb522c5-dcba-4acc-ad67-2d875e88fbfa", "");
+            this.ActionGuid("058f26f0-cbc4-429f-b84a-8d53b229a5b0", @"Загрузить из ресурса");
+            Resurs = VisualOperations.FromResource("db938a19-4c4a-4616-8ab3-65be4a5b7536");
+            this.ActionGuid("5c44e17d-8efc-4fe5-8b31-d9d7c98d17d7", @"Ждать появления");
+            Koordinat = VisualActions.WaitFor(Resurs, 0.75m, true, -1m);
+            this.ActionGuid("81dd0e10-67be-4fec-a618-68c1df1a664c", @"Двойной клик ЛКМ");
+            MouseClick.DoubleClickLeftMouseButton((int)(0), (int)(0), Koordinat);
+        }
+    }
+}

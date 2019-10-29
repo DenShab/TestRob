@@ -1,0 +1,3 @@
+﻿(28.10.2019 10:28:33) ERROR : Compilation failed:
+error CS1955: Non-invocable member 'DateTime.Today' cannot be used like a method. in line: '            date1 = DateTime.Today();'
+

@@ -1,0 +1,2 @@
+﻿(28.10.2019 13:54:46) Sleep("2000")
+(28.10.2019 13:54:48) Processes.Execute("system32\mstsc.exe", "", "False", "False", "Normal")

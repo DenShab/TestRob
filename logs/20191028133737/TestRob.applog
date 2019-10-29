@@ -1,0 +1,218 @@
+﻿(28.10.2019 13:37:37) APP   : Studio v.1.0.0.0
+(28.10.2019 13:37:37) APP   : Microsoft Windows NT 6.2.9200.0
+(28.10.2019 13:37:37) APP   : OnMessageEvent: Запуск робота
+(28.10.2019 13:37:38) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028133737, True, )
+(28.10.2019 13:37:38) APP   : OnStatusChangedEvent: building
+(28.10.2019 13:37:38) APP   : PreProcessFile
+(28.10.2019 13:37:38) APP   : ProcessFile
+(28.10.2019 13:37:38) APP   : ParseSyntaxTree
+(28.10.2019 13:37:38) APP   : Precompile
+(28.10.2019 13:37:38) APP   : Compile
+(28.10.2019 13:37:38) APP   : Compilation succeed
+(28.10.2019 13:37:38) APP   : VerifyMethods
+(28.10.2019 13:37:38) APP   : OnStatusChangedEvent: running
+(28.10.2019 13:37:38) APP   : RunRobot("Main")
+(28.10.2019 13:37:38) USER  : Выгрузка первого листа АО
+(28.10.2019 13:37:38) USER  : Горячие клавиши
+(28.10.2019 13:37:38) CMD   : NumberOfKeystrokes("17,80", "1", "10")
+(28.10.2019 13:37:38) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 13:37:38) DTL   :     KeyDown:'CONTROL'
+(28.10.2019 13:37:38) DTL   :     Sleep("10")
+(28.10.2019 13:37:38) DTL   :     KeyDown:'VK_P'
+(28.10.2019 13:37:38) DTL   :     Sleep("10")
+(28.10.2019 13:37:38) DTL   :     KeyUp:'VK_P'
+(28.10.2019 13:37:38) DTL   :     KeyUp:'CONTROL'
+(28.10.2019 13:37:38) USER  : Загрузить из ресурса
+(28.10.2019 13:37:38) CMD   : VisualOperations.FromResource: resource identifier("ecc4f544-2394-48c0-bb64-6e4295455769")
+(28.10.2019 13:37:38) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 13:37:38) USER  : Ждать появления
+(28.10.2019 13:37:38) CMD   : Sleep("1000")
+(28.10.2019 13:37:39) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 13:37:39) DTL   :   RobinBitmap detected
+(28.10.2019 13:37:40) APP   : Vision.WaitFor found location
+(28.10.2019 13:37:40) USER  : Клик ЛКМ
+(28.10.2019 13:37:40) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=847,Y=387}")
+(28.10.2019 13:37:40) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=847,Y=387}")
+(28.10.2019 13:37:40) DTL   :     (28910, 23483)
+(28.10.2019 13:37:40) DTL   :   SimulateSystem.ClickMouseYeah("28910", "23483", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 13:37:40) DTL   :   Click left mouse button complete
+(28.10.2019 13:37:40) USER  : Загрузить из ресурса
+(28.10.2019 13:37:40) CMD   : VisualOperations.FromResource: resource identifier("a687254c-6184-40ed-82e6-56b99ca6705e")
+(28.10.2019 13:37:40) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 13:37:40) USER  : Ждать появления
+(28.10.2019 13:37:40) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 13:37:40) DTL   :   RobinBitmap detected
+(28.10.2019 13:37:42) APP   : Vision.WaitFor found location
+(28.10.2019 13:37:42) USER  : Клик ЛКМ
+(28.10.2019 13:37:42) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=771,Y=392}")
+(28.10.2019 13:37:42) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=771,Y=392}")
+(28.10.2019 13:37:42) DTL   :     (26316, 23787)
+(28.10.2019 13:37:42) DTL   :   SimulateSystem.ClickMouseYeah("26316", "23787", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 13:37:42) DTL   :   Click left mouse button complete
+(28.10.2019 13:37:42) USER  : Горячие клавиши
+(28.10.2019 13:37:42) CMD   : NumberOfKeystrokes("13", "1", "10")
+(28.10.2019 13:37:42) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 13:37:42) DTL   :     KeyDown:'RETURN'
+(28.10.2019 13:37:42) DTL   :     Sleep("10")
+(28.10.2019 13:37:42) DTL   :     KeyUp:'RETURN'
+(28.10.2019 13:37:42) USER  : Загрузить из ресурса
+(28.10.2019 13:37:42) CMD   : VisualOperations.FromResource: resource identifier("748a2519-1a23-4262-9004-b91f6e332368")
+(28.10.2019 13:37:42) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 13:37:42) USER  : Ждать появления тип файла
+(28.10.2019 13:37:42) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 13:37:42) DTL   :   RobinBitmap detected
+(28.10.2019 13:37:46) APP   : Vision.WaitFor found location
+(28.10.2019 13:37:46) USER  : Клик ЛКМ
+(28.10.2019 13:37:46) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=683,Y=280}")
+(28.10.2019 13:37:46) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=683,Y=280}")
+(28.10.2019 13:37:46) DTL   :     (23313, 16990)
+(28.10.2019 13:37:46) DTL   :   SimulateSystem.ClickMouseYeah("23313", "16990", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 13:37:46) DTL   :   Click left mouse button complete
+(28.10.2019 13:37:46) USER  : Горячие клавиши
+(28.10.2019 13:37:46) CMD   : NumberOfKeystrokes("13,123", "1", "5000")
+(28.10.2019 13:37:46) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "5000")
+(28.10.2019 13:37:46) DTL   :     KeyDown:'RETURN'
+(28.10.2019 13:37:46) DTL   :     Sleep("5000")
+(28.10.2019 13:37:51) DTL   :     KeyDown:'F12'
+(28.10.2019 13:37:51) DTL   :     Sleep("5000")
+(28.10.2019 13:37:56) DTL   :     KeyUp:'F12'
+(28.10.2019 13:37:56) DTL   :     KeyUp:'RETURN'
+(28.10.2019 13:37:56) USER  : Загрузить из ресурса
+(28.10.2019 13:37:56) CMD   : VisualOperations.FromResource: resource identifier("9d676ea3-8ac1-43da-af10-07a130209d02")
+(28.10.2019 13:37:57) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 13:37:57) USER  : Ждать появления тип файла
+(28.10.2019 13:37:57) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 13:37:57) DTL   :   RobinBitmap detected
+(28.10.2019 13:37:57) APP   : Vision.WaitFor found location
+(28.10.2019 13:37:57) USER  : Код C#
+(28.10.2019 13:37:57) USER  : Клик ЛКМ
+(28.10.2019 13:37:57) CMD   : SimulateSystem.ClickLeftMouseButton("233", "711", "")
+(28.10.2019 13:37:57) DTL   :   SimulateSystem.CalculateLocation("233", "711", "")
+(28.10.2019 13:37:57) DTL   :     (7953, 43144)
+(28.10.2019 13:37:57) DTL   :   SimulateSystem.ClickMouseYeah("7953", "43144", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 13:37:57) DTL   :   Click left mouse button complete
+(28.10.2019 13:37:57) USER  : Загрузить из ресурса
+(28.10.2019 13:37:57) CMD   : VisualOperations.FromResource: resource identifier("c61b1d5c-5e39-4333-aca8-d6458c295f24")
+(28.10.2019 13:37:57) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 13:37:57) USER  : Ждать появления тип файла
+(28.10.2019 13:37:57) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 13:37:57) DTL   :   RobinBitmap detected
+(28.10.2019 13:37:58) APP   : Vision.WaitFor found location
+(28.10.2019 13:37:58) USER  : Клик ЛКМ
+(28.10.2019 13:37:58) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=232,Y=807}")
+(28.10.2019 13:37:58) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=232,Y=807}")
+(28.10.2019 13:37:58) DTL   :     (7918, 48969)
+(28.10.2019 13:37:58) DTL   :   SimulateSystem.ClickMouseYeah("7918", "48969", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 13:37:58) DTL   :   Click left mouse button complete
+(28.10.2019 13:37:58) USER  : Загрузить из ресурса
+(28.10.2019 13:37:58) CMD   : VisualOperations.FromResource: resource identifier("ac3aff50-0a10-4089-b83f-c8b7166d183a")
+(28.10.2019 13:37:58) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 13:37:58) USER  : Ждать появления тип файла
+(28.10.2019 13:37:58) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 13:37:58) DTL   :   RobinBitmap detected
+(28.10.2019 13:37:58) APP   : Vision.WaitFor found location
+(28.10.2019 13:37:58) USER  : Клик ЛКМ
+(28.10.2019 13:37:58) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=181,Y=267}")
+(28.10.2019 13:37:58) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=181,Y=267}")
+(28.10.2019 13:37:58) DTL   :     (6178, 16201)
+(28.10.2019 13:37:58) DTL   :   SimulateSystem.ClickMouseYeah("6178", "16201", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 13:37:58) DTL   :   Click left mouse button complete
+(28.10.2019 13:37:58) USER  : Клавиши+текст
+(28.10.2019 13:37:58) DTL   : TextEntry
+(28.10.2019 13:37:58) DTL   : Key RETURN pressed
+(28.10.2019 13:37:58) USER  : Загрузить из ресурса
+(28.10.2019 13:37:58) CMD   : VisualOperations.FromResource: resource identifier("09de38b7-5c71-49dd-90a6-f53e7587e9d6")
+(28.10.2019 13:37:58) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 13:37:58) USER  : Ждать появления тип файла
+(28.10.2019 13:37:58) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 13:37:59) DTL   :   RobinBitmap detected
+(28.10.2019 13:37:59) APP   : Vision.WaitFor found location
+(28.10.2019 13:37:59) USER  : Клик ЛКМ
+(28.10.2019 13:37:59) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=209,Y=301}")
+(28.10.2019 13:37:59) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=209,Y=301}")
+(28.10.2019 13:37:59) DTL   :     (7133, 18265)
+(28.10.2019 13:37:59) DTL   :   SimulateSystem.ClickMouseYeah("7133", "18265", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 13:37:59) DTL   :   Click left mouse button complete
+(28.10.2019 13:37:59) USER  : Код C#
+(28.10.2019 13:37:59) USER  : Клавиши+текст
+(28.10.2019 13:37:59) DTL   : TextEntry
+(28.10.2019 13:37:59) DTL   : Key RETURN pressed
+(28.10.2019 13:37:59) DTL   : Key RETURN pressed
+(28.10.2019 13:37:59) USER  : Загрузить из ресурса
+(28.10.2019 13:37:59) CMD   : VisualOperations.FromResource: resource identifier("2222c6cf-200b-4063-a40f-7ef8078b0258")
+(28.10.2019 13:37:59) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 13:37:59) USER  : Ждать появления тип файла
+(28.10.2019 13:37:59) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 13:37:59) DTL   :   RobinBitmap detected
+(28.10.2019 13:38:00) APP   : Vision.WaitFor found location
+(28.10.2019 13:38:00) USER  : Клик ЛКМ
+(28.10.2019 13:38:00) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=893,Y=914}")
+(28.10.2019 13:38:00) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=893,Y=914}")
+(28.10.2019 13:38:00) DTL   :     (30481, 55462)
+(28.10.2019 13:38:00) DTL   :   SimulateSystem.ClickMouseYeah("30481", "55462", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 13:38:00) DTL   :   Click left mouse button complete
+(28.10.2019 13:38:00) USER  : Закрытие ворда
+(28.10.2019 13:38:00) CMD   : Sleep("5000")
+(28.10.2019 13:38:05) USER  : Загрузить из ресурса
+(28.10.2019 13:38:05) CMD   : VisualOperations.FromResource: resource identifier("28219be6-2d14-40da-8710-dc44ce22c02c")
+(28.10.2019 13:38:05) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 13:38:05) USER  : Ждать появления
+(28.10.2019 13:38:05) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 13:38:05) DTL   :   RobinBitmap detected
+(28.10.2019 13:38:05) APP   : Vision.WaitFor found location
+(28.10.2019 13:38:05) USER  : Клик ЛКМ
+(28.10.2019 13:38:05) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=116,Y=267}")
+(28.10.2019 13:38:05) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=116,Y=267}")
+(28.10.2019 13:38:05) DTL   :     (3959, 16201)
+(28.10.2019 13:38:05) DTL   :   SimulateSystem.ClickMouseYeah("3959", "16201", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 13:38:05) DTL   :   Click left mouse button complete
+(28.10.2019 13:38:05) USER  : Загрузить из ресурса
+(28.10.2019 13:38:05) CMD   : VisualOperations.FromResource: resource identifier("8172ab2f-55ff-4cbd-8fdc-ed65fea8a8fd")
+(28.10.2019 13:38:05) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 13:38:05) USER  : Ждать появления
+(28.10.2019 13:38:06) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 13:38:06) DTL   :   RobinBitmap detected
+(28.10.2019 13:38:06) APP   : Vision.WaitFor found location
+(28.10.2019 13:38:06) USER  : Клик ЛКМ
+(28.10.2019 13:38:06) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=142,Y=668}")
+(28.10.2019 13:38:06) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=142,Y=668}")
+(28.10.2019 13:38:06) DTL   :     (4846, 40535)
+(28.10.2019 13:38:06) DTL   :   SimulateSystem.ClickMouseYeah("4846", "40535", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 13:38:06) DTL   :   Click left mouse button complete
+(28.10.2019 13:38:06) USER  : Выгрузка второго листа АО
+(28.10.2019 13:38:06) CMD   : Sleep("5000")
+(28.10.2019 13:38:11) USER  : Горячие клавиши
+(28.10.2019 13:38:11) CMD   : NumberOfKeystrokes("17,80", "1", "10")
+(28.10.2019 13:38:12) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 13:38:12) DTL   :     KeyDown:'CONTROL'
+(28.10.2019 13:38:12) DTL   :     Sleep("10")
+(28.10.2019 13:38:12) DTL   :     KeyDown:'VK_P'
+(28.10.2019 13:38:12) DTL   :     Sleep("10")
+(28.10.2019 13:38:12) DTL   :     KeyUp:'VK_P'
+(28.10.2019 13:38:12) DTL   :     KeyUp:'CONTROL'
+(28.10.2019 13:38:12) USER  : Загрузить из ресурса
+(28.10.2019 13:38:12) CMD   : VisualOperations.FromResource: resource identifier("ecc4f544-2394-48c0-bb64-6e4295455769")
+(28.10.2019 13:38:12) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 13:38:12) USER  : Ждать появления
+(28.10.2019 13:38:12) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 13:38:12) DTL   :   RobinBitmap detected
+(28.10.2019 13:38:13) APP   : OnMessageEvent: Остановка робота
+(28.10.2019 13:38:13) APP   : OnStatusChangedEvent: stopping
+(28.10.2019 13:38:42) ERROR : ScreenUtils.WaitFor: error
+System.Threading.ThreadAbortException: Поток находился в процессе прерывания.
+   в VisualCore.VisualCoreAPI.WaitFor(VisualCoreAPI* , InterBitmap* , Double , InterPoint* , Int32 )
+   в RobinIntegration.VisionCoreAPI.WaitFor(Bitmap target, Double similarity, Int64 timeout)
+   в ComputerVison.VisionApi.WaitFor(Bitmap target, Double similarityRate, Decimal timeout, Boolean giveCenter)
+(28.10.2019 13:38:42) ERROR : execution failed:
+Manually stopped
+System.Exception: Manually stopped ---> System.Threading.ThreadAbortException: Поток находился в процессе прерывания.
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   в System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   в Robin.RobotTools.RobotCompilation.RunRobot(String entryPoint, String args)
+   --- Конец трассировки внутреннего стека исключений ---
+(28.10.2019 13:38:42) APP   : Teardown
+(28.10.2019 13:38:43) ERROR : Manually stopped
+(28.10.2019 13:38:43) APP   : OnStatusChangedEvent: completed

@@ -1,0 +1,6 @@
+﻿(28.10.2019 11:34:38) NumberOfKeystrokes("17,80", "1", "10")
+(28.10.2019 11:34:38) VisualOperations.FromResource: resource identifier("ecc4f544-2394-48c0-bb64-6e4295455769")
+(28.10.2019 11:34:38) Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 11:34:39) SimulateSystem.ClickLeftMouseButton("0", "0", "{X=1280,Y=879}")
+(28.10.2019 11:34:39) VisualOperations.FromResource: resource identifier("a687254c-6184-40ed-82e6-56b99ca6705e")
+(28.10.2019 11:34:39) Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")

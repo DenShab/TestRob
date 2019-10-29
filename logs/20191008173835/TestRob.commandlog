@@ -1,0 +1,4 @@
+﻿(08.10.2019 17:38:36) VisualOperations.FromResource: resource identifier("db938a19-4c4a-4616-8ab3-65be4a5b7536")
+(08.10.2019 17:38:36) Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(08.10.2019 17:38:36) SimulateSystem.MoveMouse("0", "0", "0", "0", "1000", "{X=416,Y=479}", "{X=416,Y=479}")
+(08.10.2019 17:38:39) SimulateSystem.DoubleClickLeftMouseButton("416", "479", "")

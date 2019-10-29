@@ -1,0 +1,62 @@
+﻿(28.10.2019 11:36:48) APP   : Studio v.1.0.0.0
+(28.10.2019 11:36:48) APP   : Microsoft Windows NT 6.2.9200.0
+(28.10.2019 11:36:48) APP   : OnMessageEvent: Запуск робота
+(28.10.2019 11:36:49) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028113648, True, )
+(28.10.2019 11:36:49) APP   : OnStatusChangedEvent: building
+(28.10.2019 11:36:49) APP   : PreProcessFile
+(28.10.2019 11:36:49) APP   : ProcessFile
+(28.10.2019 11:36:49) APP   : ParseSyntaxTree
+(28.10.2019 11:36:49) APP   : Precompile
+(28.10.2019 11:36:49) APP   : Compile
+(28.10.2019 11:36:49) APP   : Compilation succeed
+(28.10.2019 11:36:49) APP   : VerifyMethods
+(28.10.2019 11:36:49) APP   : OnStatusChangedEvent: running
+(28.10.2019 11:36:49) APP   : RunRobot("Main")
+(28.10.2019 11:36:49) USER  : Горячие клавиши
+(28.10.2019 11:36:49) CMD   : NumberOfKeystrokes("17,80", "1", "10")
+(28.10.2019 11:36:49) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 11:36:49) DTL   :     KeyDown:'CONTROL'
+(28.10.2019 11:36:49) DTL   :     Sleep("10")
+(28.10.2019 11:36:49) DTL   :     KeyDown:'VK_P'
+(28.10.2019 11:36:49) DTL   :     Sleep("10")
+(28.10.2019 11:36:49) DTL   :     KeyUp:'VK_P'
+(28.10.2019 11:36:49) DTL   :     KeyUp:'CONTROL'
+(28.10.2019 11:36:49) USER  : Загрузить из ресурса
+(28.10.2019 11:36:49) CMD   : VisualOperations.FromResource: resource identifier("ecc4f544-2394-48c0-bb64-6e4295455769")
+(28.10.2019 11:36:49) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 11:36:49) USER  : Ждать появления
+(28.10.2019 11:36:49) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 11:36:49) DTL   :   RobinBitmap detected
+(28.10.2019 11:36:50) APP   : Vision.WaitFor found location
+(28.10.2019 11:36:50) USER  : Клик ЛКМ
+(28.10.2019 11:36:50) CMD   : SimulateSystem.ClickLeftMouseButton("0", "0", "{X=1280,Y=879}")
+(28.10.2019 11:36:50) DTL   :   SimulateSystem.CalculateLocation("0", "0", "{X=1280,Y=879}")
+(28.10.2019 11:36:50) DTL   :     (43690, 53339)
+(28.10.2019 11:36:50) DTL   :   SimulateSystem.ClickMouseYeah("43690", "53339", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 11:36:50) DTL   :   Click left mouse button complete
+(28.10.2019 11:36:50) USER  : Загрузить из ресурса
+(28.10.2019 11:36:50) CMD   : VisualOperations.FromResource: resource identifier("a687254c-6184-40ed-82e6-56b99ca6705e")
+(28.10.2019 11:36:50) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 11:36:50) USER  : Ждать появления
+(28.10.2019 11:36:50) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 11:36:50) DTL   :   RobinBitmap detected
+(28.10.2019 11:37:13) APP   : OnMessageEvent: Остановка робота
+(28.10.2019 11:37:13) APP   : OnStatusChangedEvent: stopping
+(28.10.2019 11:37:20) ERROR : ScreenUtils.WaitFor: error
+System.Threading.ThreadAbortException: Поток находился в процессе прерывания.
+   в VisualCore.VisualCoreAPI.WaitFor(VisualCoreAPI* , InterBitmap* , Double , InterPoint* , Int32 )
+   в RobinIntegration.VisionCoreAPI.WaitFor(Bitmap target, Double similarity, Int64 timeout)
+   в ComputerVison.VisionApi.WaitFor(Bitmap target, Double similarityRate, Decimal timeout, Boolean giveCenter)
+(28.10.2019 11:37:20) ERROR : execution failed:
+Manually stopped
+System.Exception: Manually stopped ---> System.Threading.ThreadAbortException: Поток находился в процессе прерывания.
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   в System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   в Robin.RobotTools.RobotCompilation.RunRobot(String entryPoint, String args)
+   --- Конец трассировки внутреннего стека исключений ---
+(28.10.2019 11:37:20) APP   : Teardown
+(28.10.2019 11:37:21) ERROR : Manually stopped
+(28.10.2019 11:37:21) APP   : OnStatusChangedEvent: completed

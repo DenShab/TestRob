@@ -1,0 +1,1121 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Diagnostics;
+using System.IO;
+using System.Windows;
+using System.Windows.Forms;
+using Robin.CommonTools;
+
+namespace Robin.RobotTools
+{
+    public partial class Robot : RobotCommands
+    {
+        object _a_Resurs;
+        public object Resurs
+        {
+            get
+            {
+                return _a_Resurs;
+            }
+
+            set
+            {
+                _a_Resurs = value;
+                this.VariableChanged("Resurs", value);
+            }
+        }
+
+        bool _a_Variable1 = false;
+        public bool Variable1
+        {
+            get
+            {
+                return _a_Variable1;
+            }
+
+            set
+            {
+                _a_Variable1 = value;
+                this.VariableChanged("Variable1", value);
+            }
+        }
+
+        object _a_Koordinat;
+        public object Koordinat
+        {
+            get
+            {
+                return _a_Koordinat;
+            }
+
+            set
+            {
+                _a_Koordinat = value;
+                this.VariableChanged("Koordinat", value);
+            }
+        }
+
+        decimal _a_X = 0m;
+        public decimal X
+        {
+            get
+            {
+                return _a_X;
+            }
+
+            set
+            {
+                _a_X = value;
+                this.VariableChanged("X", value);
+            }
+        }
+
+        decimal _a_Y = 0m;
+        public decimal Y
+        {
+            get
+            {
+                return _a_Y;
+            }
+
+            set
+            {
+                _a_Y = value;
+                this.VariableChanged("Y", value);
+            }
+        }
+
+        object _a_имя;
+        public object имя
+        {
+            get
+            {
+                return _a_имя;
+            }
+
+            set
+            {
+                _a_имя = value;
+                this.VariableChanged("имя", value);
+            }
+        }
+
+        object _a_пароль;
+        public object пароль
+        {
+            get
+            {
+                return _a_пароль;
+            }
+
+            set
+            {
+                _a_пароль = value;
+                this.VariableChanged("пароль", value);
+            }
+        }
+
+        string _a_login = @"supervisor";
+        public string login
+        {
+            get
+            {
+                return _a_login;
+            }
+
+            set
+            {
+                _a_login = value;
+                this.VariableChanged("login", value);
+            }
+        }
+
+        string _a_pass = @"123456";
+        public string pass
+        {
+            get
+            {
+                return _a_pass;
+            }
+
+            set
+            {
+                _a_pass = value;
+                this.VariableChanged("pass", value);
+            }
+        }
+
+        object _a_войти;
+        public object войти
+        {
+            get
+            {
+                return _a_войти;
+            }
+
+            set
+            {
+                _a_войти = value;
+                this.VariableChanged("войти", value);
+            }
+        }
+
+        object _a_Касса;
+        public object Касса
+        {
+            get
+            {
+                return _a_Касса;
+            }
+
+            set
+            {
+                _a_Касса = value;
+                this.VariableChanged("Касса", value);
+            }
+        }
+
+        object _a_КоординатыКассы;
+        public object КоординатыКассы
+        {
+            get
+            {
+                return _a_КоординатыКассы;
+            }
+
+            set
+            {
+                _a_КоординатыКассы = value;
+                this.VariableChanged("КоординатыКассы", value);
+            }
+        }
+
+        object _a_Документы;
+        public object Документы
+        {
+            get
+            {
+                return _a_Документы;
+            }
+
+            set
+            {
+                _a_Документы = value;
+                this.VariableChanged("Документы", value);
+            }
+        }
+
+        object _a_КоординатыДокументы;
+        public object КоординатыДокументы
+        {
+            get
+            {
+                return _a_КоординатыДокументы;
+            }
+
+            set
+            {
+                _a_КоординатыДокументы = value;
+                this.VariableChanged("КоординатыДокументы", value);
+            }
+        }
+
+        object _a_АвансовыйОтчет;
+        public object АвансовыйОтчет
+        {
+            get
+            {
+                return _a_АвансовыйОтчет;
+            }
+
+            set
+            {
+                _a_АвансовыйОтчет = value;
+                this.VariableChanged("АвансовыйОтчет", value);
+            }
+        }
+
+        object _a_КоординатыАвансовыйОтчет;
+        public object КоординатыАвансовыйОтчет
+        {
+            get
+            {
+                return _a_КоординатыАвансовыйОтчет;
+            }
+
+            set
+            {
+                _a_КоординатыАвансовыйОтчет = value;
+                this.VariableChanged("КоординатыАвансовыйОтчет", value);
+            }
+        }
+
+        object _a_КассыПредпрития;
+        public object КассыПредпрития
+        {
+            get
+            {
+                return _a_КассыПредпрития;
+            }
+
+            set
+            {
+                _a_КассыПредпрития = value;
+                this.VariableChanged("КассыПредпрития", value);
+            }
+        }
+
+        object _a_КоординатыКассыПредпрития;
+        public object КоординатыКассыПредпрития
+        {
+            get
+            {
+                return _a_КоординатыКассыПредпрития;
+            }
+
+            set
+            {
+                _a_КоординатыКассыПредпрития = value;
+                this.VariableChanged("КоординатыКассыПредпрития", value);
+            }
+        }
+
+        string _a_date = "";
+        public string date
+        {
+            get
+            {
+                return _a_date;
+            }
+
+            set
+            {
+                _a_date = value;
+                this.VariableChanged("date", value);
+            }
+        }
+
+        DateTime _a_date1 = DateTime.Parse("01.01.0001 0:00:00");
+        public DateTime date1
+        {
+            get
+            {
+                return _a_date1;
+            }
+
+            set
+            {
+                _a_date1 = value;
+                this.VariableChanged("date1", value);
+            }
+        }
+
+        object _a_СотрудникиПредприятия;
+        public object СотрудникиПредприятия
+        {
+            get
+            {
+                return _a_СотрудникиПредприятия;
+            }
+
+            set
+            {
+                _a_СотрудникиПредприятия = value;
+                this.VariableChanged("СотрудникиПредприятия", value);
+            }
+        }
+
+        object _a_КоординатыСотрудникиПредприятия;
+        public object КоординатыСотрудникиПредприятия
+        {
+            get
+            {
+                return _a_КоординатыСотрудникиПредприятия;
+            }
+
+            set
+            {
+                _a_КоординатыСотрудникиПредприятия = value;
+                this.VariableChanged("КоординатыСотрудникиПредприятия", value);
+            }
+        }
+
+        object _a_ОтчетВФормате;
+        public object ОтчетВФормате
+        {
+            get
+            {
+                return _a_ОтчетВФормате;
+            }
+
+            set
+            {
+                _a_ОтчетВФормате = value;
+                this.VariableChanged("ОтчетВФормате", value);
+            }
+        }
+
+        object _a_КоординатыОтчетВФормате;
+        public object КоординатыОтчетВФормате
+        {
+            get
+            {
+                return _a_КоординатыОтчетВФормате;
+            }
+
+            set
+            {
+                _a_КоординатыОтчетВФормате = value;
+                this.VariableChanged("КоординатыОтчетВФормате", value);
+            }
+        }
+
+        object _a_Формат;
+        public object Формат
+        {
+            get
+            {
+                return _a_Формат;
+            }
+
+            set
+            {
+                _a_Формат = value;
+                this.VariableChanged("Формат", value);
+            }
+        }
+
+        object _a_КоординатыФормат;
+        public object КоординатыФормат
+        {
+            get
+            {
+                return _a_КоординатыФормат;
+            }
+
+            set
+            {
+                _a_КоординатыФормат = value;
+                this.VariableChanged("КоординатыФормат", value);
+            }
+        }
+
+        object _a_НоваяПапка;
+        public object НоваяПапка
+        {
+            get
+            {
+                return _a_НоваяПапка;
+            }
+
+            set
+            {
+                _a_НоваяПапка = value;
+                this.VariableChanged("НоваяПапка", value);
+            }
+        }
+
+        object _a_КоордНоваяПапка;
+        public object КоордНоваяПапка
+        {
+            get
+            {
+                return _a_КоордНоваяПапка;
+            }
+
+            set
+            {
+                _a_КоордНоваяПапка = value;
+                this.VariableChanged("КоордНоваяПапка", value);
+            }
+        }
+
+        object _a_ТипФайла;
+        public object ТипФайла
+        {
+            get
+            {
+                return _a_ТипФайла;
+            }
+
+            set
+            {
+                _a_ТипФайла = value;
+                this.VariableChanged("ТипФайла", value);
+            }
+        }
+
+        object _a_КоордТипФайла;
+        public object КоордТипФайла
+        {
+            get
+            {
+                return _a_КоордТипФайла;
+            }
+
+            set
+            {
+                _a_КоордТипФайла = value;
+                this.VariableChanged("КоордТипФайла", value);
+            }
+        }
+
+        object _a_PDF;
+        public object PDF
+        {
+            get
+            {
+                return _a_PDF;
+            }
+
+            set
+            {
+                _a_PDF = value;
+                this.VariableChanged("PDF", value);
+            }
+        }
+
+        object _a_КоордPDF;
+        public object КоордPDF
+        {
+            get
+            {
+                return _a_КоордPDF;
+            }
+
+            set
+            {
+                _a_КоордPDF = value;
+                this.VariableChanged("КоордPDF", value);
+            }
+        }
+
+        object _a_Сохранить;
+        public object Сохранить
+        {
+            get
+            {
+                return _a_Сохранить;
+            }
+
+            set
+            {
+                _a_Сохранить = value;
+                this.VariableChanged("Сохранить", value);
+            }
+        }
+
+        object _a_коордСохранить;
+        public object коордСохранить
+        {
+            get
+            {
+                return _a_коордСохранить;
+            }
+
+            set
+            {
+                _a_коордСохранить = value;
+                this.VariableChanged("коордСохранить", value);
+            }
+        }
+
+        object _a_ВыберетеОтчетОст;
+        public object ВыберетеОтчетОст
+        {
+            get
+            {
+                return _a_ВыберетеОтчетОст;
+            }
+
+            set
+            {
+                _a_ВыберетеОтчетОст = value;
+                this.VariableChanged("ВыберетеОтчетОст", value);
+            }
+        }
+
+        object _a_КоордВыберетеОтчетОст;
+        public object КоордВыберетеОтчетОст
+        {
+            get
+            {
+                return _a_КоордВыберетеОтчетОст;
+            }
+
+            set
+            {
+                _a_КоордВыберетеОтчетОст = value;
+                this.VariableChanged("КоордВыберетеОтчетОст", value);
+            }
+        }
+
+        string _a_ПутьКСохранению = @"Libraries\Documents";
+        public string ПутьКСохранению
+        {
+            get
+            {
+                return _a_ПутьКСохранению;
+            }
+
+            set
+            {
+                _a_ПутьКСохранению = value;
+                this.VariableChanged("ПутьКСохранению", value);
+            }
+        }
+
+        object _a_Файл;
+        public object Файл
+        {
+            get
+            {
+                return _a_Файл;
+            }
+
+            set
+            {
+                _a_Файл = value;
+                this.VariableChanged("Файл", value);
+            }
+        }
+
+        object _a_КоордФайл;
+        public object КоордФайл
+        {
+            get
+            {
+                return _a_КоордФайл;
+            }
+
+            set
+            {
+                _a_КоордФайл = value;
+                this.VariableChanged("КоордФайл", value);
+            }
+        }
+
+        object _a_Выход;
+        public object Выход
+        {
+            get
+            {
+                return _a_Выход;
+            }
+
+            set
+            {
+                _a_Выход = value;
+                this.VariableChanged("Выход", value);
+            }
+        }
+
+        object _a_КоордВыход;
+        public object КоордВыход
+        {
+            get
+            {
+                return _a_КоордВыход;
+            }
+
+            set
+            {
+                _a_КоордВыход = value;
+                this.VariableChanged("КоордВыход", value);
+            }
+        }
+
+        object _a_НеСохранять;
+        public object НеСохранять
+        {
+            get
+            {
+                return _a_НеСохранять;
+            }
+
+            set
+            {
+                _a_НеСохранять = value;
+                this.VariableChanged("НеСохранять", value);
+            }
+        }
+
+        object _a_КоордНеСохранять;
+        public object КоордНеСохранять
+        {
+            get
+            {
+                return _a_КоордНеСохранять;
+            }
+
+            set
+            {
+                _a_КоордНеСохранять = value;
+                this.VariableChanged("КоордНеСохранять", value);
+            }
+        }
+
+        object _a_ВыберетеОтчетТнф;
+        public object ВыберетеОтчетТнф
+        {
+            get
+            {
+                return _a_ВыберетеОтчетТнф;
+            }
+
+            set
+            {
+                _a_ВыберетеОтчетТнф = value;
+                this.VariableChanged("ВыберетеОтчетТнф", value);
+            }
+        }
+
+        object _a_КоордВыберетеОтчетТнф;
+        public object КоордВыберетеОтчетТнф
+        {
+            get
+            {
+                return _a_КоордВыберетеОтчетТнф;
+            }
+
+            set
+            {
+                _a_КоордВыберетеОтчетТнф = value;
+                this.VariableChanged("КоордВыберетеОтчетТнф", value);
+            }
+        }
+
+        object _a_Компьютер;
+        public object Компьютер
+        {
+            get
+            {
+                return _a_Компьютер;
+            }
+
+            set
+            {
+                _a_Компьютер = value;
+                this.VariableChanged("Компьютер", value);
+            }
+        }
+
+        object _a_КоордКомпьютер;
+        public object КоордКомпьютер
+        {
+            get
+            {
+                return _a_КоордКомпьютер;
+            }
+
+            set
+            {
+                _a_КоордКомпьютер = value;
+                this.VariableChanged("КоордКомпьютер", value);
+            }
+        }
+
+        string _a_passRDP = @"o9p0[-]=";
+        public string passRDP
+        {
+            get
+            {
+                return _a_passRDP;
+            }
+
+            set
+            {
+                _a_passRDP = value;
+                this.VariableChanged("passRDP", value);
+            }
+        }
+
+        object _a_Пуск;
+        public object Пуск
+        {
+            get
+            {
+                return _a_Пуск;
+            }
+
+            set
+            {
+                _a_Пуск = value;
+                this.VariableChanged("Пуск", value);
+            }
+        }
+
+        object _a_КоордПуск;
+        public object КоордПуск
+        {
+            get
+            {
+                return _a_КоордПуск;
+            }
+
+            set
+            {
+                _a_КоордПуск = value;
+                this.VariableChanged("КоордПуск", value);
+            }
+        }
+
+        object _a_ИмяФайла;
+        public object ИмяФайла
+        {
+            get
+            {
+                return _a_ИмяФайла;
+            }
+
+            set
+            {
+                _a_ИмяФайла = value;
+                this.VariableChanged("ИмяФайла", value);
+            }
+        }
+
+        object _a_КоордИмяФайла;
+        public object КоордИмяФайла
+        {
+            get
+            {
+                return _a_КоордИмяФайла;
+            }
+
+            set
+            {
+                _a_КоордИмяФайла = value;
+                this.VariableChanged("КоордИмяФайла", value);
+            }
+        }
+
+        public string ___ReturnVariables
+        {
+            get;
+            set;
+        }
+
+        = "";
+        public void Main(string _args)
+        {
+            this.ActionGuid("5bb522c5-dcba-4acc-ad67-2d875e88fbfa", "");
+            this.ActionGuid("468f1590-9ddc-4408-85a8-05bdc17efecc", @"Горячие клавиши");
+            KeyboardInput.NumberOfKeystrokes(new List<int>()
+            {91, 77}, (int)(1), 10);
+            this.ActionGuid("3572478e-3f37-4c9a-9040-96988547ca89", @"Запустить процесс");
+            Standard.Sleep(2000);
+            Processes.Run($@"system32\mstsc.exe", "", true, false, ProcessWindowStyle.Normal);
+            this.ActionGuid("1f1a4dd9-9404-4044-a365-f9dbc23544ef", @"Фокус на элементе");
+            Standard.Sleep(1000);
+            WindowsUI.FocusWindowElement($@"mstsc", $@"Подключение к удаленному рабочему столу", @"{
+  ""30011"": ""TitleBar""
+}", (int)(0), (int)(0), false, true, false, false);
+            this.ActionGuid("f5171e84-f3ec-4e69-8452-7a1670b60358", @"Клавиши+текст");
+            Standard.Sleep(1000);
+            KeyboardInput.Actions(new List<object>()
+            {$@"172.19.197.207"}, 0);
+            this.ActionGuid("5b80ba65-1e49-4c4a-8184-d09a8802bb36", @"Фокус на элементе");
+            Standard.Sleep(1000);
+            WindowsUI.FocusWindowElement($@"mstsc", $@"Подключение к удаленному рабочему столу", @"{
+  ""30012"": ""Button"",
+  ""30004"": ""кнопка"",
+  ""30005"": ""Подключить""
+}", (int)(0), (int)(0), false, true, false, false);
+            this.ActionGuid("95d1c3b6-b379-4935-a93a-1fa00588a13f", @"Клавиши+текст");
+            Standard.Sleep(2000);
+            KeyboardInput.Actions(new List<object>()
+            {$@"{passRDP}"}, 0);
+            this.ActionGuid("1cddb0cd-b7bc-4be7-8437-2d337f8fbcc4", @"Горячие клавиши");
+            Standard.Sleep(1000);
+            KeyboardInput.NumberOfKeystrokes(new List<int>()
+            {13}, (int)(1), 10);
+            this.ActionGuid("c89e5d4e-e277-4328-9443-a30141411dc0", @"Загрузить из ресурса");
+            Пуск = VisualOperations.FromResource("a4603e12-a8d1-420f-95c4-4cd1b3819404");
+            this.ActionGuid("4439a09f-ad11-459d-933e-56a258c7865c", @"Ждать появления");
+            КоордПуск = VisualActions.WaitFor(Пуск, 0.75m, false, -1m);
+            this.ActionGuid("dfb216a8-4318-4fa1-a72c-03f922a9a0c6", @"Горячие клавиши");
+            Standard.Sleep(10000);
+            KeyboardInput.NumberOfKeystrokes(new List<int>()
+            {91, 77}, (int)(2), 10);
+            this.ActionGuid("386fc549-fba9-4a00-8604-b330139b87fd", @"Вход в УС");
+            this.ActionGuid("639306d2-b421-4fbd-9275-ffc71fdd5186", @"Загрузить из ресурса");
+            Resurs = VisualOperations.FromResource("db938a19-4c4a-4616-8ab3-65be4a5b7536");
+            this.ActionGuid("6e4af8a7-5f31-44b0-baf2-69e212c332fe", @"Ждать появления");
+            Koordinat = VisualActions.WaitFor(Resurs, 0.75m, true, -1m);
+            this.ActionGuid("d4bac9ab-1105-4de3-921c-e508aa160db0", @"Двойной клик ЛКМ");
+            MouseClick.DoubleClickLeftMouseButton((int)(0), (int)(0), Koordinat);
+            this.ActionGuid("4dafd33c-95b3-4846-b50f-e8f3804f3faa", @"Загрузить из ресурса");
+            имя = VisualOperations.FromResource("8dcd3c71-2706-482a-92ae-81da1a3e14f2");
+            this.ActionGuid("aa28ccd6-c06a-4df4-af7b-e44162badc72", @"Ждать появления");
+            Standard.Sleep(1000);
+            Koordinat = VisualActions.WaitFor(имя, 0.75m, true, -1m);
+            this.ActionGuid("d4f462da-d7be-43b2-b925-96e336fdc8c4", @"Код C#");
+            sharpcode0();
+            this.ActionGuid("9747d16d-8107-4b90-8225-af0e62c3ae0d", @"Двойной клик ЛКМ");
+            MouseClick.DoubleClickLeftMouseButton((int)(X), (int)(Y), null);
+            this.ActionGuid("868bd467-4d33-4a5f-b0d6-9a464bbd8bf1", @"Клавиши+текст");
+            Standard.Sleep(1000);
+            KeyboardInput.Actions(new List<object>()
+            {$@"{login}", new List<int>()
+            {9}}, 0);
+            this.ActionGuid("f37f2701-a57f-48ba-8077-8c44e8138d53", @"Клавиши+текст");
+            Standard.Sleep(1000);
+            KeyboardInput.Actions(new List<object>()
+            {$@"{pass}"}, 0);
+            this.ActionGuid("558e6102-7e75-4c1a-b7b0-7006b7e1d880", @"Загрузить из ресурса");
+            войти = VisualOperations.FromResource("0f753767-e856-4abe-8e73-734df7e11194");
+            this.ActionGuid("c6a9f1bc-b114-46b4-82ef-9d056a82970f", @"Ждать появления");
+            Standard.Sleep(1000);
+            Koordinat = VisualActions.WaitFor(войти, 0.75m, true, -1m);
+            this.ActionGuid("d4928325-8aa5-467b-b0bc-e589785044cb", @"Двойной клик ЛКМ");
+            MouseClick.DoubleClickLeftMouseButton((int)(0), (int)(0), Koordinat);
+            this.ActionGuid("d67c6ae0-5396-47b0-8e15-0d8b1ad7a6e0", @"Загрузить из ресурса");
+            Касса = VisualOperations.FromResource("23ad08f1-2a73-4cdc-a46c-3f4f01881a4a");
+            this.ActionGuid("dc223540-daf2-4c01-a726-2cfc17f0bf29", @"Ждать появления");
+            КоординатыКассы = VisualActions.WaitFor(Касса, 0.75m, true, -1m);
+            this.ActionGuid("5dfacc9c-e592-49a7-a28d-0abba2aaa3b0", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоординатыКассы);
+            this.ActionGuid("c4f8cfb2-3dd9-4618-b6f5-308d0b6f549c", @"Загрузить из ресурса");
+            Документы = VisualOperations.FromResource("5256fa46-6e59-4acf-b3b6-db1bcba18a1b");
+            this.ActionGuid("24205feb-f4eb-4986-849d-38fae438f699", @"Ждать появления");
+            КоординатыДокументы = VisualActions.WaitFor(Документы, 0.75m, true, -1m);
+            this.ActionGuid("e6e875c5-6fd1-4d68-a826-0f7d4f8e41e1", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоординатыДокументы);
+            this.ActionGuid("4e769f35-3cd3-4be3-a83c-75757692ab83", @"Загрузить из ресурса");
+            АвансовыйОтчет = VisualOperations.FromResource("30b31e25-7eac-4bbb-b461-7cacc9204de2");
+            this.ActionGuid("4bbfe53d-a5b4-4797-9022-625474de34fe", @"Ждать появления");
+            КоординатыАвансовыйОтчет = VisualActions.WaitFor(АвансовыйОтчет, 0.75m, true, -1m);
+            this.ActionGuid("56cbdd37-6a30-4ae6-8ad2-2bb116ab9e19", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоординатыАвансовыйОтчет);
+            this.ActionGuid("12400f29-1494-43ca-b5d7-5778d08b870e", @"Загрузить из ресурса");
+            КассыПредпрития = VisualOperations.FromResource("7b98dc78-b36f-4047-ad27-06da30599821");
+            this.ActionGuid("d02fb863-ecb0-4184-a86e-3aaf178c861a", @"Ждать появления");
+            КоординатыКассыПредпрития = VisualActions.WaitFor(КассыПредпрития, 0.75m, false, -1m);
+            this.ActionGuid("e2859e5c-8287-42a7-bb42-714835a0c94c", @"Горячие клавиши");
+            KeyboardInput.NumberOfKeystrokes(new List<int>()
+            {13}, (int)(1), 10);
+            this.ActionGuid("90741d0d-9e1e-4a91-9bd4-406343a80023", @"Загрузить из ресурса");
+            АвансовыйОтчет = VisualOperations.FromResource("30b31e25-7eac-4bbb-b461-7cacc9204de2");
+            this.ActionGuid("5abed10d-d24b-4a4d-a2c5-4522e6b92411", @"Ждать появления");
+            КоординатыАвансовыйОтчет = VisualActions.WaitFor(АвансовыйОтчет, 0.5m, false, -1m);
+            this.ActionGuid("2922fbd6-fb88-4de4-b232-5451bde60f95", @"Горячие клавиши");
+            KeyboardInput.NumberOfKeystrokes(new List<int>()
+            {118}, (int)(1), 10);
+            this.ActionGuid("7b71d9aa-c98f-4680-b10e-b89dd9505e9e", @"Код C#");
+            sharpcode1();
+            this.ActionGuid("d14065e4-9960-40f3-a72b-7133be9e6bcb", @"Клавиши+текст");
+            KeyboardInput.Actions(new List<object>()
+            {$@"{date}", new List<int>()
+            {13}}, 0);
+            this.ActionGuid("fdb3f51a-7634-4a7e-86e6-7f75da3fa30e", @"Загрузить из ресурса");
+            СотрудникиПредприятия = VisualOperations.FromResource("0e23d07f-aadf-445b-8b58-cd7a1469c633");
+            this.ActionGuid("c15080cb-25ad-41c0-995c-57c4c25ad074", @"Ждать появления");
+            КоординатыСотрудникиПредприятия = VisualActions.WaitFor(СотрудникиПредприятия, 0.5m, false, -1m);
+            this.ActionGuid("760ffd63-047d-4846-88df-2c4c3fa26986", @"Горячие клавиши");
+            KeyboardInput.NumberOfKeystrokes(new List<int>()
+            {13}, (int)(1), 10);
+            this.ActionGuid("562d91fe-00dc-43ef-9848-0a6f00bd860a", @"Ждать появления");
+            КоординатыАвансовыйОтчет = VisualActions.WaitFor(АвансовыйОтчет, 0.5m, false, -1m);
+            this.ActionGuid("ef42372a-abc6-4c3a-bc4e-4c42f570e1f8", @"Загрузить из ресурса");
+            АвансовыйОтчет = VisualOperations.FromResource("30b31e25-7eac-4bbb-b461-7cacc9204de2");
+            this.ActionGuid("e05c15bf-8817-4682-906d-9e888bec389d", @"Выгрузка первого листа АО");
+            Standard.Sleep(5000);
+            this.ActionGuid("2a38b47e-b4a7-4379-9af3-a1fdabd5bf5b", @"Горячие клавиши");
+            KeyboardInput.NumberOfKeystrokes(new List<int>()
+            {17, 80}, (int)(1), 10);
+            this.ActionGuid("830c61af-afa4-4607-8e2e-7837c8d5c41a", @"Загрузить из ресурса");
+            ОтчетВФормате = VisualOperations.FromResource("ecc4f544-2394-48c0-bb64-6e4295455769");
+            this.ActionGuid("335ce02b-d7d0-4a3c-9491-512795ede0de", @"Ждать появления");
+            Standard.Sleep(1000);
+            КоординатыОтчетВФормате = VisualActions.WaitFor(ОтчетВФормате, 0.75m, true, -1m);
+            this.ActionGuid("22c48eb9-40a0-43f9-841d-7e4f696e7d72", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоординатыОтчетВФормате);
+            this.ActionGuid("f4673926-7946-48c5-8faf-3b37b26d2d3f", @"Загрузить из ресурса");
+            Формат = VisualOperations.FromResource("a687254c-6184-40ed-82e6-56b99ca6705e");
+            this.ActionGuid("648acd6a-2eea-4b72-899f-484ec3c163d4", @"Ждать появления");
+            КоординатыФормат = VisualActions.WaitFor(Формат, 0.75m, true, -1m);
+            this.ActionGuid("943702e9-b750-4415-a11a-c391f354fa5d", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоординатыФормат);
+            this.ActionGuid("cc1c6bf3-d574-4c75-9c6a-ad3b4491f5bd", @"Горячие клавиши");
+            KeyboardInput.NumberOfKeystrokes(new List<int>()
+            {13}, (int)(1), 10);
+            this.ActionGuid("50d3380f-f974-4b6a-bd91-6b46026f4804", @"Загрузить из ресурса");
+            ВыберетеОтчетОст = VisualOperations.FromResource("748a2519-1a23-4262-9004-b91f6e332368");
+            this.ActionGuid("9f7c7677-fdb8-4af4-87d0-496619dcab72", @"Ждать появления тип файла");
+            КоордВыберетеОтчетОст = VisualActions.WaitFor(ВыберетеОтчетОст, 0.75m, true, -1m);
+            this.ActionGuid("295097f9-7896-49c9-b732-8d142f56451a", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоордВыберетеОтчетОст);
+            this.ActionGuid("58baed92-ce29-472d-b7c2-548e1586c236", @"Горячие клавиши");
+            KeyboardInput.NumberOfKeystrokes(new List<int>()
+            {13, 123}, (int)(1), 5000);
+            this.ActionGuid("1cff501c-279d-4963-b2c7-d2e7bdba548e", @"Загрузить из ресурса");
+            ТипФайла = VisualOperations.FromResource("9d676ea3-8ac1-43da-af10-07a130209d02");
+            this.ActionGuid("08f4b1e5-c1ff-4998-83e3-8f10a81ff063", @"Ждать появления тип файла");
+            КоордТипФайла = VisualActions.WaitFor(ТипФайла, 0.75m, true, -1m);
+            this.ActionGuid("7a9ede3d-32da-4332-9c5f-c5c1220fedc7", @"Код C#");
+            sharpcode2();
+            this.ActionGuid("6dd7db9e-d899-41f8-97de-e3eec05c39f8", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(X), (int)(Y), null);
+            this.ActionGuid("7cfbec90-25b1-4791-866f-81f7a9846fdc", @"Загрузить из ресурса");
+            PDF = VisualOperations.FromResource("c61b1d5c-5e39-4333-aca8-d6458c295f24");
+            this.ActionGuid("9e643554-49bc-45ef-ba8a-7536bc5a79b5", @"Ждать появления тип файла");
+            КоордPDF = VisualActions.WaitFor(PDF, 0.75m, true, -1m);
+            this.ActionGuid("f5b16745-3640-46dc-8830-7ff8810841d8", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоордPDF);
+            this.ActionGuid("e308b1c8-75d0-4038-be66-ba63b7a48045", @"Загрузить из ресурса");
+            Документы = VisualOperations.FromResource("ac3aff50-0a10-4089-b83f-c8b7166d183a");
+            this.ActionGuid("dda686f2-9ad8-43c0-a5af-7048a572ae47", @"Ждать появления тип файла");
+            КоординатыДокументы = VisualActions.WaitFor(Документы, 0.75m, true, -1m);
+            this.ActionGuid("d87812b0-9e0e-4e44-93ca-bc416b487cd9", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоординатыДокументы);
+            this.ActionGuid("e103dbfd-c5a1-42cb-a60b-06d9751137bc", @"Клавиши+текст");
+            KeyboardInput.Actions(new List<object>()
+            {$@"{ПутьКСохранению}", new List<int>()
+            {13}}, 0);
+            this.ActionGuid("64621942-de82-4c59-b586-37ac5d6b8db7", @"Загрузить из ресурса");
+            НоваяПапка = VisualOperations.FromResource("09de38b7-5c71-49dd-90a6-f53e7587e9d6");
+            this.ActionGuid("ac7f1da5-c939-452a-81ea-3f5011a5c4e0", @"Ждать появления тип файла");
+            КоордНоваяПапка = VisualActions.WaitFor(НоваяПапка, 0.75m, true, -1m);
+            this.ActionGuid("f2e4fc6d-cd5d-4786-b01f-16c630a9bd27", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоордНоваяПапка);
+            this.ActionGuid("69dde789-a0ab-4d4a-95e6-e73f18de7175", @"Код C#");
+            sharpcode3();
+            this.ActionGuid("773e2a86-072c-481d-9aa5-5aeb798789b4", @"Клавиши+текст");
+            Standard.Sleep(2500);
+            KeyboardInput.Actions(new List<object>()
+            {$@"{date}", new List<int>()
+            {13, 13}}, 0);
+            this.ActionGuid("2edef4b3-6d92-43f2-abb6-a3631876904e", @"Загрузить из ресурса");
+            Сохранить = VisualOperations.FromResource("2222c6cf-200b-4063-a40f-7ef8078b0258");
+            this.ActionGuid("0b244b68-bf13-49f6-95b6-fc50b6f085e8", @"Ждать появления тип файла");
+            коордСохранить = VisualActions.WaitFor(Сохранить, 0.75m, true, -1m);
+            this.ActionGuid("a6c20fcd-7afe-46ff-b2a8-f7e191ce50fe", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), коордСохранить);
+            this.ActionGuid("c7f1d1b2-9c2d-42df-ad48-6914ac4a0f0c", @"Закрытие ворда");
+            Standard.Sleep(5000);
+            this.ActionGuid("bbd31fce-7ad4-41b3-8d7b-3075310f2efc", @"Загрузить из ресурса");
+            Файл = VisualOperations.FromResource("28219be6-2d14-40da-8710-dc44ce22c02c");
+            this.ActionGuid("52218f51-4926-44cc-859d-663f3f0866b9", @"Ждать появления");
+            КоордФайл = VisualActions.WaitFor(Файл, 0.75m, true, -1m);
+            this.ActionGuid("b296ef1c-1116-4ee5-844d-2a0167929c53", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоордФайл);
+            this.ActionGuid("20c82321-1570-418a-950b-61faa75fcbcb", @"Загрузить из ресурса");
+            Выход = VisualOperations.FromResource("8172ab2f-55ff-4cbd-8fdc-ed65fea8a8fd");
+            this.ActionGuid("fd36caf5-b832-4378-a6db-32fffec7b978", @"Ждать появления");
+            КоордВыход = VisualActions.WaitFor(Выход, 0.75m, true, -1m);
+            this.ActionGuid("112652a2-d4bc-44a1-aa51-ff529a6bc35e", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоордВыход);
+            this.ActionGuid("d7b03819-2e89-4bac-910f-8e0bc77a764a", @"Выгрузка второго листа АО");
+            Standard.Sleep(5000);
+            this.ActionGuid("087950d6-f5b0-4e2f-9ad2-92205a34e754", @"Горячие клавиши");
+            KeyboardInput.NumberOfKeystrokes(new List<int>()
+            {17, 80}, (int)(1), 10);
+            this.ActionGuid("0bb9b8bf-06f9-4457-bf18-5d9968480eb0", @"Загрузить из ресурса");
+            ОтчетВФормате = VisualOperations.FromResource("ecc4f544-2394-48c0-bb64-6e4295455769");
+            this.ActionGuid("5c38f167-f783-4e03-aed4-eeb66fd21852", @"Ждать появления");
+            КоординатыОтчетВФормате = VisualActions.WaitFor(ОтчетВФормате, 0.75m, true, -1m);
+            this.ActionGuid("f181b2d9-8f2c-48dd-bbaa-4188d682e2b8", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоординатыОтчетВФормате);
+            this.ActionGuid("888f82d8-97b0-48ad-952c-5120c6d28fc6", @"Загрузить из ресурса");
+            Формат = VisualOperations.FromResource("a687254c-6184-40ed-82e6-56b99ca6705e");
+            this.ActionGuid("8a965b1e-e401-4950-a221-fdec53c8dd80", @"Ждать появления");
+            КоординатыФормат = VisualActions.WaitFor(Формат, 0.75m, true, -1m);
+            this.ActionGuid("715814b5-abf5-40ee-8218-d2fb5c702bc1", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоординатыФормат);
+            this.ActionGuid("d7a6f4eb-cb81-45aa-bb0b-d020ecb9287e", @"Горячие клавиши");
+            KeyboardInput.NumberOfKeystrokes(new List<int>()
+            {13}, (int)(1), 10);
+            this.ActionGuid("7f41959a-dc55-45b8-8f00-db87e04f6baf", @"Загрузить из ресурса");
+            ВыберетеОтчетТнф = VisualOperations.FromResource("0372c93f-fdba-4737-aa6e-026b1ef9eb19");
+            this.ActionGuid("d68981dd-5aa9-4b0d-9270-24af8d2e07d2", @"Ждать появления тип файла");
+            КоордВыберетеОтчетТнф = VisualActions.WaitFor(ВыберетеОтчетТнф, 0.75m, true, -1m);
+            this.ActionGuid("940cfd3d-0de9-41ad-8ad6-b14921044319", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоордВыберетеОтчетТнф);
+            this.ActionGuid("04ba363f-3af9-444e-99f5-9046e327278d", @"Горячие клавиши");
+            KeyboardInput.NumberOfKeystrokes(new List<int>()
+            {13, 123}, (int)(1), 5000);
+            this.ActionGuid("d51ef9df-d974-47e6-b7f9-513ac2d3f50e", @"Загрузить из ресурса");
+            ТипФайла = VisualOperations.FromResource("9d676ea3-8ac1-43da-af10-07a130209d02");
+            this.ActionGuid("68038555-6b92-4327-a57b-4fd3a7670e0f", @"Ждать появления тип файла");
+            КоордТипФайла = VisualActions.WaitFor(ТипФайла, 0.75m, true, -1m);
+            this.ActionGuid("9b5103d0-8056-4fde-876e-f60e75db8488", @"Код C#");
+            sharpcode4();
+            this.ActionGuid("ea2e4066-0f23-4c31-b33e-f3254eaef0d9", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(X), (int)(Y), null);
+            this.ActionGuid("2fb8197a-1fcc-449e-8a8f-09582bcc5367", @"Загрузить из ресурса");
+            PDF = VisualOperations.FromResource("c61b1d5c-5e39-4333-aca8-d6458c295f24");
+            this.ActionGuid("2d7bcc64-251a-4865-a7e6-4c5e2e06f9fb", @"Ждать появления тип файла");
+            КоордPDF = VisualActions.WaitFor(PDF, 0.75m, true, -1m);
+            this.ActionGuid("8558b418-5bb0-4b54-aead-a900124286ef", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоордPDF);
+            this.ActionGuid("afbc11a9-59f8-40c6-9b30-824e327fc394", @"Загрузить из ресурса");
+            ИмяФайла = VisualOperations.FromResource("4eba4af7-7072-42b8-86c0-0f6d168fef50");
+            this.ActionGuid("b24a62c9-452b-4bfa-83dc-c50f5071455a", @"Ждать появления тип файла");
+            КоордИмяФайла = VisualActions.WaitFor(ИмяФайла, 0.75m, true, -1m);
+            this.ActionGuid("91ddd4a0-c7cc-4c1c-8366-f4d2cb860468", @"Код C#");
+            sharpcode5();
+            this.ActionGuid("0bac7c72-479b-4af3-bc25-58e18a37cd17", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(X), (int)(Y), null);
+            this.ActionGuid("745ef980-1c8a-4bdf-bc3c-e4b0b7086b43", @"Клавиши+текст");
+            KeyboardInput.Actions(new List<object>()
+            {$@"Второй лист АО"}, 0);
+            this.ActionGuid("35bc2a29-bdcf-4b2c-bcdc-263ac95fd257", @"Загрузить из ресурса");
+            Документы = VisualOperations.FromResource("ac3aff50-0a10-4089-b83f-c8b7166d183a");
+            this.ActionGuid("ca603029-a6d2-4b42-8a7b-c43b6d8096c4", @"Ждать появления тип файла");
+            КоординатыДокументы = VisualActions.WaitFor(Документы, 0.75m, true, -1m);
+            this.ActionGuid("7e444776-663b-495c-9819-bd9c2c670d8f", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), КоординатыДокументы);
+            this.ActionGuid("05164ccf-2499-462c-a822-3b0c85739a51", @"Клавиши+текст");
+            KeyboardInput.Actions(new List<object>()
+            {$@"{ПутьКСохранению}\{date}", new List<int>()
+            {13}}, 0);
+            this.ActionGuid("a1d3d218-b1f0-4acd-bdc9-3db62ee4c5bf", @"Загрузить из ресурса");
+            Сохранить = VisualOperations.FromResource("2222c6cf-200b-4063-a40f-7ef8078b0258");
+            this.ActionGuid("1232aa7e-cc8a-4646-a7a9-600e0a56cba2", @"Ждать появления тип файла");
+            коордСохранить = VisualActions.WaitFor(Сохранить, 0.75m, true, -1m);
+            this.ActionGuid("7f1ad4f2-e860-4116-afe7-bef744800b06", @"Клик ЛКМ");
+            MouseClick.ClickLeftMouseButton((int)(0), (int)(0), коордСохранить);
+        }
+
+        void sharpcode0()
+        {
+            X = ((System.Drawing.Point)Koordinat).X;
+            Y = ((System.Drawing.Point)Koordinat).Y + 25;
+        }
+
+        void sharpcode1()
+        {
+            date1 = DateTime.Today;
+            date1 = date1.AddMonths(-2);
+            date = date1.ToShortDateString();
+        }
+
+        void sharpcode2()
+        {
+            X = ((System.Drawing.Point)КоордТипФайла).X + 50;
+            Y = ((System.Drawing.Point)КоордТипФайла).Y;
+        }
+
+        void sharpcode3()
+        {
+            date1 = DateTime.Now;
+            //date1 = date1.AddMonths(-2);
+            date = "Авансовый отчет " + date1.ToLocalTime();
+            date = date.Replace(":", ".");
+        }
+
+        void sharpcode4()
+        {
+            X = ((System.Drawing.Point)КоордТипФайла).X + 50;
+            Y = ((System.Drawing.Point)КоордТипФайла).Y;
+        }
+
+        void sharpcode5()
+        {
+            X = ((System.Drawing.Point)КоордИмяФайла).X + 50;
+            Y = ((System.Drawing.Point)КоордИмяФайла).Y;
+        }
+    }
+}

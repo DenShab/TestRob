@@ -1,0 +1,1128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Robot>
+  <Studio Version="1.0.2.0" />
+  <Schema>
+    <Base.Sequence type_guid="32c6fcaa-cbe4-4fab-afd9-8113b8a5190b" Name="" Description="" GUID="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" Next="" Previous="" Parent="" UI_identifier="" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+      <List>
+        <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="468f1590-9ddc-4408-85a8-05bdc17efecc" Next="3572478e-3f37-4c9a-9040-96988547ca89" Previous="" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Keys>[LWIN]][VK_M]</Keys>
+            <KeyCount2>1</KeyCount2>
+            <SleepKey>10</SleepKey>
+          </Properties>
+        </SimulateSystem.KeyPress>
+        <Process.Run type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c1a700" Name="Запустить процесс" Description="" GUID="3572478e-3f37-4c9a-9040-96988547ca89" Next="5cd5d7aa-eb18-48ee-b740-263ac8cfdfad" Previous="468f1590-9ddc-4408-85a8-05bdc17efecc" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Process|" DelayTime="2000" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <ExecutableName>system32\mstsc.exe</ExecutableName>
+            <Args></Args>
+            <CreateNoWindow>true</CreateNoWindow>
+            <UseShellExecute>false</UseShellExecute>
+            <Style>Normal</Style>
+          </Properties>
+        </Process.Run>
+        <WindowApp.WindowActivate type_guid="7dc5c92b-cbbf-414f-9064-d79f9a12c36e" Name="Сделать окно активным" Description="" GUID="5cd5d7aa-eb18-48ee-b740-263ac8cfdfad" Next="1f1a4dd9-9404-4044-a365-f9dbc23544ef" Previous="3572478e-3f37-4c9a-9040-96988547ca89" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Windows|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <SearchByPartialName>true</SearchByPartialName>
+            <WindowName>Подключение к удаленному рабочему столу</WindowName>
+            <TimeOut>0</TimeOut>
+          </Properties>
+        </WindowApp.WindowActivate>
+        <WindowApp.WindowFocusElement type_guid="af0765d4-5830-4b15-be75-e89e6abfef81" Name="Фокус на элементе" Description="" GUID="1f1a4dd9-9404-4044-a365-f9dbc23544ef" Next="f5171e84-f3ec-4e69-8452-7a1670b60358" Previous="5cd5d7aa-eb18-48ee-b740-263ac8cfdfad" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Windows|" DelayTime="1000" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <SendClick>false</SendClick>
+            <ForceClick>true</ForceClick>
+            <ForceRightClick>false</ForceRightClick>
+            <ForceDoubleLeftClick>false</ForceDoubleLeftClick>
+            <ProcessName>mstsc</ProcessName>
+            <LocatorsJson>{
+  "30011": "TitleBar"
+}</LocatorsJson>
+            <Order>0</Order>
+            <WindowName>Подключение к удаленному рабочему столу</WindowName>
+            <TimeOut>0</TimeOut>
+          </Properties>
+        </WindowApp.WindowFocusElement>
+        <SimulateSystem.SendStringKeys type_guid="224de82e-c8f6-44de-b2d5-98e194ec7615" Name="Клавиши+текст" Description="" GUID="f5171e84-f3ec-4e69-8452-7a1670b60358" Next="d2ec3247-632e-4f53-8d57-7c32765975ab" Previous="1f1a4dd9-9404-4044-a365-f9dbc23544ef" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|keyboard" DelayTime="1000" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Text>172.19.197.207</Text>
+            <Sleep>0</Sleep>
+          </Properties>
+        </SimulateSystem.SendStringKeys>
+        <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="d2ec3247-632e-4f53-8d57-7c32765975ab" Next="5b80ba65-1e49-4c4a-8184-d09a8802bb36" Previous="f5171e84-f3ec-4e69-8452-7a1670b60358" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Keys>[RETURN]</Keys>
+            <KeyCount2>1</KeyCount2>
+            <SleepKey>10</SleepKey>
+          </Properties>
+        </SimulateSystem.KeyPress>
+        <WindowApp.WindowFocusElement type_guid="af0765d4-5830-4b15-be75-e89e6abfef81" Name="Фокус на элементе" Description="" GUID="5b80ba65-1e49-4c4a-8184-d09a8802bb36" Next="0fe4244f-a4c2-402b-9f7f-34dd1fa0733c" Previous="d2ec3247-632e-4f53-8d57-7c32765975ab" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Windows|" DelayTime="1000" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <SendClick>false</SendClick>
+            <ForceClick>true</ForceClick>
+            <ForceRightClick>false</ForceRightClick>
+            <ForceDoubleLeftClick>false</ForceDoubleLeftClick>
+            <ProcessName>mstsc</ProcessName>
+            <LocatorsJson>{
+  "30012": "Button",
+  "30004": "кнопка",
+  "30005": "Подключить"
+}</LocatorsJson>
+            <Order>0</Order>
+            <WindowName>Подключение к удаленному рабочему столу</WindowName>
+            <TimeOut>0</TimeOut>
+          </Properties>
+        </WindowApp.WindowFocusElement>
+        <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="0fe4244f-a4c2-402b-9f7f-34dd1fa0733c" Next="efd9725e-f05e-481d-b903-d4f279fa8941" Previous="5b80ba65-1e49-4c4a-8184-d09a8802bb36" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <Keys>[RETURN]</Keys>
+            <KeyCount2>1</KeyCount2>
+            <SleepKey>10</SleepKey>
+          </Properties>
+        </SimulateSystem.KeyPress>
+        <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="efd9725e-f05e-481d-b903-d4f279fa8941" Next="06976495-3a51-4195-b826-2dfee97648a2" Previous="0fe4244f-a4c2-402b-9f7f-34dd1fa0733c" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <Keys>[RETURN]</Keys>
+            <KeyCount2>1</KeyCount2>
+            <SleepKey>10</SleepKey>
+          </Properties>
+        </SimulateSystem.KeyPress>
+        <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="06976495-3a51-4195-b826-2dfee97648a2" Next="504582ce-eff0-44bd-b942-4640b3f34674" Previous="efd9725e-f05e-481d-b903-d4f279fa8941" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <Resource2>bc784d11-6ca8-498e-9867-ca2ec37a9bfb</Resource2>
+            <ReturnValueVariable>2f382461-adc3-4964-87a3-c9f38f7bc1d4</ReturnValueVariable>
+          </Properties>
+        </Vision.LoadFromResource>
+        <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="504582ce-eff0-44bd-b942-4640b3f34674" Next="8547d1d3-f699-4dab-9cd2-27e87f95ed1a" Previous="06976495-3a51-4195-b826-2dfee97648a2" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <Data>2f382461-adc3-4964-87a3-c9f38f7bc1d4</Data>
+            <SimilarityRate>0.75</SimilarityRate>
+            <GiveCenter>true</GiveCenter>
+            <Timeout>-1</Timeout>
+            <ReturnValueVariable>eaafe028-b143-434b-bed8-56f1fc6c1952</ReturnValueVariable>
+          </Properties>
+        </Vision.WaitForAction>
+        <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="8547d1d3-f699-4dab-9cd2-27e87f95ed1a" Next="95d1c3b6-b379-4935-a93a-1fa00588a13f" Previous="504582ce-eff0-44bd-b942-4640b3f34674" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <Location>eaafe028-b143-434b-bed8-56f1fc6c1952</Location>
+            <Xfrom>0</Xfrom>
+            <Yfrom>0</Yfrom>
+          </Properties>
+        </SimulateSystem.MouseLeftClick>
+        <SimulateSystem.SendStringKeys type_guid="224de82e-c8f6-44de-b2d5-98e194ec7615" Name="Клавиши+текст" Description="" GUID="95d1c3b6-b379-4935-a93a-1fa00588a13f" Next="0d57e4e6-2852-40cd-b002-65c69f2f977d" Previous="8547d1d3-f699-4dab-9cd2-27e87f95ed1a" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|keyboard" DelayTime="2000" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Text>{passRDP}</Text>
+            <Sleep>0</Sleep>
+          </Properties>
+        </SimulateSystem.SendStringKeys>
+        <WindowApp.WindowFocusElement type_guid="af0765d4-5830-4b15-be75-e89e6abfef81" Name="Фокус на элементе" Description="" GUID="0d57e4e6-2852-40cd-b002-65c69f2f977d" Next="1cddb0cd-b7bc-4be7-8437-2d337f8fbcc4" Previous="95d1c3b6-b379-4935-a93a-1fa00588a13f" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Windows|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <SendClick>false</SendClick>
+            <ForceClick>true</ForceClick>
+            <ForceRightClick>false</ForceRightClick>
+            <ForceDoubleLeftClick>false</ForceDoubleLeftClick>
+            <ProcessName>mstsc</ProcessName>
+            <LocatorsJson>{
+  "30007": "Alt+ю",
+  "30012": "Button",
+  "30004": "кнопка",
+  "30005": "Подключить"
+}</LocatorsJson>
+            <Order>0</Order>
+            <WindowName>Подключение к удаленному рабочему столу</WindowName>
+            <TimeOut>0</TimeOut>
+          </Properties>
+        </WindowApp.WindowFocusElement>
+        <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="1cddb0cd-b7bc-4be7-8437-2d337f8fbcc4" Next="c89e5d4e-e277-4328-9443-a30141411dc0" Previous="0d57e4e6-2852-40cd-b002-65c69f2f977d" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|keyboard" DelayTime="1000" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Keys>[RETURN]</Keys>
+            <KeyCount2>1</KeyCount2>
+            <SleepKey>10</SleepKey>
+          </Properties>
+        </SimulateSystem.KeyPress>
+        <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="c89e5d4e-e277-4328-9443-a30141411dc0" Next="4439a09f-ad11-459d-933e-56a258c7865c" Previous="1cddb0cd-b7bc-4be7-8437-2d337f8fbcc4" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Resource2>a4603e12-a8d1-420f-95c4-4cd1b3819404</Resource2>
+            <ReturnValueVariable>729aa05d-fcb3-475c-a2fa-986e2d44d51b</ReturnValueVariable>
+          </Properties>
+        </Vision.LoadFromResource>
+        <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="4439a09f-ad11-459d-933e-56a258c7865c" Next="56176ed7-e5bb-4e6e-b3d2-1f122befa3b0" Previous="c89e5d4e-e277-4328-9443-a30141411dc0" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Data>729aa05d-fcb3-475c-a2fa-986e2d44d51b</Data>
+            <SimilarityRate>0.75</SimilarityRate>
+            <GiveCenter>false</GiveCenter>
+            <Timeout>12000</Timeout>
+            <ReturnValueVariable>7c113ae5-99ef-4dbb-a4d2-bde62191a077</ReturnValueVariable>
+          </Properties>
+        </Vision.WaitForAction>
+        <SimulateSystem.SendStringKeys type_guid="224de82e-c8f6-44de-b2d5-98e194ec7615" Name="Клавиши+текст" Description="" GUID="56176ed7-e5bb-4e6e-b3d2-1f122befa3b0" Next="dfb216a8-4318-4fa1-a72c-03f922a9a0c6" Previous="4439a09f-ad11-459d-933e-56a258c7865c" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+          <Properties>
+            <Text>[RETURN]</Text>
+            <Sleep>0</Sleep>
+          </Properties>
+        </SimulateSystem.SendStringKeys>
+        <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="dfb216a8-4318-4fa1-a72c-03f922a9a0c6" Next="386fc549-fba9-4a00-8604-b330139b87fd" Previous="56176ed7-e5bb-4e6e-b3d2-1f122befa3b0" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|keyboard" DelayTime="12000" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Keys>[LWIN][VK_M]</Keys>
+            <KeyCount2>1</KeyCount2>
+            <SleepKey>10</SleepKey>
+          </Properties>
+        </SimulateSystem.KeyPress>
+        <Base.Sequence type_guid="32c6fcaa-cbe4-4fab-afd9-8113b8a5190b" Name="Вход в УС" Description="" GUID="386fc549-fba9-4a00-8604-b330139b87fd" Next="d67c6ae0-5396-47b0-8e15-0d8b1ad7a6e0" Previous="dfb216a8-4318-4fa1-a72c-03f922a9a0c6" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <List>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="639306d2-b421-4fbd-9275-ffc71fdd5186" Next="6e4af8a7-5f31-44b0-baf2-69e212c332fe" Previous="" Parent="386fc549-fba9-4a00-8604-b330139b87fd" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>db938a19-4c4a-4616-8ab3-65be4a5b7536</Resource2>
+                <ReturnValueVariable>848622e4-d3aa-4183-91fb-e05eb26405cc</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="6e4af8a7-5f31-44b0-baf2-69e212c332fe" Next="d4bac9ab-1105-4de3-921c-e508aa160db0" Previous="639306d2-b421-4fbd-9275-ffc71fdd5186" Parent="386fc549-fba9-4a00-8604-b330139b87fd" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>848622e4-d3aa-4183-91fb-e05eb26405cc</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>70dedb69-7a8c-4979-baca-4a739366e7e0</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseDoubleLeftClick type_guid="d5a2215f-7c98-4b28-aa05-cdbc48bb7b2d" Name="Двойной клик ЛКМ" Description="" GUID="d4bac9ab-1105-4de3-921c-e508aa160db0" Next="4dafd33c-95b3-4846-b50f-e8f3804f3faa" Previous="6e4af8a7-5f31-44b0-baf2-69e212c332fe" Parent="386fc549-fba9-4a00-8604-b330139b87fd" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>70dedb69-7a8c-4979-baca-4a739366e7e0</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseDoubleLeftClick>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="4dafd33c-95b3-4846-b50f-e8f3804f3faa" Next="aa28ccd6-c06a-4df4-af7b-e44162badc72" Previous="d4bac9ab-1105-4de3-921c-e508aa160db0" Parent="386fc549-fba9-4a00-8604-b330139b87fd" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>8dcd3c71-2706-482a-92ae-81da1a3e14f2</Resource2>
+                <ReturnValueVariable>637ff282-227e-4eee-a9ea-a266162346cc</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="aa28ccd6-c06a-4df4-af7b-e44162badc72" Next="d4f462da-d7be-43b2-b925-96e336fdc8c4" Previous="4dafd33c-95b3-4846-b50f-e8f3804f3faa" Parent="386fc549-fba9-4a00-8604-b330139b87fd" UI_identifier="Visual spy|wait" DelayTime="1000" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>637ff282-227e-4eee-a9ea-a266162346cc</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>70dedb69-7a8c-4979-baca-4a739366e7e0</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <Standard.CSharp type_guid="722ccf16-af25-49f9-b09d-d5b4da6478dc" Name="Код C#" Description="" GUID="d4f462da-d7be-43b2-b925-96e336fdc8c4" Next="9747d16d-8107-4b90-8225-af0e62c3ae0d" Previous="aa28ccd6-c06a-4df4-af7b-e44162badc72" Parent="386fc549-fba9-4a00-8604-b330139b87fd" UI_identifier="Base|c_sharp" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <sharpcode>X = ((System.Drawing.Point)Koordinat).X;
+Y = ((System.Drawing.Point)Koordinat).Y+25;</sharpcode>
+              </Properties>
+            </Standard.CSharp>
+            <SimulateSystem.MouseDoubleLeftClick type_guid="d5a2215f-7c98-4b28-aa05-cdbc48bb7b2d" Name="Двойной клик ЛКМ" Description="" GUID="9747d16d-8107-4b90-8225-af0e62c3ae0d" Next="ccca6525-b233-4b30-b600-22901a769a65" Previous="d4f462da-d7be-43b2-b925-96e336fdc8c4" Parent="386fc549-fba9-4a00-8604-b330139b87fd" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>00000000-0000-0000-0000-000000000000</Location>
+                <Xfrom>X</Xfrom>
+                <Yfrom>Y</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseDoubleLeftClick>
+            <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="ccca6525-b233-4b30-b600-22901a769a65" Next="3c72eaba-28c4-493c-9aa9-3926421fe168" Previous="9747d16d-8107-4b90-8225-af0e62c3ae0d" Parent="386fc549-fba9-4a00-8604-b330139b87fd" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Keys>[CONTROL][VK_A]</Keys>
+                <KeyCount2>1</KeyCount2>
+                <SleepKey>10</SleepKey>
+              </Properties>
+            </SimulateSystem.KeyPress>
+            <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="3c72eaba-28c4-493c-9aa9-3926421fe168" Next="868bd467-4d33-4a5f-b0d6-9a464bbd8bf1" Previous="ccca6525-b233-4b30-b600-22901a769a65" Parent="386fc549-fba9-4a00-8604-b330139b87fd" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+              <Properties>
+                <Keys>[BACK]</Keys>
+                <KeyCount2>1</KeyCount2>
+                <SleepKey>10</SleepKey>
+              </Properties>
+            </SimulateSystem.KeyPress>
+            <SimulateSystem.SendStringKeys type_guid="224de82e-c8f6-44de-b2d5-98e194ec7615" Name="Клавиши+текст" Description="" GUID="868bd467-4d33-4a5f-b0d6-9a464bbd8bf1" Next="f37f2701-a57f-48ba-8077-8c44e8138d53" Previous="3c72eaba-28c4-493c-9aa9-3926421fe168" Parent="386fc549-fba9-4a00-8604-b330139b87fd" UI_identifier="SimulateSystem|keyboard" DelayTime="1000" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Text>{login}[TAB]</Text>
+                <Sleep>0</Sleep>
+              </Properties>
+            </SimulateSystem.SendStringKeys>
+            <SimulateSystem.SendStringKeys type_guid="224de82e-c8f6-44de-b2d5-98e194ec7615" Name="Клавиши+текст" Description="" GUID="f37f2701-a57f-48ba-8077-8c44e8138d53" Next="558e6102-7e75-4c1a-b7b0-7006b7e1d880" Previous="868bd467-4d33-4a5f-b0d6-9a464bbd8bf1" Parent="386fc549-fba9-4a00-8604-b330139b87fd" UI_identifier="SimulateSystem|keyboard" DelayTime="1000" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Text>{pass}</Text>
+                <Sleep>0</Sleep>
+              </Properties>
+            </SimulateSystem.SendStringKeys>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="558e6102-7e75-4c1a-b7b0-7006b7e1d880" Next="c6a9f1bc-b114-46b4-82ef-9d056a82970f" Previous="f37f2701-a57f-48ba-8077-8c44e8138d53" Parent="386fc549-fba9-4a00-8604-b330139b87fd" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>0f753767-e856-4abe-8e73-734df7e11194</Resource2>
+                <ReturnValueVariable>4fdec70e-7d41-4724-aac3-e1886dea5a9c</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="c6a9f1bc-b114-46b4-82ef-9d056a82970f" Next="d4928325-8aa5-467b-b0bc-e589785044cb" Previous="558e6102-7e75-4c1a-b7b0-7006b7e1d880" Parent="386fc549-fba9-4a00-8604-b330139b87fd" UI_identifier="Visual spy|wait" DelayTime="1000" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>4fdec70e-7d41-4724-aac3-e1886dea5a9c</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>70dedb69-7a8c-4979-baca-4a739366e7e0</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseDoubleLeftClick type_guid="d5a2215f-7c98-4b28-aa05-cdbc48bb7b2d" Name="Двойной клик ЛКМ" Description="" GUID="d4928325-8aa5-467b-b0bc-e589785044cb" Next="" Previous="c6a9f1bc-b114-46b4-82ef-9d056a82970f" Parent="386fc549-fba9-4a00-8604-b330139b87fd" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>70dedb69-7a8c-4979-baca-4a739366e7e0</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseDoubleLeftClick>
+          </List>
+        </Base.Sequence>
+        <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="d67c6ae0-5396-47b0-8e15-0d8b1ad7a6e0" Next="dc223540-daf2-4c01-a726-2cfc17f0bf29" Previous="386fc549-fba9-4a00-8604-b330139b87fd" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Resource2>23ad08f1-2a73-4cdc-a46c-3f4f01881a4a</Resource2>
+            <ReturnValueVariable>25b8cc3e-0867-487f-964e-4ce27a6c0c57</ReturnValueVariable>
+          </Properties>
+        </Vision.LoadFromResource>
+        <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="dc223540-daf2-4c01-a726-2cfc17f0bf29" Next="5dfacc9c-e592-49a7-a28d-0abba2aaa3b0" Previous="d67c6ae0-5396-47b0-8e15-0d8b1ad7a6e0" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Data>25b8cc3e-0867-487f-964e-4ce27a6c0c57</Data>
+            <SimilarityRate>0.75</SimilarityRate>
+            <GiveCenter>true</GiveCenter>
+            <Timeout>-1</Timeout>
+            <ReturnValueVariable>1e6e9058-aed2-4fac-8837-825b58f43889</ReturnValueVariable>
+          </Properties>
+        </Vision.WaitForAction>
+        <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="5dfacc9c-e592-49a7-a28d-0abba2aaa3b0" Next="c4f8cfb2-3dd9-4618-b6f5-308d0b6f549c" Previous="dc223540-daf2-4c01-a726-2cfc17f0bf29" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Location>1e6e9058-aed2-4fac-8837-825b58f43889</Location>
+            <Xfrom>0</Xfrom>
+            <Yfrom>0</Yfrom>
+          </Properties>
+        </SimulateSystem.MouseLeftClick>
+        <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="c4f8cfb2-3dd9-4618-b6f5-308d0b6f549c" Next="24205feb-f4eb-4986-849d-38fae438f699" Previous="5dfacc9c-e592-49a7-a28d-0abba2aaa3b0" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Resource2>5256fa46-6e59-4acf-b3b6-db1bcba18a1b</Resource2>
+            <ReturnValueVariable>46541c17-eded-43ab-9437-d9214bfa5688</ReturnValueVariable>
+          </Properties>
+        </Vision.LoadFromResource>
+        <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="24205feb-f4eb-4986-849d-38fae438f699" Next="e6e875c5-6fd1-4d68-a826-0f7d4f8e41e1" Previous="c4f8cfb2-3dd9-4618-b6f5-308d0b6f549c" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Data>46541c17-eded-43ab-9437-d9214bfa5688</Data>
+            <SimilarityRate>0.75</SimilarityRate>
+            <GiveCenter>true</GiveCenter>
+            <Timeout>-1</Timeout>
+            <ReturnValueVariable>2a817d10-cdff-4c60-b774-5d41995389fa</ReturnValueVariable>
+          </Properties>
+        </Vision.WaitForAction>
+        <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="e6e875c5-6fd1-4d68-a826-0f7d4f8e41e1" Next="4e769f35-3cd3-4be3-a83c-75757692ab83" Previous="24205feb-f4eb-4986-849d-38fae438f699" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Location>2a817d10-cdff-4c60-b774-5d41995389fa</Location>
+            <Xfrom>0</Xfrom>
+            <Yfrom>0</Yfrom>
+          </Properties>
+        </SimulateSystem.MouseLeftClick>
+        <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="4e769f35-3cd3-4be3-a83c-75757692ab83" Next="4bbfe53d-a5b4-4797-9022-625474de34fe" Previous="e6e875c5-6fd1-4d68-a826-0f7d4f8e41e1" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Resource2>30b31e25-7eac-4bbb-b461-7cacc9204de2</Resource2>
+            <ReturnValueVariable>4fb63e42-b493-41d1-b607-ffb00272ebb2</ReturnValueVariable>
+          </Properties>
+        </Vision.LoadFromResource>
+        <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="4bbfe53d-a5b4-4797-9022-625474de34fe" Next="56cbdd37-6a30-4ae6-8ad2-2bb116ab9e19" Previous="4e769f35-3cd3-4be3-a83c-75757692ab83" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Data>4fb63e42-b493-41d1-b607-ffb00272ebb2</Data>
+            <SimilarityRate>0.75</SimilarityRate>
+            <GiveCenter>true</GiveCenter>
+            <Timeout>-1</Timeout>
+            <ReturnValueVariable>65f15679-5d49-47d1-ba39-29b86e93c47d</ReturnValueVariable>
+          </Properties>
+        </Vision.WaitForAction>
+        <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="56cbdd37-6a30-4ae6-8ad2-2bb116ab9e19" Next="12400f29-1494-43ca-b5d7-5778d08b870e" Previous="4bbfe53d-a5b4-4797-9022-625474de34fe" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Location>65f15679-5d49-47d1-ba39-29b86e93c47d</Location>
+            <Xfrom>0</Xfrom>
+            <Yfrom>0</Yfrom>
+          </Properties>
+        </SimulateSystem.MouseLeftClick>
+        <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="12400f29-1494-43ca-b5d7-5778d08b870e" Next="d02fb863-ecb0-4184-a86e-3aaf178c861a" Previous="56cbdd37-6a30-4ae6-8ad2-2bb116ab9e19" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Resource2>7b98dc78-b36f-4047-ad27-06da30599821</Resource2>
+            <ReturnValueVariable>2f23419d-54e6-45af-9948-10679b88eff9</ReturnValueVariable>
+          </Properties>
+        </Vision.LoadFromResource>
+        <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="d02fb863-ecb0-4184-a86e-3aaf178c861a" Next="e2859e5c-8287-42a7-bb42-714835a0c94c" Previous="12400f29-1494-43ca-b5d7-5778d08b870e" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Data>2f23419d-54e6-45af-9948-10679b88eff9</Data>
+            <SimilarityRate>0.75</SimilarityRate>
+            <GiveCenter>false</GiveCenter>
+            <Timeout>-1</Timeout>
+            <ReturnValueVariable>0207261d-a796-4907-9341-af29b4692d5e</ReturnValueVariable>
+          </Properties>
+        </Vision.WaitForAction>
+        <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="e2859e5c-8287-42a7-bb42-714835a0c94c" Next="90741d0d-9e1e-4a91-9bd4-406343a80023" Previous="d02fb863-ecb0-4184-a86e-3aaf178c861a" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Keys>[RETURN]</Keys>
+            <KeyCount2>1</KeyCount2>
+            <SleepKey>10</SleepKey>
+          </Properties>
+        </SimulateSystem.KeyPress>
+        <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="90741d0d-9e1e-4a91-9bd4-406343a80023" Next="5abed10d-d24b-4a4d-a2c5-4522e6b92411" Previous="e2859e5c-8287-42a7-bb42-714835a0c94c" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Resource2>30b31e25-7eac-4bbb-b461-7cacc9204de2</Resource2>
+            <ReturnValueVariable>4fb63e42-b493-41d1-b607-ffb00272ebb2</ReturnValueVariable>
+          </Properties>
+        </Vision.LoadFromResource>
+        <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="5abed10d-d24b-4a4d-a2c5-4522e6b92411" Next="2922fbd6-fb88-4de4-b232-5451bde60f95" Previous="90741d0d-9e1e-4a91-9bd4-406343a80023" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Data>4fb63e42-b493-41d1-b607-ffb00272ebb2</Data>
+            <SimilarityRate>0.5</SimilarityRate>
+            <GiveCenter>false</GiveCenter>
+            <Timeout>-1</Timeout>
+            <ReturnValueVariable>65f15679-5d49-47d1-ba39-29b86e93c47d</ReturnValueVariable>
+          </Properties>
+        </Vision.WaitForAction>
+        <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="2922fbd6-fb88-4de4-b232-5451bde60f95" Next="7b71d9aa-c98f-4680-b10e-b89dd9505e9e" Previous="5abed10d-d24b-4a4d-a2c5-4522e6b92411" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Keys>[F7]</Keys>
+            <KeyCount2>1</KeyCount2>
+            <SleepKey>10</SleepKey>
+          </Properties>
+        </SimulateSystem.KeyPress>
+        <Standard.CSharp type_guid="722ccf16-af25-49f9-b09d-d5b4da6478dc" Name="Код C#" Description="" GUID="7b71d9aa-c98f-4680-b10e-b89dd9505e9e" Next="d14065e4-9960-40f3-a72b-7133be9e6bcb" Previous="2922fbd6-fb88-4de4-b232-5451bde60f95" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Base|c_sharp" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <sharpcode>date1 = DateTime.Today;
+date1 = date1.AddMonths(-2);
+date = date1.ToShortDateString();
+</sharpcode>
+          </Properties>
+        </Standard.CSharp>
+        <SimulateSystem.SendStringKeys type_guid="224de82e-c8f6-44de-b2d5-98e194ec7615" Name="Клавиши+текст" Description="" GUID="d14065e4-9960-40f3-a72b-7133be9e6bcb" Next="fdb3f51a-7634-4a7e-86e6-7f75da3fa30e" Previous="7b71d9aa-c98f-4680-b10e-b89dd9505e9e" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Text>{date}[RETURN]</Text>
+            <Sleep>0</Sleep>
+          </Properties>
+        </SimulateSystem.SendStringKeys>
+        <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="fdb3f51a-7634-4a7e-86e6-7f75da3fa30e" Next="c15080cb-25ad-41c0-995c-57c4c25ad074" Previous="d14065e4-9960-40f3-a72b-7133be9e6bcb" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Resource2>0e23d07f-aadf-445b-8b58-cd7a1469c633</Resource2>
+            <ReturnValueVariable>9b8a8f19-d6fd-4ef9-bd43-5a00bfe0c58a</ReturnValueVariable>
+          </Properties>
+        </Vision.LoadFromResource>
+        <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="c15080cb-25ad-41c0-995c-57c4c25ad074" Next="760ffd63-047d-4846-88df-2c4c3fa26986" Previous="fdb3f51a-7634-4a7e-86e6-7f75da3fa30e" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Data>9b8a8f19-d6fd-4ef9-bd43-5a00bfe0c58a</Data>
+            <SimilarityRate>0.5</SimilarityRate>
+            <GiveCenter>false</GiveCenter>
+            <Timeout>-1</Timeout>
+            <ReturnValueVariable>4952ca44-2cec-439d-8d55-d41345e9a7ed</ReturnValueVariable>
+          </Properties>
+        </Vision.WaitForAction>
+        <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="760ffd63-047d-4846-88df-2c4c3fa26986" Next="562d91fe-00dc-43ef-9848-0a6f00bd860a" Previous="c15080cb-25ad-41c0-995c-57c4c25ad074" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Keys>[RETURN]</Keys>
+            <KeyCount2>1</KeyCount2>
+            <SleepKey>10</SleepKey>
+          </Properties>
+        </SimulateSystem.KeyPress>
+        <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="562d91fe-00dc-43ef-9848-0a6f00bd860a" Next="ef42372a-abc6-4c3a-bc4e-4c42f570e1f8" Previous="760ffd63-047d-4846-88df-2c4c3fa26986" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Data>4fb63e42-b493-41d1-b607-ffb00272ebb2</Data>
+            <SimilarityRate>0.5</SimilarityRate>
+            <GiveCenter>false</GiveCenter>
+            <Timeout>-1</Timeout>
+            <ReturnValueVariable>65f15679-5d49-47d1-ba39-29b86e93c47d</ReturnValueVariable>
+          </Properties>
+        </Vision.WaitForAction>
+        <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="ef42372a-abc6-4c3a-bc4e-4c42f570e1f8" Next="e05c15bf-8817-4682-906d-9e888bec389d" Previous="562d91fe-00dc-43ef-9848-0a6f00bd860a" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Resource2>30b31e25-7eac-4bbb-b461-7cacc9204de2</Resource2>
+            <ReturnValueVariable>4fb63e42-b493-41d1-b607-ffb00272ebb2</ReturnValueVariable>
+          </Properties>
+        </Vision.LoadFromResource>
+        <Base.Sequence type_guid="32c6fcaa-cbe4-4fab-afd9-8113b8a5190b" Name="Выгрузка первого листа АО" Description="" GUID="e05c15bf-8817-4682-906d-9e888bec389d" Next="c7f1d1b2-9c2d-42df-ad48-6914ac4a0f0c" Previous="ef42372a-abc6-4c3a-bc4e-4c42f570e1f8" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="" DelayTime="5000" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <List>
+            <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="2a38b47e-b4a7-4379-9af3-a1fdabd5bf5b" Next="830c61af-afa4-4607-8e2e-7837c8d5c41a" Previous="" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Keys>[CONTROL][VK_P]</Keys>
+                <KeyCount2>1</KeyCount2>
+                <SleepKey>10</SleepKey>
+              </Properties>
+            </SimulateSystem.KeyPress>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="830c61af-afa4-4607-8e2e-7837c8d5c41a" Next="335ce02b-d7d0-4a3c-9491-512795ede0de" Previous="2a38b47e-b4a7-4379-9af3-a1fdabd5bf5b" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>ecc4f544-2394-48c0-bb64-6e4295455769</Resource2>
+                <ReturnValueVariable>b907903b-58c7-49fb-9067-be09916ff450</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="335ce02b-d7d0-4a3c-9491-512795ede0de" Next="22c48eb9-40a0-43f9-841d-7e4f696e7d72" Previous="830c61af-afa4-4607-8e2e-7837c8d5c41a" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|wait" DelayTime="1000" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>b907903b-58c7-49fb-9067-be09916ff450</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>d1305569-f510-4f91-b80b-4f64cd6dfaf8</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="22c48eb9-40a0-43f9-841d-7e4f696e7d72" Next="f4673926-7946-48c5-8faf-3b37b26d2d3f" Previous="335ce02b-d7d0-4a3c-9491-512795ede0de" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>d1305569-f510-4f91-b80b-4f64cd6dfaf8</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="f4673926-7946-48c5-8faf-3b37b26d2d3f" Next="648acd6a-2eea-4b72-899f-484ec3c163d4" Previous="22c48eb9-40a0-43f9-841d-7e4f696e7d72" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>a687254c-6184-40ed-82e6-56b99ca6705e</Resource2>
+                <ReturnValueVariable>d955151a-3bab-4e81-918a-93feca4ce6ea</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="648acd6a-2eea-4b72-899f-484ec3c163d4" Next="943702e9-b750-4415-a11a-c391f354fa5d" Previous="f4673926-7946-48c5-8faf-3b37b26d2d3f" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>d955151a-3bab-4e81-918a-93feca4ce6ea</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>23ab9062-2bed-4dbf-942a-679a24f283a0</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="943702e9-b750-4415-a11a-c391f354fa5d" Next="cc1c6bf3-d574-4c75-9c6a-ad3b4491f5bd" Previous="648acd6a-2eea-4b72-899f-484ec3c163d4" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>23ab9062-2bed-4dbf-942a-679a24f283a0</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="cc1c6bf3-d574-4c75-9c6a-ad3b4491f5bd" Next="50d3380f-f974-4b6a-bd91-6b46026f4804" Previous="943702e9-b750-4415-a11a-c391f354fa5d" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Keys>[RETURN]</Keys>
+                <KeyCount2>1</KeyCount2>
+                <SleepKey>10</SleepKey>
+              </Properties>
+            </SimulateSystem.KeyPress>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="50d3380f-f974-4b6a-bd91-6b46026f4804" Next="9f7c7677-fdb8-4af4-87d0-496619dcab72" Previous="cc1c6bf3-d574-4c75-9c6a-ad3b4491f5bd" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>748a2519-1a23-4262-9004-b91f6e332368</Resource2>
+                <ReturnValueVariable>c1b44f0d-5dae-41ed-9daa-595126e1eb36</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления тип файла" Description="" GUID="9f7c7677-fdb8-4af4-87d0-496619dcab72" Next="295097f9-7896-49c9-b732-8d142f56451a" Previous="50d3380f-f974-4b6a-bd91-6b46026f4804" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>c1b44f0d-5dae-41ed-9daa-595126e1eb36</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>ebdc2303-51c4-4073-9e1f-da081f3b6cf0</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="295097f9-7896-49c9-b732-8d142f56451a" Next="58baed92-ce29-472d-b7c2-548e1586c236" Previous="9f7c7677-fdb8-4af4-87d0-496619dcab72" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>ebdc2303-51c4-4073-9e1f-da081f3b6cf0</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="58baed92-ce29-472d-b7c2-548e1586c236" Next="1cff501c-279d-4963-b2c7-d2e7bdba548e" Previous="295097f9-7896-49c9-b732-8d142f56451a" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Keys>[RETURN][F12]</Keys>
+                <KeyCount2>1</KeyCount2>
+                <SleepKey>5000</SleepKey>
+              </Properties>
+            </SimulateSystem.KeyPress>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="1cff501c-279d-4963-b2c7-d2e7bdba548e" Next="08f4b1e5-c1ff-4998-83e3-8f10a81ff063" Previous="58baed92-ce29-472d-b7c2-548e1586c236" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>9d676ea3-8ac1-43da-af10-07a130209d02</Resource2>
+                <ReturnValueVariable>1c3176cd-9c9c-4166-bb49-b8aab404c3e6</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления тип файла" Description="" GUID="08f4b1e5-c1ff-4998-83e3-8f10a81ff063" Next="7a9ede3d-32da-4332-9c5f-c5c1220fedc7" Previous="1cff501c-279d-4963-b2c7-d2e7bdba548e" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>1c3176cd-9c9c-4166-bb49-b8aab404c3e6</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>b6afc0a9-ee83-4f8a-895c-eaa0c6de7f5b</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <Standard.CSharp type_guid="722ccf16-af25-49f9-b09d-d5b4da6478dc" Name="Код C#" Description="" GUID="7a9ede3d-32da-4332-9c5f-c5c1220fedc7" Next="6dd7db9e-d899-41f8-97de-e3eec05c39f8" Previous="08f4b1e5-c1ff-4998-83e3-8f10a81ff063" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Base|c_sharp" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <sharpcode>X = ((System.Drawing.Point)КоордТипФайла).X+50;
+Y = ((System.Drawing.Point)КоордТипФайла).Y;</sharpcode>
+              </Properties>
+            </Standard.CSharp>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="6dd7db9e-d899-41f8-97de-e3eec05c39f8" Next="7cfbec90-25b1-4791-866f-81f7a9846fdc" Previous="7a9ede3d-32da-4332-9c5f-c5c1220fedc7" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>00000000-0000-0000-0000-000000000000</Location>
+                <Xfrom>X</Xfrom>
+                <Yfrom>Y</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="7cfbec90-25b1-4791-866f-81f7a9846fdc" Next="9e643554-49bc-45ef-ba8a-7536bc5a79b5" Previous="6dd7db9e-d899-41f8-97de-e3eec05c39f8" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>c61b1d5c-5e39-4333-aca8-d6458c295f24</Resource2>
+                <ReturnValueVariable>d398ce31-ad1a-4eeb-ad84-6e7862cddb00</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления тип файла" Description="" GUID="9e643554-49bc-45ef-ba8a-7536bc5a79b5" Next="f5b16745-3640-46dc-8830-7ff8810841d8" Previous="7cfbec90-25b1-4791-866f-81f7a9846fdc" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>d398ce31-ad1a-4eeb-ad84-6e7862cddb00</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>bc06e639-ecf2-4ea9-92fa-55e90842551d</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="f5b16745-3640-46dc-8830-7ff8810841d8" Next="e308b1c8-75d0-4038-be66-ba63b7a48045" Previous="9e643554-49bc-45ef-ba8a-7536bc5a79b5" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>bc06e639-ecf2-4ea9-92fa-55e90842551d</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="e308b1c8-75d0-4038-be66-ba63b7a48045" Next="dda686f2-9ad8-43c0-a5af-7048a572ae47" Previous="f5b16745-3640-46dc-8830-7ff8810841d8" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>ac3aff50-0a10-4089-b83f-c8b7166d183a</Resource2>
+                <ReturnValueVariable>46541c17-eded-43ab-9437-d9214bfa5688</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления тип файла" Description="" GUID="dda686f2-9ad8-43c0-a5af-7048a572ae47" Next="d87812b0-9e0e-4e44-93ca-bc416b487cd9" Previous="e308b1c8-75d0-4038-be66-ba63b7a48045" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>46541c17-eded-43ab-9437-d9214bfa5688</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>2a817d10-cdff-4c60-b774-5d41995389fa</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="d87812b0-9e0e-4e44-93ca-bc416b487cd9" Next="e103dbfd-c5a1-42cb-a60b-06d9751137bc" Previous="dda686f2-9ad8-43c0-a5af-7048a572ae47" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>2a817d10-cdff-4c60-b774-5d41995389fa</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <SimulateSystem.SendStringKeys type_guid="224de82e-c8f6-44de-b2d5-98e194ec7615" Name="Клавиши+текст" Description="" GUID="e103dbfd-c5a1-42cb-a60b-06d9751137bc" Next="64621942-de82-4c59-b586-37ac5d6b8db7" Previous="d87812b0-9e0e-4e44-93ca-bc416b487cd9" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Text>{ПутьКСохранению}[RETURN]</Text>
+                <Sleep>0</Sleep>
+              </Properties>
+            </SimulateSystem.SendStringKeys>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="64621942-de82-4c59-b586-37ac5d6b8db7" Next="ac7f1da5-c939-452a-81ea-3f5011a5c4e0" Previous="e103dbfd-c5a1-42cb-a60b-06d9751137bc" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>09de38b7-5c71-49dd-90a6-f53e7587e9d6</Resource2>
+                <ReturnValueVariable>df1b96cf-2619-4995-861b-d263864de939</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления тип файла" Description="" GUID="ac7f1da5-c939-452a-81ea-3f5011a5c4e0" Next="f2e4fc6d-cd5d-4786-b01f-16c630a9bd27" Previous="64621942-de82-4c59-b586-37ac5d6b8db7" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>df1b96cf-2619-4995-861b-d263864de939</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>6dcdb7ce-9e6d-44b9-a77b-cd0f56764ebb</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="f2e4fc6d-cd5d-4786-b01f-16c630a9bd27" Next="69dde789-a0ab-4d4a-95e6-e73f18de7175" Previous="ac7f1da5-c939-452a-81ea-3f5011a5c4e0" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>6dcdb7ce-9e6d-44b9-a77b-cd0f56764ebb</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <Standard.CSharp type_guid="722ccf16-af25-49f9-b09d-d5b4da6478dc" Name="Код C#" Description="" GUID="69dde789-a0ab-4d4a-95e6-e73f18de7175" Next="773e2a86-072c-481d-9aa5-5aeb798789b4" Previous="f2e4fc6d-cd5d-4786-b01f-16c630a9bd27" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Base|c_sharp" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <sharpcode>date1 =DateTime.Now;
+//date1 = date1.AddMonths(-2);
+date = "Авансовый отчет "+date1.ToLocalTime();
+date = date.Replace(":", ".");
+</sharpcode>
+              </Properties>
+            </Standard.CSharp>
+            <SimulateSystem.SendStringKeys type_guid="224de82e-c8f6-44de-b2d5-98e194ec7615" Name="Клавиши+текст" Description="" GUID="773e2a86-072c-481d-9aa5-5aeb798789b4" Next="2edef4b3-6d92-43f2-abb6-a3631876904e" Previous="69dde789-a0ab-4d4a-95e6-e73f18de7175" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="SimulateSystem|keyboard" DelayTime="2500" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Text>{date}[RETURN][RETURN]</Text>
+                <Sleep>0</Sleep>
+              </Properties>
+            </SimulateSystem.SendStringKeys>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="2edef4b3-6d92-43f2-abb6-a3631876904e" Next="0b244b68-bf13-49f6-95b6-fc50b6f085e8" Previous="773e2a86-072c-481d-9aa5-5aeb798789b4" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>2222c6cf-200b-4063-a40f-7ef8078b0258</Resource2>
+                <ReturnValueVariable>a7e2c97c-0e1a-40e7-a3c0-f988badedfd3</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления тип файла" Description="" GUID="0b244b68-bf13-49f6-95b6-fc50b6f085e8" Next="a6c20fcd-7afe-46ff-b2a8-f7e191ce50fe" Previous="2edef4b3-6d92-43f2-abb6-a3631876904e" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>a7e2c97c-0e1a-40e7-a3c0-f988badedfd3</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>68b98017-a76c-4b56-9e3c-6b2cea430b46</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="a6c20fcd-7afe-46ff-b2a8-f7e191ce50fe" Next="" Previous="0b244b68-bf13-49f6-95b6-fc50b6f085e8" Parent="e05c15bf-8817-4682-906d-9e888bec389d" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>68b98017-a76c-4b56-9e3c-6b2cea430b46</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+          </List>
+        </Base.Sequence>
+        <Base.Sequence type_guid="32c6fcaa-cbe4-4fab-afd9-8113b8a5190b" Name="Закрытие ворда" Description="" GUID="c7f1d1b2-9c2d-42df-ad48-6914ac4a0f0c" Next="d7b03819-2e89-4bac-910f-8e0bc77a764a" Previous="e05c15bf-8817-4682-906d-9e888bec389d" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="" DelayTime="5000" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <List>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="bbd31fce-7ad4-41b3-8d7b-3075310f2efc" Next="52218f51-4926-44cc-859d-663f3f0866b9" Previous="" Parent="c7f1d1b2-9c2d-42df-ad48-6914ac4a0f0c" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>28219be6-2d14-40da-8710-dc44ce22c02c</Resource2>
+                <ReturnValueVariable>9e9b70b4-b21e-4ae3-98c3-e03932945a82</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="52218f51-4926-44cc-859d-663f3f0866b9" Next="b296ef1c-1116-4ee5-844d-2a0167929c53" Previous="bbd31fce-7ad4-41b3-8d7b-3075310f2efc" Parent="c7f1d1b2-9c2d-42df-ad48-6914ac4a0f0c" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>9e9b70b4-b21e-4ae3-98c3-e03932945a82</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>4e4084b5-7642-485c-bc9a-7b2f6dab1510</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="b296ef1c-1116-4ee5-844d-2a0167929c53" Next="20c82321-1570-418a-950b-61faa75fcbcb" Previous="52218f51-4926-44cc-859d-663f3f0866b9" Parent="c7f1d1b2-9c2d-42df-ad48-6914ac4a0f0c" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>4e4084b5-7642-485c-bc9a-7b2f6dab1510</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="20c82321-1570-418a-950b-61faa75fcbcb" Next="fd36caf5-b832-4378-a6db-32fffec7b978" Previous="b296ef1c-1116-4ee5-844d-2a0167929c53" Parent="c7f1d1b2-9c2d-42df-ad48-6914ac4a0f0c" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>8172ab2f-55ff-4cbd-8fdc-ed65fea8a8fd</Resource2>
+                <ReturnValueVariable>8dfd22e0-0829-439b-86b8-7b105e77e12f</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="fd36caf5-b832-4378-a6db-32fffec7b978" Next="112652a2-d4bc-44a1-aa51-ff529a6bc35e" Previous="20c82321-1570-418a-950b-61faa75fcbcb" Parent="c7f1d1b2-9c2d-42df-ad48-6914ac4a0f0c" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>8dfd22e0-0829-439b-86b8-7b105e77e12f</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>d15267bf-16a7-41c5-8fce-85de3245a508</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="112652a2-d4bc-44a1-aa51-ff529a6bc35e" Next="c4b0b7b5-6376-4304-b637-e349f8a6a1b9" Previous="fd36caf5-b832-4378-a6db-32fffec7b978" Parent="c7f1d1b2-9c2d-42df-ad48-6914ac4a0f0c" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>d15267bf-16a7-41c5-8fce-85de3245a508</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="c4b0b7b5-6376-4304-b637-e349f8a6a1b9" Next="de756967-1345-4f79-91b5-ae9843b23300" Previous="112652a2-d4bc-44a1-aa51-ff529a6bc35e" Parent="c7f1d1b2-9c2d-42df-ad48-6914ac4a0f0c" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+              <Properties>
+                <Resource2>609ebcc3-7a5b-4436-a6ea-acb59616e345</Resource2>
+                <ReturnValueVariable>e0e5c0a1-48c0-4d69-899f-7c2545cfeabe</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="de756967-1345-4f79-91b5-ae9843b23300" Next="e723d67f-a741-497c-a055-67701fdd1d01" Previous="c4b0b7b5-6376-4304-b637-e349f8a6a1b9" Parent="c7f1d1b2-9c2d-42df-ad48-6914ac4a0f0c" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+              <Properties>
+                <Data>e0e5c0a1-48c0-4d69-899f-7c2545cfeabe</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>d2836746-1394-4e17-b4b5-d8e73fc135a8</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="e723d67f-a741-497c-a055-67701fdd1d01" Next="" Previous="de756967-1345-4f79-91b5-ae9843b23300" Parent="c7f1d1b2-9c2d-42df-ad48-6914ac4a0f0c" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+              <Properties>
+                <Location>d2836746-1394-4e17-b4b5-d8e73fc135a8</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+          </List>
+        </Base.Sequence>
+        <Base.Sequence type_guid="32c6fcaa-cbe4-4fab-afd9-8113b8a5190b" Name="Выгрузка второго листа АО" Description="" GUID="d7b03819-2e89-4bac-910f-8e0bc77a764a" Next="" Previous="c7f1d1b2-9c2d-42df-ad48-6914ac4a0f0c" Parent="5bb522c5-dcba-4acc-ad67-2d875e88fbfa" UI_identifier="" DelayTime="5000" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <List>
+            <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="087950d6-f5b0-4e2f-9ad2-92205a34e754" Next="0bb9b8bf-06f9-4457-bf18-5d9968480eb0" Previous="" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Keys>[CONTROL][VK_P]</Keys>
+                <KeyCount2>1</KeyCount2>
+                <SleepKey>10</SleepKey>
+              </Properties>
+            </SimulateSystem.KeyPress>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="0bb9b8bf-06f9-4457-bf18-5d9968480eb0" Next="5c38f167-f783-4e03-aed4-eeb66fd21852" Previous="087950d6-f5b0-4e2f-9ad2-92205a34e754" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>ecc4f544-2394-48c0-bb64-6e4295455769</Resource2>
+                <ReturnValueVariable>b907903b-58c7-49fb-9067-be09916ff450</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="5c38f167-f783-4e03-aed4-eeb66fd21852" Next="f181b2d9-8f2c-48dd-bbaa-4188d682e2b8" Previous="0bb9b8bf-06f9-4457-bf18-5d9968480eb0" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>b907903b-58c7-49fb-9067-be09916ff450</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>d1305569-f510-4f91-b80b-4f64cd6dfaf8</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="f181b2d9-8f2c-48dd-bbaa-4188d682e2b8" Next="888f82d8-97b0-48ad-952c-5120c6d28fc6" Previous="5c38f167-f783-4e03-aed4-eeb66fd21852" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>d1305569-f510-4f91-b80b-4f64cd6dfaf8</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="888f82d8-97b0-48ad-952c-5120c6d28fc6" Next="8a965b1e-e401-4950-a221-fdec53c8dd80" Previous="f181b2d9-8f2c-48dd-bbaa-4188d682e2b8" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>a687254c-6184-40ed-82e6-56b99ca6705e</Resource2>
+                <ReturnValueVariable>d955151a-3bab-4e81-918a-93feca4ce6ea</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления" Description="" GUID="8a965b1e-e401-4950-a221-fdec53c8dd80" Next="715814b5-abf5-40ee-8218-d2fb5c702bc1" Previous="888f82d8-97b0-48ad-952c-5120c6d28fc6" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>d955151a-3bab-4e81-918a-93feca4ce6ea</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>23ab9062-2bed-4dbf-942a-679a24f283a0</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="715814b5-abf5-40ee-8218-d2fb5c702bc1" Next="d7a6f4eb-cb81-45aa-bb0b-d020ecb9287e" Previous="8a965b1e-e401-4950-a221-fdec53c8dd80" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>23ab9062-2bed-4dbf-942a-679a24f283a0</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="d7a6f4eb-cb81-45aa-bb0b-d020ecb9287e" Next="7f41959a-dc55-45b8-8f00-db87e04f6baf" Previous="715814b5-abf5-40ee-8218-d2fb5c702bc1" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Keys>[RETURN]</Keys>
+                <KeyCount2>1</KeyCount2>
+                <SleepKey>10</SleepKey>
+              </Properties>
+            </SimulateSystem.KeyPress>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="7f41959a-dc55-45b8-8f00-db87e04f6baf" Next="d68981dd-5aa9-4b0d-9270-24af8d2e07d2" Previous="d7a6f4eb-cb81-45aa-bb0b-d020ecb9287e" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>0372c93f-fdba-4737-aa6e-026b1ef9eb19</Resource2>
+                <ReturnValueVariable>ca8c00a9-4856-4f63-8f6a-ce19fd972bbe</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления тип файла" Description="" GUID="d68981dd-5aa9-4b0d-9270-24af8d2e07d2" Next="940cfd3d-0de9-41ad-8ad6-b14921044319" Previous="7f41959a-dc55-45b8-8f00-db87e04f6baf" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>ca8c00a9-4856-4f63-8f6a-ce19fd972bbe</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>5bd706d2-2ca3-434e-b5ed-8f9c020b6bdd</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="940cfd3d-0de9-41ad-8ad6-b14921044319" Next="04ba363f-3af9-444e-99f5-9046e327278d" Previous="d68981dd-5aa9-4b0d-9270-24af8d2e07d2" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>5bd706d2-2ca3-434e-b5ed-8f9c020b6bdd</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="04ba363f-3af9-444e-99f5-9046e327278d" Next="d51ef9df-d974-47e6-b7f9-513ac2d3f50e" Previous="940cfd3d-0de9-41ad-8ad6-b14921044319" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Keys>[RETURN][F12]</Keys>
+                <KeyCount2>1</KeyCount2>
+                <SleepKey>5000</SleepKey>
+              </Properties>
+            </SimulateSystem.KeyPress>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="d51ef9df-d974-47e6-b7f9-513ac2d3f50e" Next="68038555-6b92-4327-a57b-4fd3a7670e0f" Previous="04ba363f-3af9-444e-99f5-9046e327278d" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>9d676ea3-8ac1-43da-af10-07a130209d02</Resource2>
+                <ReturnValueVariable>1c3176cd-9c9c-4166-bb49-b8aab404c3e6</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления тип файла" Description="" GUID="68038555-6b92-4327-a57b-4fd3a7670e0f" Next="9b5103d0-8056-4fde-876e-f60e75db8488" Previous="d51ef9df-d974-47e6-b7f9-513ac2d3f50e" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>1c3176cd-9c9c-4166-bb49-b8aab404c3e6</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>b6afc0a9-ee83-4f8a-895c-eaa0c6de7f5b</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <Standard.CSharp type_guid="722ccf16-af25-49f9-b09d-d5b4da6478dc" Name="Код C#" Description="" GUID="9b5103d0-8056-4fde-876e-f60e75db8488" Next="ea2e4066-0f23-4c31-b33e-f3254eaef0d9" Previous="68038555-6b92-4327-a57b-4fd3a7670e0f" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Base|c_sharp" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <sharpcode>X = ((System.Drawing.Point)КоордТипФайла).X+50;
+Y = ((System.Drawing.Point)КоордТипФайла).Y;</sharpcode>
+              </Properties>
+            </Standard.CSharp>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="ea2e4066-0f23-4c31-b33e-f3254eaef0d9" Next="2fb8197a-1fcc-449e-8a8f-09582bcc5367" Previous="9b5103d0-8056-4fde-876e-f60e75db8488" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>00000000-0000-0000-0000-000000000000</Location>
+                <Xfrom>X</Xfrom>
+                <Yfrom>Y</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="2fb8197a-1fcc-449e-8a8f-09582bcc5367" Next="2d7bcc64-251a-4865-a7e6-4c5e2e06f9fb" Previous="ea2e4066-0f23-4c31-b33e-f3254eaef0d9" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>c61b1d5c-5e39-4333-aca8-d6458c295f24</Resource2>
+                <ReturnValueVariable>d398ce31-ad1a-4eeb-ad84-6e7862cddb00</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления тип файла" Description="" GUID="2d7bcc64-251a-4865-a7e6-4c5e2e06f9fb" Next="8558b418-5bb0-4b54-aead-a900124286ef" Previous="2fb8197a-1fcc-449e-8a8f-09582bcc5367" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>d398ce31-ad1a-4eeb-ad84-6e7862cddb00</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>bc06e639-ecf2-4ea9-92fa-55e90842551d</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="8558b418-5bb0-4b54-aead-a900124286ef" Next="afbc11a9-59f8-40c6-9b30-824e327fc394" Previous="2d7bcc64-251a-4865-a7e6-4c5e2e06f9fb" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>bc06e639-ecf2-4ea9-92fa-55e90842551d</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="afbc11a9-59f8-40c6-9b30-824e327fc394" Next="b24a62c9-452b-4bfa-83dc-c50f5071455a" Previous="8558b418-5bb0-4b54-aead-a900124286ef" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>4eba4af7-7072-42b8-86c0-0f6d168fef50</Resource2>
+                <ReturnValueVariable>0895d491-6834-4154-8c66-a9295016f322</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления тип файла" Description="" GUID="b24a62c9-452b-4bfa-83dc-c50f5071455a" Next="91ddd4a0-c7cc-4c1c-8366-f4d2cb860468" Previous="afbc11a9-59f8-40c6-9b30-824e327fc394" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>0895d491-6834-4154-8c66-a9295016f322</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>e8f90ac3-9d36-4cf9-b026-6ad29808eb88</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <Standard.CSharp type_guid="722ccf16-af25-49f9-b09d-d5b4da6478dc" Name="Код C#" Description="" GUID="91ddd4a0-c7cc-4c1c-8366-f4d2cb860468" Next="0bac7c72-479b-4af3-bc25-58e18a37cd17" Previous="b24a62c9-452b-4bfa-83dc-c50f5071455a" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Base|c_sharp" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <sharpcode>X = ((System.Drawing.Point)КоордИмяФайла).X+50;
+Y = ((System.Drawing.Point)КоордИмяФайла).Y;</sharpcode>
+              </Properties>
+            </Standard.CSharp>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="0bac7c72-479b-4af3-bc25-58e18a37cd17" Next="745ef980-1c8a-4bdf-bc3c-e4b0b7086b43" Previous="91ddd4a0-c7cc-4c1c-8366-f4d2cb860468" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>00000000-0000-0000-0000-000000000000</Location>
+                <Xfrom>X</Xfrom>
+                <Yfrom>Y</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <SimulateSystem.SendStringKeys type_guid="224de82e-c8f6-44de-b2d5-98e194ec7615" Name="Клавиши+текст" Description="" GUID="745ef980-1c8a-4bdf-bc3c-e4b0b7086b43" Next="35bc2a29-bdcf-4b2c-bcdc-263ac95fd257" Previous="0bac7c72-479b-4af3-bc25-58e18a37cd17" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Text>Второй лист АО</Text>
+                <Sleep>0</Sleep>
+              </Properties>
+            </SimulateSystem.SendStringKeys>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="35bc2a29-bdcf-4b2c-bcdc-263ac95fd257" Next="ca603029-a6d2-4b42-8a7b-c43b6d8096c4" Previous="745ef980-1c8a-4bdf-bc3c-e4b0b7086b43" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>ac3aff50-0a10-4089-b83f-c8b7166d183a</Resource2>
+                <ReturnValueVariable>46541c17-eded-43ab-9437-d9214bfa5688</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления тип файла" Description="" GUID="ca603029-a6d2-4b42-8a7b-c43b6d8096c4" Next="7e444776-663b-495c-9819-bd9c2c670d8f" Previous="35bc2a29-bdcf-4b2c-bcdc-263ac95fd257" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>46541c17-eded-43ab-9437-d9214bfa5688</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>2a817d10-cdff-4c60-b774-5d41995389fa</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="7e444776-663b-495c-9819-bd9c2c670d8f" Next="05164ccf-2499-462c-a822-3b0c85739a51" Previous="ca603029-a6d2-4b42-8a7b-c43b6d8096c4" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>2a817d10-cdff-4c60-b774-5d41995389fa</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <SimulateSystem.SendStringKeys type_guid="224de82e-c8f6-44de-b2d5-98e194ec7615" Name="Клавиши+текст" Description="" GUID="05164ccf-2499-462c-a822-3b0c85739a51" Next="a1d3d218-b1f0-4acd-bdc9-3db62ee4c5bf" Previous="7e444776-663b-495c-9819-bd9c2c670d8f" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Text>{ПутьКСохранению}\{date}[RETURN]</Text>
+                <Sleep>0</Sleep>
+              </Properties>
+            </SimulateSystem.SendStringKeys>
+            <Vision.LoadFromResource type_guid="D9A14B3D-AF65-4F29-8B60-9F85830DA6D3" Name="Загрузить из ресурса" Description="" GUID="a1d3d218-b1f0-4acd-bdc9-3db62ee4c5bf" Next="1232aa7e-cc8a-4646-a7a9-600e0a56cba2" Previous="05164ccf-2499-462c-a822-3b0c85739a51" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|download" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Resource2>2222c6cf-200b-4063-a40f-7ef8078b0258</Resource2>
+                <ReturnValueVariable>a7e2c97c-0e1a-40e7-a3c0-f988badedfd3</ReturnValueVariable>
+              </Properties>
+            </Vision.LoadFromResource>
+            <Vision.WaitForAction type_guid="10FE3AA0-AF6A-4FE9-A5DE-E6629E6DE8B2" Name="Ждать появления тип файла" Description="" GUID="1232aa7e-cc8a-4646-a7a9-600e0a56cba2" Next="7f1ad4f2-e860-4116-afe7-bef744800b06" Previous="a1d3d218-b1f0-4acd-bdc9-3db62ee4c5bf" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Visual spy|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Data>a7e2c97c-0e1a-40e7-a3c0-f988badedfd3</Data>
+                <SimilarityRate>0.75</SimilarityRate>
+                <GiveCenter>true</GiveCenter>
+                <Timeout>-1</Timeout>
+                <ReturnValueVariable>68b98017-a76c-4b56-9e3c-6b2cea430b46</ReturnValueVariable>
+              </Properties>
+            </Vision.WaitForAction>
+            <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="7f1ad4f2-e860-4116-afe7-bef744800b06" Next="2b6c0d04-6871-4bca-8636-22c79801125c" Previous="1232aa7e-cc8a-4646-a7a9-600e0a56cba2" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Location>68b98017-a76c-4b56-9e3c-6b2cea430b46</Location>
+                <Xfrom>0</Xfrom>
+                <Yfrom>0</Yfrom>
+              </Properties>
+            </SimulateSystem.MouseLeftClick>
+            <Dialogs.ShowMessage type_guid="a95cbc1d-b583-4bbb-9339-000000000203" Name="Сообщение" Description="" GUID="2b6c0d04-6871-4bca-8636-22c79801125c" Next="" Previous="7f1ad4f2-e860-4116-afe7-bef744800b06" Parent="d7b03819-2e89-4bac-910f-8e0bc77a764a" UI_identifier="Dialogs|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Caption>Сообщение от робота</Caption>
+                <MsgText>Робот завершил работу</MsgText>
+              </Properties>
+            </Dialogs.ShowMessage>
+          </List>
+        </Base.Sequence>
+      </List>
+    </Base.Sequence>
+  </Schema>
+  <Variables>
+    <List>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="Resurs" GUID="848622e4-d3aa-4183-91fb-e05eb26405cc" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Boolean type_guid="3de4b0ec-bf45-4b56-bac0-bfa70cc8e9fc" Name="Variable1" GUID="c30e7b39-c953-434d-b32a-1f732d797310" IsReturn="false">
+        <Value>False</Value>
+      </Variable.Boolean>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="Koordinat" GUID="70dedb69-7a8c-4979-baca-4a739366e7e0" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Decimal type_guid="e6b39109-e349-47ac-aa9e-96e5e2340f54" Name="X" GUID="65ff6d20-7d1f-4578-b18c-718b2dcf15c9" IsReturn="false">
+        <Value>0</Value>
+      </Variable.Decimal>
+      <Variable.Decimal type_guid="e6b39109-e349-47ac-aa9e-96e5e2340f54" Name="Y" GUID="869db82c-f308-423a-8ba8-ac9d6584888b" IsReturn="false">
+        <Value>0</Value>
+      </Variable.Decimal>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="имя" GUID="637ff282-227e-4eee-a9ea-a266162346cc" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="пароль" GUID="73835034-e59f-476f-b071-a58a6e72be23" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="login" GUID="81613aa0-e92d-4479-bf92-6a4eba2ec17f" IsReturn="false">
+        <Value>supervisor</Value>
+      </Variable.String>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="pass" GUID="e6dc06bd-7e9d-47e5-859b-b2d331ef117d" IsReturn="false">
+        <Value>123456</Value>
+      </Variable.String>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="войти" GUID="4fdec70e-7d41-4724-aac3-e1886dea5a9c" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="Касса" GUID="25b8cc3e-0867-487f-964e-4ce27a6c0c57" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоординатыКассы" GUID="1e6e9058-aed2-4fac-8837-825b58f43889" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="Документы" GUID="46541c17-eded-43ab-9437-d9214bfa5688" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоординатыДокументы" GUID="2a817d10-cdff-4c60-b774-5d41995389fa" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="АвансовыйОтчет" GUID="4fb63e42-b493-41d1-b607-ffb00272ebb2" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоординатыАвансовыйОтчет" GUID="65f15679-5d49-47d1-ba39-29b86e93c47d" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КассыПредпрития" GUID="2f23419d-54e6-45af-9948-10679b88eff9" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоординатыКассыПредпрития" GUID="0207261d-a796-4907-9341-af29b4692d5e" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="date" GUID="f1026c05-8353-4ef3-a844-e7bf45305a55" IsReturn="false">
+        <Value></Value>
+      </Variable.String>
+      <Variable.DateTime type_guid="f883d2c6-45d4-4a15-911b-826eadc17d06" Name="date1" GUID="b49b36d6-2cc9-4284-9d6e-2e3a3084efaa" IsReturn="false">
+        <Value>01.01.0001 0:00:00</Value>
+      </Variable.DateTime>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="СотрудникиПредприятия" GUID="9b8a8f19-d6fd-4ef9-bd43-5a00bfe0c58a" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоординатыСотрудникиПредприятия" GUID="4952ca44-2cec-439d-8d55-d41345e9a7ed" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="ОтчетВФормате" GUID="b907903b-58c7-49fb-9067-be09916ff450" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоординатыОтчетВФормате" GUID="d1305569-f510-4f91-b80b-4f64cd6dfaf8" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="Формат" GUID="d955151a-3bab-4e81-918a-93feca4ce6ea" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоординатыФормат" GUID="23ab9062-2bed-4dbf-942a-679a24f283a0" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="НоваяПапка" GUID="df1b96cf-2619-4995-861b-d263864de939" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоордНоваяПапка" GUID="6dcdb7ce-9e6d-44b9-a77b-cd0f56764ebb" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="ТипФайла" GUID="1c3176cd-9c9c-4166-bb49-b8aab404c3e6" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоордТипФайла" GUID="b6afc0a9-ee83-4f8a-895c-eaa0c6de7f5b" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="PDF" GUID="d398ce31-ad1a-4eeb-ad84-6e7862cddb00" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоордPDF" GUID="bc06e639-ecf2-4ea9-92fa-55e90842551d" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="Сохранить" GUID="a7e2c97c-0e1a-40e7-a3c0-f988badedfd3" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="коордСохранить" GUID="68b98017-a76c-4b56-9e3c-6b2cea430b46" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="ВыберетеОтчетОст" GUID="c1b44f0d-5dae-41ed-9daa-595126e1eb36" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоордВыберетеОтчетОст" GUID="ebdc2303-51c4-4073-9e1f-da081f3b6cf0" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="ПутьКСохранению" GUID="3b50a0b6-7303-4869-960d-a39980613b5c" IsReturn="false">
+        <Value>Libraries\Documents</Value>
+      </Variable.String>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="Файл" GUID="9e9b70b4-b21e-4ae3-98c3-e03932945a82" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоордФайл" GUID="4e4084b5-7642-485c-bc9a-7b2f6dab1510" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="Выход" GUID="8dfd22e0-0829-439b-86b8-7b105e77e12f" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоордВыход" GUID="d15267bf-16a7-41c5-8fce-85de3245a508" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="НеСохранять" GUID="e0e5c0a1-48c0-4d69-899f-7c2545cfeabe" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоордНеСохранять" GUID="d2836746-1394-4e17-b4b5-d8e73fc135a8" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="ВыберетеОтчетТнф" GUID="ca8c00a9-4856-4f63-8f6a-ce19fd972bbe" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоордВыберетеОтчетТнф" GUID="5bd706d2-2ca3-434e-b5ed-8f9c020b6bdd" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="Компьютер" GUID="2f382461-adc3-4964-87a3-c9f38f7bc1d4" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоордКомпьютер" GUID="eaafe028-b143-434b-bed8-56f1fc6c1952" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="passRDP" GUID="71e29309-951c-4cb4-a191-73b4ff2a78eb" IsReturn="false">
+        <Value>o9p0[-]=</Value>
+      </Variable.String>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="Пуск" GUID="729aa05d-fcb3-475c-a2fa-986e2d44d51b" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоордПуск" GUID="7c113ae5-99ef-4dbb-a4d2-bde62191a077" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="ИмяФайла" GUID="0895d491-6834-4154-8c66-a9295016f322" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="КоордИмяФайла" GUID="e8f90ac3-9d36-4cf9-b026-6ad29808eb88" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+    </List>
+  </Variables>
+  <Contexts>
+    <List />
+  </Contexts>
+</Robot>

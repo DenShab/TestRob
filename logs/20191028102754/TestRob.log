@@ -1,0 +1,3 @@
+﻿(28.10.2019 10:27:54) ERROR : Compilation failed:
+error CS1503: Argument 1: cannot convert from 'System.DateTime' to 'long' in line: '            date1 = new DateTime(DateTime.Today);'
+

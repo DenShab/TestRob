@@ -1,0 +1,14 @@
+﻿(28.10.2019 10:28:33) APP   : Studio v.1.0.0.0
+(28.10.2019 10:28:33) APP   : Microsoft Windows NT 6.2.9200.0
+(28.10.2019 10:28:33) APP   : OnMessageEvent: Запуск робота
+(28.10.2019 10:28:33) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191028102833, True, )
+(28.10.2019 10:28:33) APP   : OnStatusChangedEvent: building
+(28.10.2019 10:28:33) APP   : PreProcessFile
+(28.10.2019 10:28:33) APP   : ProcessFile
+(28.10.2019 10:28:33) APP   : ParseSyntaxTree
+(28.10.2019 10:28:33) APP   : Precompile
+(28.10.2019 10:28:33) APP   : Compile
+(28.10.2019 10:28:33) ERROR : Compilation failed:
+error CS1955: Non-invocable member 'DateTime.Today' cannot be used like a method. in line: '            date1 = DateTime.Today();'
+
+(28.10.2019 10:28:33) APP   : OnStatusChangedEvent: completed

@@ -1,0 +1,80 @@
+﻿(28.10.2019 17:16:05) CMD   : NumberOfKeystrokes("91,77", "1", "10")
+(28.10.2019 17:16:05) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 17:16:05) DTL   :     KeyDown:'LWIN'
+(28.10.2019 17:16:05) DTL   :     Sleep("10")
+(28.10.2019 17:16:05) DTL   :     KeyDown:'VK_M'
+(28.10.2019 17:16:05) DTL   :     Sleep("10")
+(28.10.2019 17:16:05) DTL   :     KeyUp:'VK_M'
+(28.10.2019 17:16:05) DTL   :     KeyUp:'LWIN'
+(28.10.2019 17:16:05) CMD   : Sleep("2000")
+(28.10.2019 17:16:07) CMD   : Processes.Execute("system32\mstsc.exe", "", "True", "False", "Normal")
+(28.10.2019 17:16:07) DTL   :   Processes.StartProcess("system32\mstsc.exe", "", "True", "False", "Normal", "False", "False")
+(28.10.2019 17:16:07) CMD   : Sleep("1000")
+(28.10.2019 17:16:08) CMD   : WindowsUI.GetElementRectangle("0", "False", "True", "False", "False")
+(28.10.2019 17:16:08) DTL   :   WindowsUI.FocusWindow("ByName", "Подключение к удаленному рабочему столу", "0")
+(28.10.2019 17:16:08) DTL   :     WindowsUI.FindWindow("ByName", "Подключение к удаленному рабочему столу", "System.Windows.Automation.AutomationElement", "Robin.RobotTools.RobinWatch")
+(28.10.2019 17:16:09) DTL   :       Focus window with name 'Подключение к удаленному рабочему столу' is successfully
+(28.10.2019 17:16:09) DTL   :       Focus on window Подключение к удаленному рабочему столу
+(28.10.2019 17:16:09) DTL   :     Found 1 elements.
+(28.10.2019 17:16:09) DTL   :     Order = 0, taking first.
+(28.10.2019 17:16:09) DTL   :     elArr: Found 
+(28.10.2019 17:16:09) DTL   :     BoundingRectangle: (x=773, y=198, w=389, h=28)
+(28.10.2019 17:16:09) DTL   :     GetCurrentPropertyValue: (x=773, y=198, w=389, h=28)
+(28.10.2019 17:16:09) DTL   :     GetClickablePoint: (967, 212)
+(28.10.2019 17:16:09) DTL   :     x+w/2, y+h/2: (967,5, 212)
+(28.10.2019 17:16:09) DTL   :     Focused element
+(28.10.2019 17:16:09) DTL   :     SimulateSystem.ClickLeftMouseButton("967", "212", "")
+(28.10.2019 17:16:09) DTL   :       SimulateSystem.CalculateLocation("967", "212", "")
+(28.10.2019 17:16:09) DTL   :         (33006, 12864)
+(28.10.2019 17:16:09) DTL   :       SimulateSystem.ClickMouseYeah("33006", "12864", "MOUSEEVENTF_LEFTUP", "MOUSEEVENTF_LEFTDOWN")
+(28.10.2019 17:16:09) DTL   :       Click left mouse button complete
+(28.10.2019 17:16:09) DTL   :     ForceClick on (967,212)
+(28.10.2019 17:16:09) WARN  : Action Timeout!
+(28.10.2019 17:16:09) DTL   :     Sleep("1000")
+(28.10.2019 17:16:10) DTL   :     TextEntry
+(28.10.2019 17:16:10) DTL   :   NumberOfKeystrokes("13", "1", "10")
+(28.10.2019 17:16:10) DTL   :     KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 17:16:10) DTL   :       KeyDown:'RETURN'
+(28.10.2019 17:16:10) DTL   :       Sleep("10")
+(28.10.2019 17:16:10) DTL   :       KeyUp:'RETURN'
+(28.10.2019 17:16:10) DTL   :   Sleep("2000")
+(28.10.2019 17:16:12) DTL   :   TextEntry
+(28.10.2019 17:16:12) CMD   : Sleep("1000")
+(28.10.2019 17:16:14) CMD   : NumberOfKeystrokes("13", "1", "10")
+(28.10.2019 17:16:14) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 17:16:14) DTL   :     KeyDown:'RETURN'
+(28.10.2019 17:16:14) DTL   :     Sleep("10")
+(28.10.2019 17:16:14) DTL   :     KeyUp:'RETURN'
+(28.10.2019 17:16:14) CMD   : VisualOperations.FromResource: resource identifier("a4603e12-a8d1-420f-95c4-4cd1b3819404")
+(28.10.2019 17:16:14) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 17:16:14) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "False", "12000")
+(28.10.2019 17:16:14) DTL   :   RobinBitmap detected
+(28.10.2019 17:16:26) CMD   : Sleep("12000")
+(28.10.2019 17:16:38) CMD   : NumberOfKeystrokes("91,77", "1", "10")
+(28.10.2019 17:16:38) DTL   :   KeyboardAction("System.Collections.Generic.List`1[System.Int32]", "10")
+(28.10.2019 17:16:38) DTL   :     KeyDown:'LWIN'
+(28.10.2019 17:16:38) DTL   :     Sleep("10")
+(28.10.2019 17:16:38) DTL   :     KeyDown:'VK_M'
+(28.10.2019 17:16:38) DTL   :     Sleep("10")
+(28.10.2019 17:16:38) DTL   :     KeyUp:'VK_M'
+(28.10.2019 17:16:38) DTL   :     KeyUp:'LWIN'
+(28.10.2019 17:16:38) CMD   : VisualOperations.FromResource: resource identifier("db938a19-4c4a-4616-8ab3-65be4a5b7536")
+(28.10.2019 17:16:38) DTL   :   VisualOperations.FromResource: resource name 
+(28.10.2019 17:16:38) CMD   : Vision.WaitFor similarity, return center, timeout("0,75", "True", "-1")
+(28.10.2019 17:16:38) DTL   :   RobinBitmap detected
+(28.10.2019 17:17:09) ERROR : ScreenUtils.WaitFor: error
+System.Threading.ThreadAbortException: Поток находился в процессе прерывания.
+   в VisualCore.VisualCoreAPI.WaitFor(VisualCoreAPI* , InterBitmap* , Double , InterPoint* , Int32 )
+   в RobinIntegration.VisionCoreAPI.WaitFor(Bitmap target, Double similarity, Int64 timeout)
+   в ComputerVison.VisionApi.WaitFor(Bitmap target, Double similarityRate, Decimal timeout, Boolean giveCenter)
+(28.10.2019 17:17:09) ERROR : execution failed:
+Manually stopped
+System.Exception: Manually stopped ---> System.Threading.ThreadAbortException: Поток находился в процессе прерывания.
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   в System.Type.InvokeMember(String name, BindingFlags invokeAttr, Binder binder, Object target, Object[] args)
+   в Robin.RobotTools.RobotCompilation.RunRobot(String entryPoint, String args)
+   --- Конец трассировки внутреннего стека исключений ---
+(28.10.2019 17:17:09) ERROR : Manually stopped

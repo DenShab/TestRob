@@ -1,0 +1,24 @@
+﻿(08.10.2019 16:44:21) APP   : Studio v.1.0.0.0
+(08.10.2019 16:44:21) APP   : Microsoft Windows NT 6.2.9200.0
+(08.10.2019 16:44:21) APP   : OnMessageEvent: Запуск робота
+(08.10.2019 16:44:21) APP   : Execute("C:\Users\dboychuk\Desktop\ROBIN\TestRob", C:\Users\dboychuk\Desktop\ROBIN\TestRob\logs\20191008164421, True, )
+(08.10.2019 16:44:21) APP   : OnStatusChangedEvent: building
+(08.10.2019 16:44:21) APP   : PreProcessFile
+(08.10.2019 16:44:21) APP   : ProcessFile
+(08.10.2019 16:44:21) APP   : ParseSyntaxTree
+(08.10.2019 16:44:21) APP   : Precompile
+(08.10.2019 16:44:21) APP   : Compile
+(08.10.2019 16:44:21) APP   : Compilation succeed
+(08.10.2019 16:44:21) APP   : VerifyMethods
+(08.10.2019 16:44:21) APP   : OnStatusChangedEvent: running
+(08.10.2019 16:44:21) APP   : RunRobot("Main")
+(08.10.2019 16:44:21) USER  : Загрузить из ресурса
+(08.10.2019 16:44:21) CMD   : VisualOperations.FromResource: resource identifier("db938a19-4c4a-4616-8ab3-65be4a5b7536")
+(08.10.2019 16:44:21) DTL   :   VisualOperations.FromResource: resource name 
+(08.10.2019 16:44:21) USER  : Существует на экране
+(08.10.2019 16:44:22) CMD   : Vision.ExistsOnScreen: similarity("0,75")
+(08.10.2019 16:44:22) DTL   :   Vision.FindFirst: similarity , return center("0,75", "False")
+(08.10.2019 16:44:22) DTL   :     RobinBitmap detected
+(08.10.2019 16:44:22) APP   : execution succeed
+(08.10.2019 16:44:22) APP   : Teardown
+(08.10.2019 16:44:22) APP   : OnStatusChangedEvent: completed

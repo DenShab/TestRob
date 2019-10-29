@@ -1,0 +1,209 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Diagnostics;
+using System.IO;
+using System.Windows;
+using System.Windows.Forms;
+using Robin.CommonTools;
+
+namespace Robin.RobotTools
+{
+    public partial class Robot : RobotCommands
+    {
+        object _a_Resurs;
+        public object Resurs
+        {
+            get
+            {
+                return _a_Resurs;
+            }
+
+            set
+            {
+                _a_Resurs = value;
+                this.VariableChanged("Resurs", value);
+            }
+        }
+
+        bool _a_Variable1 = false;
+        public bool Variable1
+        {
+            get
+            {
+                return _a_Variable1;
+            }
+
+            set
+            {
+                _a_Variable1 = value;
+                this.VariableChanged("Variable1", value);
+            }
+        }
+
+        object _a_Koordinat;
+        public object Koordinat
+        {
+            get
+            {
+                return _a_Koordinat;
+            }
+
+            set
+            {
+                _a_Koordinat = value;
+                this.VariableChanged("Koordinat", value);
+            }
+        }
+
+        decimal _a_X = 0m;
+        public decimal X
+        {
+            get
+            {
+                return _a_X;
+            }
+
+            set
+            {
+                _a_X = value;
+                this.VariableChanged("X", value);
+            }
+        }
+
+        decimal _a_Y = 0m;
+        public decimal Y
+        {
+            get
+            {
+                return _a_Y;
+            }
+
+            set
+            {
+                _a_Y = value;
+                this.VariableChanged("Y", value);
+            }
+        }
+
+        object _a_имя;
+        public object имя
+        {
+            get
+            {
+                return _a_имя;
+            }
+
+            set
+            {
+                _a_имя = value;
+                this.VariableChanged("имя", value);
+            }
+        }
+
+        object _a_пароль;
+        public object пароль
+        {
+            get
+            {
+                return _a_пароль;
+            }
+
+            set
+            {
+                _a_пароль = value;
+                this.VariableChanged("пароль", value);
+            }
+        }
+
+        string _a_login = @"supervisor";
+        public string login
+        {
+            get
+            {
+                return _a_login;
+            }
+
+            set
+            {
+                _a_login = value;
+                this.VariableChanged("login", value);
+            }
+        }
+
+        string _a_pass = @"123456";
+        public string pass
+        {
+            get
+            {
+                return _a_pass;
+            }
+
+            set
+            {
+                _a_pass = value;
+                this.VariableChanged("pass", value);
+            }
+        }
+
+        object _a_войти;
+        public object войти
+        {
+            get
+            {
+                return _a_войти;
+            }
+
+            set
+            {
+                _a_войти = value;
+                this.VariableChanged("войти", value);
+            }
+        }
+
+        public string ___ReturnVariables
+        {
+            get;
+            set;
+        }
+
+        = "";
+        public void Main(string _args)
+        {
+            this.ActionGuid("5bb522c5-dcba-4acc-ad67-2d875e88fbfa", "");
+            this.ActionGuid("058f26f0-cbc4-429f-b84a-8d53b229a5b0", @"Загрузить из ресурса");
+            Resurs = VisualOperations.FromResource("db938a19-4c4a-4616-8ab3-65be4a5b7536");
+            this.ActionGuid("5c44e17d-8efc-4fe5-8b31-d9d7c98d17d7", @"Ждать появления");
+            Koordinat = VisualActions.WaitFor(Resurs, 0.75m, true, -1m);
+            this.ActionGuid("81dd0e10-67be-4fec-a618-68c1df1a664c", @"Двойной клик ЛКМ");
+            MouseClick.DoubleClickLeftMouseButton((int)(0), (int)(0), Koordinat);
+            this.ActionGuid("bbb80ba3-196c-41a2-9080-5981d8d482b0", @"Загрузить из ресурса");
+            имя = VisualOperations.FromResource("8dcd3c71-2706-482a-92ae-81da1a3e14f2");
+            this.ActionGuid("12fcbd9d-0238-4100-bd27-5f3e3baf6fc1", @"Ждать появления");
+            Koordinat = VisualActions.WaitFor(имя, 0.75m, true, -1m);
+            this.ActionGuid("c3ec2e3f-12f6-4b41-86d9-02c414b407fe", @"Код C#");
+            sharpcode0();
+            this.ActionGuid("be0fd840-a874-4468-a8d8-d0b6b568a12c", @"Двойной клик ЛКМ");
+            MouseClick.DoubleClickLeftMouseButton((int)(X), (int)(Y), null);
+            this.ActionGuid("c666a5f0-1349-4fe1-a2bc-4f946465a5aa", @"Клавиши+текст");
+            KeyboardInput.Actions(new List<object>()
+            {$@"login", new List<int>()
+            {13}}, 0);
+            this.ActionGuid("d3421233-0bbd-4c0c-b79a-dd411daf1717", @"Клавиши+текст");
+            KeyboardInput.Actions(new List<object>()
+            {$@"pass"}, 0);
+            this.ActionGuid("1d966cfc-487c-40a4-afd4-93572527ab07", @"Загрузить из ресурса");
+            войти = VisualOperations.FromResource("0f753767-e856-4abe-8e73-734df7e11194");
+            this.ActionGuid("be85b102-1bf8-4736-8b34-48f16c82973a", @"Ждать появления");
+            Koordinat = VisualActions.WaitFor(войти, 0.75m, false, -1m);
+            this.ActionGuid("048de47f-2fca-47f1-b740-5e1a989a9107", @"Двойной клик ЛКМ");
+            MouseClick.DoubleClickLeftMouseButton((int)(0), (int)(0), Koordinat);
+        }
+
+        void sharpcode0()
+        {
+            X = ((System.Drawing.Point)Koordinat).X;
+            Y = ((System.Drawing.Point)Koordinat).Y + 25;
+        }
+    }
+}
